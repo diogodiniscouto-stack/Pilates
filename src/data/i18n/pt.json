@@ -5,7 +5,7 @@
     "siteName": "Base Movement",
     "siteTagline": "Pilates Supply",
     "defaultTitle": "Base Movement | Equipamento de Pilates Premium para Estúdios",
-    "defaultDescription": "Equipamentos e acessórios de Pilates concebidos para estúdios profissionais, hotéis, clínicas e espaços premium. Fabrico europeu, personalização total, elegância atemporal.",
+    "defaultDescription": "Equipamentos e acessórios de Pilates concebidos para estúdios profissionais, hotéis, clínicas e espaços premium. Qualidade certificada, personalização total, elegância atemporal.",
     "ogAlt": "Base Movement — Equipamento de Pilates Premium"
   },
   "nav": {
@@ -27,7 +27,10 @@
   },
   "hero": {
     "eyebrow": "Base Movement — Pilates Supply",
-    "headlineLines": ["Eleve o seu estúdio.", "Inspire cada movimento."],
+    "headlineLines": [
+      "Eleve o seu estúdio.",
+      "Inspire cada movimento."
+    ],
     "subheadline": "Equipamentos e acessórios de Pilates concebidos para estúdios profissionais e espaços premium.",
     "ctaPrimary": "Explorar Catálogo",
     "ctaSecondary": "Solicitar Orçamento",
@@ -38,10 +41,22 @@
     "heading": "Equipamento que eleva a prática",
     "intro": "Cada peça é concebida com precisão arquitetónica e materiais nobres, para estúdios que não aceitam menos do que a excelência.",
     "cards": [
-      { "title": "Equipamentos Premium", "text": "Materiais nobres, engenharia precisa e acabamentos que resistem ao tempo e ao uso profissional intensivo." },
-      { "title": "Personalização Total", "text": "Cores, estofos, acabamentos em madeira e metal, e gravação de marca — cada peça reflete a identidade do seu espaço." },
-      { "title": "Fabrico de Qualidade", "text": "Produção europeia com controlo rigoroso, segundo os mais altos padrões de segurança e durabilidade." },
-      { "title": "Envio para toda a Europa", "text": "Logística cuidada, instalação assistida e acompanhamento dedicado, do pedido à entrega." }
+      {
+        "title": "Equipamentos Premium",
+        "text": "Materiais nobres, engenharia precisa e acabamentos que resistem ao tempo e ao uso profissional intensivo."
+      },
+      {
+        "title": "Personalização Total",
+        "text": "Cores, estofos, acabamentos em madeira e metal, e gravação de marca — cada peça reflete a identidade do seu espaço."
+      },
+      {
+        "title": "Fabrico de Qualidade",
+        "text": "Produção certificada e controlo rigoroso, segundo os mais altos padrões de segurança e durabilidade."
+      },
+      {
+        "title": "Envio para toda a Europa",
+        "text": "Logística cuidada, instalação assistida e acompanhamento dedicado, do pedido à entrega."
+      }
     ]
   },
   "categories": {
@@ -53,17 +68,35 @@
   },
   "customisation": {
     "eyebrow": "Personalização",
-    "headingLines": ["Cada estúdio é único.", "O seu equipamento também deve ser."],
+    "headingLines": [
+      "Cada estúdio é único.",
+      "O seu equipamento também deve ser."
+    ],
     "paragraphs": [
       "Da escolha da madeira ao tom exato do estofo, cada detalhe pode ser adaptado à identidade visual do seu espaço.",
       "Trabalhamos consigo desde o conceito até à instalação final, garantindo coerência estética em cada peça."
     ],
     "options": [
-      { "title": "Cores", "text": "Uma paleta cuidada de tons neutros e acentos discretos." },
-      { "title": "Estofo", "text": "Tecidos técnicos e couro sintético premium, resistentes ao uso profissional." },
-      { "title": "Acabamentos em Madeira", "text": "Carvalho, nogueira e faia, em acabamento natural ou lacado." },
-      { "title": "Cores em Metal", "text": "Estruturas em preto fosco, latão escovado ou aço inoxidável." },
-      { "title": "Gravação de Marca", "text": "Gravação subtil do logótipo do seu estúdio nas peças principais." }
+      {
+        "title": "Cores",
+        "text": "Uma paleta cuidada de tons neutros e acentos discretos."
+      },
+      {
+        "title": "Estofo",
+        "text": "Tecidos técnicos e couro sintético premium, resistentes ao uso profissional."
+      },
+      {
+        "title": "Acabamentos em Madeira",
+        "text": "Carvalho, nogueira e faia, em acabamento natural ou lacado."
+      },
+      {
+        "title": "Cores em Metal",
+        "text": "Estruturas em preto fosco, latão escovado ou aço inoxidável."
+      },
+      {
+        "title": "Gravação de Marca",
+        "text": "Gravação subtil do logótipo do seu estúdio nas peças principais."
+      }
     ],
     "cta": "Pedir Amostras"
   },
@@ -72,12 +105,30 @@
     "heading": "Concebido para espaços de referência",
     "intro": "Estúdios de Pilates, hotéis, clínicas e casas particulares confiam na Base Movement para elevar a experiência de movimento.",
     "items": [
-      { "title": "Estúdios de Pilates", "text": "Equipamento profissional para estúdios boutique e clínicas de reformer." },
-      { "title": "Hotéis", "text": "Espaços de bem-estar que refletem o padrão de excelência da marca." },
-      { "title": "Clínicas de Fisioterapia", "text": "Precisão clínica aliada a um design que transmite confiança." },
-      { "title": "Casas de Luxo", "text": "Estúdios privados desenhados à medida do espaço e do gosto do cliente." },
-      { "title": "Clubes de Fitness", "text": "Equipamento robusto, pensado para uso intensivo sem comprometer a estética." },
-      { "title": "Centros de Wellness", "text": "Ambientes serenos, onde cada detalhe convida ao movimento consciente." }
+      {
+        "title": "Estúdios de Pilates",
+        "text": "Equipamento profissional para estúdios boutique e clínicas de reformer."
+      },
+      {
+        "title": "Hotéis",
+        "text": "Espaços de bem-estar que refletem o padrão de excelência da marca."
+      },
+      {
+        "title": "Clínicas de Fisioterapia",
+        "text": "Precisão clínica aliada a um design que transmite confiança."
+      },
+      {
+        "title": "Casas de Luxo",
+        "text": "Estúdios privados desenhados à medida do espaço e do gosto do cliente."
+      },
+      {
+        "title": "Clubes de Fitness",
+        "text": "Equipamento robusto, pensado para uso intensivo sem comprometer a estética."
+      },
+      {
+        "title": "Centros de Wellness",
+        "text": "Ambientes serenos, onde cada detalhe convida ao movimento consciente."
+      }
     ]
   },
   "whyChoose": {
@@ -85,12 +136,30 @@
     "heading": "Porque escolhem a Base Movement",
     "intro": "Profissionais exigentes escolhem-nos pela consistência entre design, engenharia e serviço.",
     "timeline": [
-      { "title": "Materiais Premium", "text": "Selecionamos apenas materiais de origem responsável, testados para uso profissional contínuo." },
-      { "title": "Qualidade Europeia", "text": "Produção certificada, com controlo de qualidade em cada etapa do processo." },
-      { "title": "Design Elegante", "text": "Uma linguagem visual atemporal, desenhada para durar além das tendências." },
-      { "title": "Apoio Profissional", "text": "Uma equipa dedicada, do primeiro contacto à manutenção contínua do seu equipamento." },
-      { "title": "Durabilidade", "text": "Estruturas concebidas para décadas de uso intensivo em ambiente profissional." },
-      { "title": "Garantia", "text": "Cobertura alargada em estrutura e mecanismos, com peças sobressalentes disponíveis." }
+      {
+        "title": "Materiais Premium",
+        "text": "Selecionamos apenas materiais de origem responsável, testados para uso profissional contínuo."
+      },
+      {
+        "title": "Qualidade Certificada",
+        "text": "Produção certificada, com controlo de qualidade em cada etapa do processo."
+      },
+      {
+        "title": "Design Elegante",
+        "text": "Uma linguagem visual atemporal, desenhada para durar além das tendências."
+      },
+      {
+        "title": "Apoio Profissional",
+        "text": "Uma equipa dedicada, do primeiro contacto à manutenção contínua do seu equipamento."
+      },
+      {
+        "title": "Durabilidade",
+        "text": "Estruturas concebidas para décadas de uso intensivo em ambiente profissional."
+      },
+      {
+        "title": "Garantia",
+        "text": "Cobertura alargada em estrutura e mecanismos, com peças sobressalentes disponíveis."
+      }
     ]
   },
   "gallery": {
@@ -102,21 +171,51 @@
     "eyebrow": "Testemunhos",
     "heading": "A confiança de quem trabalha connosco",
     "items": [
-      { "quote": "A qualidade do equipamento e a atenção ao detalhe transformaram por completo a experiência do nosso estúdio.", "name": "Mariana Oliveira", "role": "Diretora, Studio Nove — Lisboa" },
-      { "quote": "Um processo de personalização impecável, do primeiro esboço à instalação final. Resultado à altura da nossa marca.", "name": "Rui Ferreira", "role": "Fundador, Reform Atelier — Porto" },
-      { "quote": "Equipamento robusto, elegante, e um serviço que se sente verdadeiramente premium em cada etapa.", "name": "Beatriz Nunes", "role": "Wellness Director, Aurora Hotel & Spa" }
+      {
+        "quote": "A qualidade do equipamento e a atenção ao detalhe transformaram por completo a experiência do nosso estúdio.",
+        "name": "Mariana Oliveira",
+        "role": "Diretora, Studio Nove — Lisboa"
+      },
+      {
+        "quote": "Um processo de personalização impecável, do primeiro esboço à instalação final. Resultado à altura da nossa marca.",
+        "name": "Rui Ferreira",
+        "role": "Fundador, Reform Atelier — Porto"
+      },
+      {
+        "quote": "Equipamento robusto, elegante, e um serviço que se sente verdadeiramente premium em cada etapa.",
+        "name": "Beatriz Nunes",
+        "role": "Wellness Director, Aurora Hotel & Spa"
+      }
     ]
   },
   "faq": {
     "eyebrow": "Perguntas Frequentes",
     "heading": "Tudo o que precisa de saber",
     "items": [
-      { "q": "Qual o prazo médio de produção e entrega?", "a": "O prazo médio situa-se entre 6 a 10 semanas, consoante o nível de personalização e o volume da encomenda. Os prazos exatos são confirmados após a validação do pedido." },
-      { "q": "É possível visitar um showroom antes de decidir?", "a": "Sim. Organizamos visitas mediante marcação, para que possa experimentar o equipamento e os acabamentos disponíveis." },
-      { "q": "Que opções de personalização estão disponíveis?", "a": "Cor, estofo, acabamento em madeira, cor da estrutura metálica e gravação de logótipo — cada elemento pode ser adaptado à identidade do seu espaço." },
-      { "q": "Fazem entregas fora de Portugal?", "a": "Sim, entregamos em toda a Europa, com logística e instalação assistida em coordenação com a sua equipa." },
-      { "q": "Que garantia é oferecida?", "a": "Todos os equipamentos incluem garantia alargada sobre estrutura e mecanismos, com disponibilidade de peças sobressalentes a longo prazo." },
-      { "q": "Como solicito um orçamento?", "a": "Através do formulário de contacto ou do botão \"Solicitar Orçamento\", indicando o tipo de espaço e as peças pretendidas. A nossa equipa responde em 48 horas úteis." }
+      {
+        "q": "Qual o prazo médio de produção e entrega?",
+        "a": "O prazo médio situa-se entre 6 a 10 semanas, consoante o nível de personalização e o volume da encomenda. Os prazos exatos são confirmados após a validação do pedido."
+      },
+      {
+        "q": "É possível visitar um showroom antes de decidir?",
+        "a": "Sim. Organizamos visitas mediante marcação, para que possa experimentar o equipamento e os acabamentos disponíveis."
+      },
+      {
+        "q": "Que opções de personalização estão disponíveis?",
+        "a": "Cor, estofo, acabamento em madeira, cor da estrutura metálica e gravação de logótipo — cada elemento pode ser adaptado à identidade do seu espaço."
+      },
+      {
+        "q": "Fazem entregas fora de Portugal?",
+        "a": "Sim, entregamos em toda a Europa, com logística e instalação assistida em coordenação com a sua equipa."
+      },
+      {
+        "q": "Que garantia é oferecida?",
+        "a": "Todos os equipamentos incluem garantia alargada sobre estrutura e mecanismos, com disponibilidade de peças sobressalentes a longo prazo."
+      },
+      {
+        "q": "Como solicito um orçamento?",
+        "a": "Através do formulário de contacto ou do botão \"Solicitar Orçamento\", indicando o tipo de espaço e as peças pretendidas. A nossa equipa responde em 48 horas úteis."
+      }
     ]
   },
   "finalCta": {
@@ -152,11 +251,26 @@
       "Acreditamos que um estúdio bem equipado é, também, um espaço de confiança — para quem o gere e para quem nele se move."
     ],
     "pillars": [
-      { "title": "Missão", "text": "Elevar o padrão do equipamento de Pilates profissional, unindo rigor técnico e sensibilidade de design escandinavo." },
-      { "title": "Visão", "text": "Ser a referência europeia em equipamento de Pilates premium, reconhecida pela qualidade, durabilidade e coerência estética." },
-      { "title": "Artesania", "text": "Cada peça é produzida por parceiros europeus selecionados, combinando processos artesanais com engenharia de precisão." },
-      { "title": "Filosofia de Design", "text": "Inspiramo-nos na arquitetura escandinava e na atenção ao detalhe da alta relojoaria: formas simples, materiais honestos, nada supérfluo." },
-      { "title": "Qualidade Europeia", "text": "Produção certificada, com origem responsável dos materiais e controlo de qualidade em cada fase do processo." }
+      {
+        "title": "Missão",
+        "text": "Elevar o padrão do equipamento de Pilates profissional, unindo rigor técnico e sensibilidade de design escandinavo."
+      },
+      {
+        "title": "Visão",
+        "text": "Ser a referência europeia em equipamento de Pilates premium, reconhecida pela qualidade, durabilidade e coerência estética."
+      },
+      {
+        "title": "Artesania",
+        "text": "Cada peça é produzida por parceiros de fabrico selecionados, combinando processos artesanais com engenharia de precisão."
+      },
+      {
+        "title": "Filosofia de Design",
+        "text": "Inspiramo-nos na arquitetura escandinava e na atenção ao detalhe da alta relojoaria: formas simples, materiais honestos, nada supérfluo."
+      },
+      {
+        "title": "Qualidade Certificada",
+        "text": "Produção certificada, com origem responsável dos materiais e controlo de qualidade em cada fase do processo."
+      }
     ],
     "closingHeading": "Um convite ao movimento consciente",
     "closingText": "Cada peça Base Movement é desenhada para durar — na estrutura, no material e no gosto. Convidamo-lo a conhecer a coleção e a imaginar o seu próximo estúdio."
@@ -171,7 +285,15 @@
       "email": "Email",
       "phone": "Telefone",
       "studioType": "Tipo de Espaço",
-      "studioTypeOptions": ["Estúdio de Pilates", "Hotel", "Clínica de Fisioterapia", "Casa Particular", "Clube de Fitness", "Centro de Wellness", "Outro"],
+      "studioTypeOptions": [
+        "Estúdio de Pilates",
+        "Hotel",
+        "Clínica de Fisioterapia",
+        "Casa Particular",
+        "Clube de Fitness",
+        "Centro de Wellness",
+        "Outro"
+      ],
       "message": "Mensagem",
       "messagePlaceholder": "Conte-nos sobre o seu espaço e o que procura...",
       "submit": "Enviar Mensagem",

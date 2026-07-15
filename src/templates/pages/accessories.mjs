@@ -1,11 +1,9 @@
-import { art } from "../art.mjs";
+import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 
 function fmtEUR(n) {
   return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);
 }
-
-const accessoryTones = ["ivory", "sand", "charcoal", "ivory", "sand", "ink"];
 
 export function accessoriesPage({ locale, t, accessories, category }) {
   const catalogue = path(locale, "catalogue");
@@ -29,7 +27,7 @@ export function accessoriesPage({ locale, t, accessories, category }) {
           (item, i) => `
       <div class="accessory-card" data-reveal style="--reveal-delay:${(i % 3) * 70}ms">
         <div class="media-frame">
-          ${art({ tone: accessoryTones[i % accessoryTones.length], ratio: "square", glyphName: "accessories", noCaption: true })}
+          ${photo(item.image, `${item.name[locale]} — Base Movement`)}
         </div>
         <h3>${item.name[locale]}</h3>
         <p>${item.description[locale]}</p>

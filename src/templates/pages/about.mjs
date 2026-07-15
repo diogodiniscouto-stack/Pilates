@@ -1,4 +1,4 @@
-import { art } from "../art.mjs";
+import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 
 export function aboutPage({ locale, t }) {
@@ -25,7 +25,7 @@ export function aboutPage({ locale, t }) {
 <section class="section section--muted">
   <div class="container">
     <div class="media-frame" data-reveal="scale" style="aspect-ratio:21/9;">
-      ${art({ tone: "sand", ratio: "fill", glyphName: "interiorC", caption: locale === "pt" ? "Estúdio de referência" : "Reference studio" })}
+      ${photo("about-wide", locale === "pt" ? "Cadillac Base Movement em madeira de bordo" : "Base Movement maple Cadillac")}
     </div>
   </div>
 </section>

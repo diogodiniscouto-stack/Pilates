@@ -3,43 +3,85 @@
     "key": "reformer",
     "slug": "reformer",
     "productSlug": "reformer",
-    "name": { "pt": "Reformer", "en": "Reformer" },
-    "shortDescription": { "pt": "A peça central do estúdio moderno.", "en": "The centrepiece of the modern studio." }
+    "name": {
+      "pt": "Reformer",
+      "en": "Reformer"
+    },
+    "shortDescription": {
+      "pt": "A peça central do estúdio moderno.",
+      "en": "The centrepiece of the modern studio."
+    },
+    "image": "reformer-1"
   },
   {
     "key": "cadillac",
     "slug": "cadillac",
     "productSlug": "cadillac",
-    "name": { "pt": "Cadillac", "en": "Cadillac" },
-    "shortDescription": { "pt": "Amplitude e versatilidade clínica.", "en": "Range and clinical versatility." }
+    "name": {
+      "pt": "Cadillac",
+      "en": "Cadillac"
+    },
+    "shortDescription": {
+      "pt": "Amplitude e versatilidade clínica.",
+      "en": "Range and clinical versatility."
+    },
+    "image": "cadillac-1"
   },
   {
     "key": "chair",
     "slug": "chair",
     "productSlug": "chair",
-    "name": { "pt": "Chair", "en": "Chair" },
-    "shortDescription": { "pt": "Precisão numa escala compacta.", "en": "Precision at a compact scale." }
+    "name": {
+      "pt": "Chair",
+      "en": "Chair"
+    },
+    "shortDescription": {
+      "pt": "Precisão numa escala compacta.",
+      "en": "Precision at a compact scale."
+    },
+    "image": "chair-1"
   },
   {
     "key": "barrel",
     "slug": "barrel",
     "productSlug": "barrel",
-    "name": { "pt": "Barrel", "en": "Barrel" },
-    "shortDescription": { "pt": "Extensão e mobilidade espinhal.", "en": "Spinal extension and mobility." }
+    "name": {
+      "pt": "Barrel",
+      "en": "Barrel"
+    },
+    "shortDescription": {
+      "pt": "Extensão e mobilidade espinhal.",
+      "en": "Spinal extension and mobility."
+    },
+    "image": "barrel-1"
   },
   {
     "key": "spine-corrector",
     "slug": "spine-corrector",
     "productSlug": "spine-corrector",
-    "name": { "pt": "Spine Corrector", "en": "Spine Corrector" },
-    "shortDescription": { "pt": "Suporte escultural para a coluna.", "en": "Sculptural support for the spine." }
+    "name": {
+      "pt": "Spine Corrector",
+      "en": "Spine Corrector"
+    },
+    "shortDescription": {
+      "pt": "Suporte escultural para a coluna.",
+      "en": "Sculptural support for the spine."
+    },
+    "image": "spine-1"
   },
   {
     "key": "accessories",
     "slug": "acessorios",
     "slugEn": "accessories",
     "productSlug": null,
-    "name": { "pt": "Acessórios", "en": "Accessories" },
-    "shortDescription": { "pt": "Os detalhes que completam a prática.", "en": "The details that complete the practice." }
+    "name": {
+      "pt": "Acessórios",
+      "en": "Accessories"
+    },
+    "shortDescription": {
+      "pt": "Os detalhes que completam a prática.",
+      "en": "The details that complete the practice."
+    },
+    "image": "acc-blocks"
   }
 ]

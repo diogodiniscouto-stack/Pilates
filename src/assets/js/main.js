@@ -198,16 +198,15 @@
   function initProductGallery() {
     var main = document.querySelector("[data-gallery-main]");
     if (!main) return;
+    var mainImg = main.querySelector("img");
     var thumbs = document.querySelectorAll("[data-gallery-thumb]");
+    if (!mainImg) return;
     thumbs.forEach(function (thumb) {
       thumb.addEventListener("click", function () {
         thumbs.forEach(function (t) { t.setAttribute("aria-current", "false"); });
         thumb.setAttribute("aria-current", "true");
-        var variant = thumb.getAttribute("data-gallery-thumb");
-        main.setAttribute("data-variant", variant);
-        var newClass = thumb.querySelector(".art-placeholder").className;
-        var art = main.querySelector(".art-placeholder");
-        if (art) art.className = newClass.replace("art-placeholder--square", "").trim() + " " + (main.getAttribute("data-main-ratio") || "art-placeholder--wide");
+        mainImg.src = thumb.getAttribute("data-src");
+        mainImg.alt = thumb.getAttribute("data-alt") || "";
       });
     });
   }
@@ -246,8 +245,12 @@
     var index = 0;
 
     function render() {
-      var source = items[index].querySelector(".art-placeholder");
+      var source = items[index].querySelector("img, .art-placeholder");
       frame.innerHTML = source ? source.outerHTML : "";
+      var img = frame.querySelector("img");
+      if (img) {
+        img.style.cssText = "position:static;width:100%;height:100%;object-fit:contain;padding:0;background:transparent;";
+      }
     }
     function open(i) {
       index = i;

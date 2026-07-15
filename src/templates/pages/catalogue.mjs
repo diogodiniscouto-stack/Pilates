@@ -1,10 +1,7 @@
 import { icon } from "../icons.mjs";
-import { art } from "../art.mjs";
+import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 import categoriesData from "../../data/categories.json" with { type: "json" };
-
-const categoryGlyphs = { reformer: "reformer", cadillac: "cadillac", chair: "chair", barrel: "barrel", "spine-corrector": "spineCorrector", accessories: "accessories" };
-const categoryTones = ["ivory", "sand", "charcoal", "ivory", "sand", "ink"];
 
 function categoryHref(locale, cat) {
   return cat.productSlug ? path(locale, "product", cat.productSlug) : path(locale, "accessories");
@@ -29,7 +26,7 @@ export function cataloguePage({ locale, t }) {
           (cat, i) => `
       <a class="category-card" href="${categoryHref(locale, cat)}" data-reveal style="--reveal-delay:${i * 70}ms">
         <div class="media-frame">
-          ${art({ tone: categoryTones[i % categoryTones.length], ratio: "portrait", glyphName: categoryGlyphs[cat.key], noCaption: true })}
+          ${photo(cat.image, `${cat.name[locale]} — Base Movement`)}
         </div>
         <div class="category-card__title">
           <h3>${cat.name[locale]}</h3>

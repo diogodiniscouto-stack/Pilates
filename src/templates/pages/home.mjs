@@ -1,11 +1,10 @@
 import { icon } from "../icons.mjs";
 import { art } from "../art.mjs";
+import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 import categoriesData from "../../data/categories.json" with { type: "json" };
 
 const whyIcons = ["gem", "sliders", "shieldCheck", "truck"];
-const categoryGlyphs = { reformer: "reformer", cadillac: "cadillac", chair: "chair", barrel: "barrel", "spine-corrector": "spineCorrector", accessories: "accessories" };
-const categoryTones = ["ivory", "sand", "charcoal", "ivory", "sand", "ink"];
 
 function categoryHref(locale, cat) {
   return cat.productSlug ? path(locale, "product", cat.productSlug) : path(locale, "accessories");
@@ -74,7 +73,7 @@ export function homePage({ locale, t }) {
           (cat, i) => `
       <a class="category-card" href="${categoryHref(locale, cat)}" data-reveal style="--reveal-delay:${i * 80}ms">
         <div class="media-frame">
-          ${art({ tone: categoryTones[i % categoryTones.length], ratio: "portrait", glyphName: categoryGlyphs[cat.key], caption: cat.name[locale], noCaption: true })}
+          ${photo(cat.image, `${cat.name[locale]} — Base Movement`)}
         </div>
         <div class="category-card__title">
           <h3>${cat.name[locale]}</h3>
@@ -96,9 +95,9 @@ export function homePage({ locale, t }) {
   <div class="container">
     <div class="customisation-layout">
       <div class="customisation-gallery" data-reveal="scale">
-        ${art({ tone: "sand", ratio: "fill", glyphName: "woodGrain", caption: locale === "pt" ? "Acabamento em madeira" : "Wood finish" })}
-        ${art({ tone: "ivory", ratio: "fill", glyphName: "upholstery", caption: locale === "pt" ? "Estofo técnico" : "Technical upholstery" })}
-        ${art({ tone: "charcoal", ratio: "fill", glyphName: "metal", caption: locale === "pt" ? "Acabamento em metal" : "Metal finish" })}
+        <div class="media-frame">${photo("reformer-2", locale === "pt" ? "Reformer em madeira de bordo natural" : "Reformer in natural maple wood")}</div>
+        <div class="media-frame media-frame--cover">${photo("fabric", locale === "pt" ? "Estofo técnico em tom creme" : "Technical upholstery in cream tone")}</div>
+        <div class="media-frame">${photo("metal-frame", locale === "pt" ? "Estrutura metálica em preto fosco" : "Metal frame in matte black")}</div>
       </div>
       <div class="customisation-copy" data-reveal>
         <p class="eyebrow">${t.customisation.eyebrow}</p>
@@ -166,9 +165,16 @@ export function homePage({ locale, t }) {
   </div>
 </section>`;
 
-  const galleryGlyphs = ["interiorA", "reformer", "interiorB", "cadillac", "interiorC", "chair", "woodGrain", "interiorA"];
-  const galleryTones = ["sand", "ivory", "charcoal", "sand", "ivory", "ink", "sand", "charcoal"];
-  const galleryRatios = ["wide", "square", "portrait", "square", "portrait", "wide", "square", "portrait"];
+  const galleryShots = [
+    ["cadillac-1", { pt: "Cadillac em madeira de bordo com estofo preto", en: "Maple Cadillac with black upholstery" }],
+    ["reformer-1", { pt: "Reformer profissional em madeira de bordo", en: "Professional maple reformer" }],
+    ["ladder-tower", { pt: "Torre de barras em madeira", en: "Wooden ladder tower" }],
+    ["fabric", { pt: "Estofo técnico em tom creme", en: "Technical upholstery in cream tone" }],
+    ["reformer-2", { pt: "Reformer em madeira com carruagem preta", en: "Wood reformer with black carriage" }],
+    ["trio-beech", { pt: "Chair, Ladder Barrel e Spine Corrector em faia", en: "Beech Chair, Ladder Barrel and Spine Corrector" }],
+    ["cadillac-4", { pt: "Estrutura Cadillac completa", en: "Complete Cadillac frame" }],
+    ["acc-blocks", { pt: "Acessórios de cortiça natural", en: "Natural cork accessories" }],
+  ];
   const gallery = `
 <section class="section section--muted">
   <div class="container">
@@ -178,11 +184,11 @@ export function homePage({ locale, t }) {
       <p class="text-lead">${t.gallery.intro}</p>
     </div>
     <div class="masonry">
-      ${galleryGlyphs
+      ${galleryShots
         .map(
-          (gName, i) => `
+          ([name, alt], i) => `
       <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:${(i % 4) * 70}ms">
-        ${art({ tone: galleryTones[i], ratio: galleryRatios[i], glyphName: gName, caption: `${t.gallery.eyebrow} ${String(i + 1).padStart(2, "0")}` })}
+        ${photo(name, alt[locale])}
       </div>`
         )
         .join("")}

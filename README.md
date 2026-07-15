@@ -61,12 +61,14 @@ public/                  Generated output — this is what you deploy
   typographic wordmark (`.brand-logo` in `src/assets/css/logo.css`). Swap
   in the real mark by replacing that markup (in `header.mjs`/`footer.mjs`)
   and/or `public/favicon.svg`.
-- **Photography**: no stock photography could be fetched in this
-  environment either, so every image slot is an elegant tonal-gradient +
-  abstract line-art placeholder (`src/templates/art.mjs`, `glyphs.mjs`),
-  each with a small caption naming what real photography belongs there
-  (e.g. "Studio Photography — Reformer"). Replace `art({...})` calls with
-  real `<img>`/`<picture>` markup as photography comes in.
+- **Photography**: product/category/accessory imagery is real supplier
+  catalog photography (processed into `src/assets/img/products/`, served
+  via the `photo()` helper in `src/templates/media.mjs` with a build-time
+  dimensions manifest in `src/data/images.json`). The homepage hero and
+  final-CTA backdrop still use the abstract line-art treatment
+  (`src/templates/art.mjs`) — swap those for real studio lifestyle
+  photography when a shoot happens; catalog product-on-white shots would
+  cheapen the hero.
 - **Contact form**: client-side validation and a success state are wired
   up, but submission doesn't hit a real backend yet — see the `TODO` in
   `src/assets/js/main.js` (`initForms`). Wire it to Formspree, a
@@ -74,9 +76,9 @@ public/                  Generated output — this is what you deploy
 - **SITE_URL**: `src/templates/config.mjs` has a placeholder production
   domain (`https://www.basemovement.pt`) used for canonical URLs, hreflang,
   sitemap.xml and JSON-LD — update it once the real domain is set.
-- **Pricing/specs**: all product data in `src/data/products.json` is
-  illustrative — confirm real pricing, dimensions and lead times before
-  launch.
+- **Pricing/specs**: dimensions and materials in `src/data/products.json`
+  come from the supplier catalog; prices, lead times and warranty terms
+  are illustrative — confirm before launch.
 - Each category currently ships one flagship model (matching how the brand
   is positioned — a curated line, not a large SKU catalogue). Add more
   products by extending `src/data/products.json`; the build script and

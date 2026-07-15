@@ -89,3 +89,27 @@
 }
 .media-frame .art-placeholder { width: 100%; height: 100%; transition: transform var(--dur-slow) var(--ease-luxury); }
 .media-frame:hover .art-placeholder { transform: scale(1.045); }
+
+/* Real product photography. Catalog shots come on white, so frames with a
+   fixed aspect ratio letterbox them (object-fit: contain) over a warm
+   neutral field instead of crop-zooming long equipment out of frame. */
+.media-frame .photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #FBFAF8;
+  padding: 6%;
+  transition: transform var(--dur-slow) var(--ease-luxury);
+}
+.media-frame:hover .photo { transform: scale(1.045); }
+.media-frame--cover .photo { object-fit: cover; padding: 0; }
+
+/* Masonry tiles keep each photo's natural ratio */
+.masonry .media-frame .photo {
+  position: static;
+  height: auto;
+  padding: 0;
+  background: #FBFAF8;
+}

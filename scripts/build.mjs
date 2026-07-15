@@ -253,6 +253,9 @@ async function buildJs() {
 async function buildStaticAssets() {
   await mkdir(nodePath.join(PUBLIC, "assets", "img"), { recursive: true });
 
+  // Product photography (processed catalog assets in src/assets/img)
+  await cp(nodePath.join(SRC, "assets", "img", "products"), nodePath.join(PUBLIC, "assets", "img", "products"), { recursive: true });
+
   // "B" monogram in the same hand-traced style as the full wordmark
   // (src/templates/logoMark.mjs) — a wide 3.5:1 wordmark doesn't read at
   // favicon size, so the initial stands in for it there.

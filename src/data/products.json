@@ -6,31 +6,30 @@
       "name": "The Reformer One",
       "tagline": { "pt": "A peça central de qualquer estúdio de referência.", "en": "The centrepiece of every studio of distinction." },
       "description": {
-        "pt": "Estrutura em carvalho maciço e alumínio anodizado, com sistema de molas de precisão e carruagem silenciosa. Concebido para uso profissional intensivo, sem nunca comprometer a elegância da linha.",
-        "en": "Solid oak and anodised aluminium frame, with precision spring system and a silent carriage. Engineered for intensive professional use, without ever compromising the elegance of its line."
+        "pt": "Estrutura em madeira de bordo maciça com carruagem silenciosa, sistema de molas de precisão e estofo técnico. Concebido para uso profissional intensivo, sem nunca comprometer a elegância da linha. Disponível também em versão com torre e em versão dobrável.",
+        "en": "Solid maple frame with a silent carriage, precision spring system and technical upholstery. Engineered for intensive professional use, without ever compromising the elegance of its line. Also available with tower and in a folding version."
       },
       "priceFrom": 3200,
-      "dimensions": { "length_cm": 244, "width_cm": 64, "height_cm": 33 },
+      "dimensions": { "length_cm": 236, "width_cm": 74, "height_cm": 39 },
       "weightCapacityKg": 180,
-      "material": { "pt": "Carvalho maciço, alumínio anodizado, aço inoxidável", "en": "Solid oak, anodised aluminium, stainless steel" },
+      "material": { "pt": "Madeira de bordo maciça, alumínio, aço inoxidável", "en": "Solid maple, aluminium, stainless steel" },
       "leadTimeWeeks": "6–8",
       "warrantyYears": 5,
       "colourways": [
-        { "name": { "pt": "Marfim", "en": "Ivory" }, "hex": "#F8F8F6" },
-        { "name": { "pt": "Areia", "en": "Sand" }, "hex": "#F4F1EC" },
-        { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" }
+        { "name": { "pt": "Preto", "en": "Black" }, "hex": "#1A1A1A" },
+        { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" },
+        { "name": { "pt": "Creme", "en": "Cream" }, "hex": "#F4F1EC" }
       ],
       "woodFinishes": [
-        { "name": { "pt": "Carvalho Natural", "en": "Natural Oak" }, "hex": "#C8AD84" },
-        { "name": { "pt": "Nogueira", "en": "Walnut" }, "hex": "#6B4A32" },
-        { "name": { "pt": "Faia Lacada", "en": "Lacquered Beech" }, "hex": "#E7D9C4" }
+        { "name": { "pt": "Bordo Natural", "en": "Natural Maple" }, "hex": "#C8AD84" },
+        { "name": { "pt": "Faia Clara", "en": "Light Beech" }, "hex": "#E7D9C4" },
+        { "name": { "pt": "Lacado Branco", "en": "White Lacquer" }, "hex": "#F4F1EC" }
       ],
       "metalFinishes": [
         { "name": { "pt": "Preto Fosco", "en": "Matte Black" }, "hex": "#111111" },
-        { "name": { "pt": "Latão Escovado", "en": "Brushed Brass" }, "hex": "#C9A96A" },
-        { "name": { "pt": "Aço Inoxidável", "en": "Stainless Steel" }, "hex": "#B9B9B6" }
+        { "name": { "pt": "Alumínio", "en": "Aluminium" }, "hex": "#B9B9B6" }
       ],
-      "gallery": 4,
+      "images": ["reformer-1", "reformer-2", "reformer-3", "reformer-4"],
       "relatedSlugs": ["cadillac", "chair", "spine-corrector"]
     },
     {
@@ -39,90 +38,87 @@
       "name": "The Cadillac Frame",
       "tagline": { "pt": "Amplitude de movimento numa estrutura escultural.", "en": "Range of movement within a sculptural frame." },
       "description": {
-        "pt": "Torre completa com barras, molas e suspensórios de precisão, desenhada como peça arquitetónica de estúdio. O equilíbrio perfeito entre versatilidade clínica e presença visual.",
-        "en": "A complete tower with bars, springs and precision straps, designed as an architectural centrepiece for any studio. The perfect balance between clinical versatility and visual presence."
+        "pt": "Torre completa com barras, molas e suspensórios de precisão, desenhada como peça arquitetónica de estúdio. O equilíbrio perfeito entre versatilidade clínica e presença visual. Disponível em versão combinada reformer-torre.",
+        "en": "A complete tower with bars, springs and precision straps, designed as an architectural centrepiece for any studio. The perfect balance between clinical versatility and visual presence. Also available as a combined reformer-tower."
       },
       "priceFrom": 5400,
-      "dimensions": { "length_cm": 213, "width_cm": 91, "height_cm": 211 },
+      "dimensions": { "length_cm": 231, "width_cm": 74, "height_cm": 200 },
       "weightCapacityKg": 180,
-      "material": { "pt": "Aço estrutural, carvalho maciço, alumínio anodizado", "en": "Structural steel, solid oak, anodised aluminium" },
+      "material": { "pt": "Madeira maciça, aço estrutural, alumínio", "en": "Solid wood, structural steel, aluminium" },
       "leadTimeWeeks": "8–10",
       "warrantyYears": 5,
       "colourways": [
-        { "name": { "pt": "Marfim", "en": "Ivory" }, "hex": "#F8F8F6" },
-        { "name": { "pt": "Areia", "en": "Sand" }, "hex": "#F4F1EC" },
-        { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" }
+        { "name": { "pt": "Preto", "en": "Black" }, "hex": "#1A1A1A" },
+        { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" },
+        { "name": { "pt": "Creme", "en": "Cream" }, "hex": "#F4F1EC" }
       ],
       "woodFinishes": [
-        { "name": { "pt": "Carvalho Natural", "en": "Natural Oak" }, "hex": "#C8AD84" },
-        { "name": { "pt": "Nogueira", "en": "Walnut" }, "hex": "#6B4A32" }
+        { "name": { "pt": "Bordo Natural", "en": "Natural Maple" }, "hex": "#C8AD84" },
+        { "name": { "pt": "Faia Clara", "en": "Light Beech" }, "hex": "#E7D9C4" }
       ],
       "metalFinishes": [
-        { "name": { "pt": "Preto Fosco", "en": "Matte Black" }, "hex": "#111111" },
-        { "name": { "pt": "Latão Escovado", "en": "Brushed Brass" }, "hex": "#C9A96A" },
-        { "name": { "pt": "Aço Inoxidável", "en": "Stainless Steel" }, "hex": "#B9B9B6" }
+        { "name": { "pt": "Aço Cromado", "en": "Chromed Steel" }, "hex": "#B9B9B6" },
+        { "name": { "pt": "Preto Fosco", "en": "Matte Black" }, "hex": "#111111" }
       ],
-      "gallery": 4,
+      "images": ["cadillac-1", "cadillac-2", "cadillac-3", "cadillac-4"],
       "relatedSlugs": ["reformer", "barrel", "chair"]
     },
     {
       "slug": "chair",
       "categoryKey": "chair",
-      "name": "The Wunda Chair",
+      "name": "The Combo Chair",
       "tagline": { "pt": "Compacta na forma, exigente no movimento.", "en": "Compact in form, demanding in movement." },
       "description": {
-        "pt": "Estrutura compacta com pedal de resistência variável, ideal para estúdios boutique e sessões de precisão. Uma peça discreta que não abdica de exigência técnica.",
-        "en": "A compact frame with variable-resistance pedal, ideal for boutique studios and precision sessions. A discreet piece that never compromises on technical demand."
+        "pt": "Estrutura compacta em madeira maciça com pedal dividido de resistência variável e pegas altas, ideal para estúdios boutique e sessões de precisão. Uma peça discreta que não abdica de exigência técnica.",
+        "en": "A compact solid-wood frame with variable-resistance split pedal and high handles, ideal for boutique studios and precision sessions. A discreet piece that never compromises on technical demand."
       },
       "priceFrom": 1650,
-      "dimensions": { "length_cm": 56, "width_cm": 56, "height_cm": 92 },
+      "dimensions": { "length_cm": 85, "width_cm": 68, "height_cm": 60 },
       "weightCapacityKg": 150,
-      "material": { "pt": "Carvalho maciço, aço inoxidável", "en": "Solid oak, stainless steel" },
+      "material": { "pt": "Madeira maciça, aço inoxidável, estofo técnico", "en": "Solid wood, stainless steel, technical upholstery" },
       "leadTimeWeeks": "5–7",
       "warrantyYears": 5,
       "colourways": [
-        { "name": { "pt": "Marfim", "en": "Ivory" }, "hex": "#F8F8F6" },
+        { "name": { "pt": "Preto", "en": "Black" }, "hex": "#1A1A1A" },
         { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" }
       ],
       "woodFinishes": [
-        { "name": { "pt": "Carvalho Natural", "en": "Natural Oak" }, "hex": "#C8AD84" },
-        { "name": { "pt": "Nogueira", "en": "Walnut" }, "hex": "#6B4A32" }
+        { "name": { "pt": "Bordo Natural", "en": "Natural Maple" }, "hex": "#C8AD84" },
+        { "name": { "pt": "Faia Clara", "en": "Light Beech" }, "hex": "#E7D9C4" }
       ],
       "metalFinishes": [
         { "name": { "pt": "Preto Fosco", "en": "Matte Black" }, "hex": "#111111" },
         { "name": { "pt": "Aço Inoxidável", "en": "Stainless Steel" }, "hex": "#B9B9B6" }
       ],
-      "gallery": 3,
+      "images": ["chair-1", "chair-2", "trio-maple"],
       "relatedSlugs": ["barrel", "spine-corrector", "reformer"]
     },
     {
       "slug": "barrel",
       "categoryKey": "barrel",
-      "name": "The Spine Barrel",
+      "name": "The Ladder Barrel",
       "tagline": { "pt": "Curvatura precisa para extensão e mobilidade.", "en": "Precise curvature for extension and mobility." },
       "description": {
-        "pt": "Casco em madeira curvada revestido a estofo técnico, com base estável em aço. Concebido para trabalho de extensão espinhal com conforto e segurança.",
-        "en": "Curved wood shell finished in technical upholstery, on a stable steel base. Designed for spinal extension work with comfort and safety."
+        "pt": "Barril de madeira curvada revestido a estofo técnico, com escada de barras ajustável para trabalho de extensão, alongamento e mobilidade da coluna com conforto e segurança.",
+        "en": "Curved wood barrel finished in technical upholstery, with an adjustable rung ladder for spinal extension, stretching and mobility work in comfort and safety."
       },
-      "priceFrom": 980,
-      "dimensions": { "length_cm": 65, "width_cm": 40, "height_cm": 43 },
+      "priceFrom": 1450,
+      "dimensions": { "length_cm": 111, "width_cm": 62, "height_cm": 98 },
       "weightCapacityKg": 150,
-      "material": { "pt": "Madeira curvada, estofo técnico, base em aço", "en": "Curved wood, technical upholstery, steel base" },
+      "material": { "pt": "Madeira maciça curvada, estofo técnico", "en": "Curved solid wood, technical upholstery" },
       "leadTimeWeeks": "4–6",
       "warrantyYears": 3,
       "colourways": [
-        { "name": { "pt": "Marfim", "en": "Ivory" }, "hex": "#F8F8F6" },
-        { "name": { "pt": "Areia", "en": "Sand" }, "hex": "#F4F1EC" },
-        { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" }
+        { "name": { "pt": "Preto", "en": "Black" }, "hex": "#1A1A1A" },
+        { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" },
+        { "name": { "pt": "Creme", "en": "Cream" }, "hex": "#F4F1EC" }
       ],
       "woodFinishes": [
-        { "name": { "pt": "Carvalho Natural", "en": "Natural Oak" }, "hex": "#C8AD84" }
+        { "name": { "pt": "Bordo Natural", "en": "Natural Maple" }, "hex": "#C8AD84" },
+        { "name": { "pt": "Faia Clara", "en": "Light Beech" }, "hex": "#E7D9C4" }
       ],
-      "metalFinishes": [
-        { "name": { "pt": "Preto Fosco", "en": "Matte Black" }, "hex": "#111111" },
-        { "name": { "pt": "Aço Inoxidável", "en": "Stainless Steel" }, "hex": "#B9B9B6" }
-      ],
-      "gallery": 3,
+      "metalFinishes": [],
+      "images": ["barrel-1", "barrel-2", "trio-beech"],
       "relatedSlugs": ["spine-corrector", "chair", "cadillac"]
     },
     {
@@ -131,34 +127,34 @@
       "name": "The Corrector Arc",
       "tagline": { "pt": "Suporte escultural para a coluna.", "en": "Sculptural support for the spine." },
       "description": {
-        "pt": "Duplo arco em madeira maciça, desenhado para alongamento seguro e progressivo da coluna. Uma peça de escala reduzida com presença de escultura.",
-        "en": "Double solid-wood arc, designed for safe, progressive spinal lengthening. A small-scale piece with sculptural presence."
+        "pt": "Arco em madeira maciça revestido a estofo técnico, desenhado para alongamento seguro e progressivo da coluna. Uma peça de escala reduzida com presença de escultura.",
+        "en": "Solid-wood arc finished in technical upholstery, designed for safe, progressive spinal lengthening. A small-scale piece with sculptural presence."
       },
       "priceFrom": 740,
-      "dimensions": { "length_cm": 48, "width_cm": 33, "height_cm": 25 },
+      "dimensions": { "length_cm": 94, "width_cm": 48, "height_cm": 33 },
       "weightCapacityKg": 150,
       "material": { "pt": "Madeira maciça, estofo técnico", "en": "Solid wood, technical upholstery" },
       "leadTimeWeeks": "4–6",
       "warrantyYears": 3,
       "colourways": [
-        { "name": { "pt": "Marfim", "en": "Ivory" }, "hex": "#F8F8F6" },
+        { "name": { "pt": "Preto", "en": "Black" }, "hex": "#1A1A1A" },
         { "name": { "pt": "Grafite", "en": "Graphite" }, "hex": "#2E2E2E" }
       ],
       "woodFinishes": [
-        { "name": { "pt": "Carvalho Natural", "en": "Natural Oak" }, "hex": "#C8AD84" },
-        { "name": { "pt": "Nogueira", "en": "Walnut" }, "hex": "#6B4A32" }
+        { "name": { "pt": "Bordo Natural", "en": "Natural Maple" }, "hex": "#C8AD84" },
+        { "name": { "pt": "Faia Clara", "en": "Light Beech" }, "hex": "#E7D9C4" }
       ],
       "metalFinishes": [],
-      "gallery": 3,
+      "images": ["spine-1", "spine-2", "trio-maple"],
       "relatedSlugs": ["barrel", "chair", "reformer"]
     }
   ],
   "accessories": [
-    { "slug": "magic-circle", "name": { "pt": "Magic Circle", "en": "Magic Circle" }, "price": 65, "description": { "pt": "Anel de resistência em alumínio revestido, para tonificação e controlo.", "en": "Padded aluminium resistance ring, for toning and control." } },
-    { "slug": "resistance-bands", "name": { "pt": "Faixas de Resistência", "en": "Resistance Bands" }, "price": 45, "description": { "pt": "Conjunto de três faixas técnicas, três níveis de resistência.", "en": "Set of three technical bands, three resistance levels." } },
-    { "slug": "sitting-box", "name": { "pt": "Sitting Box", "en": "Sitting Box" }, "price": 320, "description": { "pt": "Caixa modular em carvalho, complemento essencial do Reformer.", "en": "Modular oak box, an essential Reformer companion." } },
-    { "slug": "pilates-socks", "name": { "pt": "Meias de Pilates", "en": "Pilates Socks" }, "price": 18, "description": { "pt": "Meias antiderrapantes em algodão técnico, edição de estúdio.", "en": "Non-slip technical cotton socks, studio edition." } },
-    { "slug": "foam-roller", "name": { "pt": "Rolo de Espuma", "en": "Foam Roller" }, "price": 55, "description": { "pt": "Rolo de alta densidade, acabamento premium.", "en": "High-density roller, premium finish." } },
-    { "slug": "weighted-props", "name": { "pt": "Pesos e Props", "en": "Weighted Props" }, "price": 95, "description": { "pt": "Conjunto de pesos revestidos, para trabalho de precisão.", "en": "Set of padded weighted props, for precision work." } }
+    { "slug": "weighted-rings", "name": { "pt": "Anilhas de Peso", "en": "Weighted Rings" }, "price": 45, "image": "acc-rings", "description": { "pt": "Anilhas revestidas em dois pesos, para trabalho de tonificação e controlo.", "en": "Coated rings in two weights, for toning and control work." } },
+    { "slug": "resistance-bands", "name": { "pt": "Faixas de Resistência", "en": "Resistance Bands" }, "price": 45, "image": "acc-bands", "description": { "pt": "Conjunto de três faixas técnicas, três níveis de resistência.", "en": "Set of three technical bands, three resistance levels." } },
+    { "slug": "cork-blocks", "name": { "pt": "Blocos de Cortiça", "en": "Cork Blocks" }, "price": 38, "image": "acc-blocks", "description": { "pt": "Bloco, meia-lua e bola de massagem em cortiça natural.", "en": "Block, half-moon and massage ball in natural cork." } },
+    { "slug": "pilates-socks", "name": { "pt": "Meias de Pilates", "en": "Pilates Socks" }, "price": 18, "image": "acc-socks", "description": { "pt": "Meias antiderrapantes em algodão técnico, edição de estúdio.", "en": "Non-slip technical cotton socks, studio edition." } },
+    { "slug": "massage-roller", "name": { "pt": "Rolo de Massagem", "en": "Massage Roller" }, "price": 55, "image": "acc-roller", "description": { "pt": "Rolo texturado de alta densidade para libertação miofascial.", "en": "High-density textured roller for myofascial release." } },
+    { "slug": "studio-bag", "name": { "pt": "Saco de Estúdio", "en": "Studio Bag" }, "price": 85, "image": "acc-bag", "description": { "pt": "Saco de desporto em tecido técnico, com compartimento dedicado.", "en": "Technical fabric duffel with a dedicated compartment." } }
   ]
 }

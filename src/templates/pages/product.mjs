@@ -1,10 +1,7 @@
 import { icon } from "../icons.mjs";
-import { art } from "../art.mjs";
+import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 import categoriesData from "../../data/categories.json" with { type: "json" };
-
-const categoryGlyphs = { reformer: "reformer", cadillac: "cadillac", chair: "chair", barrel: "barrel", "spine-corrector": "spineCorrector", accessories: "accessories" };
-const galleryTonesBySlot = ["ivory", "sand", "charcoal", "ivory"];
 
 function fmtEUR(n) {
   return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);
@@ -20,14 +17,14 @@ function swatchRowLocalised(items, locale) {
 export function productPage({ locale, t, product, category }) {
   const catalogue = path(locale, "catalogue");
   const contact = path(locale, "contact");
-  const glyphName = categoryGlyphs[product.categoryKey] || "reformer";
+  const viewWord = locale === "pt" ? "vista" : "view";
+  const altFor = (i) => `${product.name} — ${category.name[locale]}, ${viewWord} ${i + 1}`;
 
-  const thumbs = [0, 1, 2, 3]
-    .slice(0, product.gallery)
+  const thumbs = product.images
     .map(
-      (i) => `
-    <button data-gallery-thumb="${i}" aria-current="${i === 0 ? "true" : "false"}">
-      ${art({ tone: galleryTonesBySlot[i % galleryTonesBySlot.length], ratio: "square", glyphName, noCaption: true })}
+      (img, i) => `
+    <button data-gallery-thumb data-src="/assets/img/products/${img}.jpg" data-alt="${altFor(i)}" aria-current="${i === 0 ? "true" : "false"}" aria-label="${altFor(i)}">
+      ${photo(img, altFor(i))}
     </button>`
     )
     .join("");
@@ -39,7 +36,7 @@ export function productPage({ locale, t, product, category }) {
       return `
     <a class="category-card" href="${path(locale, "product", slug)}">
       <div class="media-frame">
-        ${art({ tone: "sand", ratio: "portrait", glyphName: categoryGlyphs[slug] || "reformer", noCaption: true })}
+        ${photo(relCat.image, `${relCat.name[locale]} — Base Movement`)}
       </div>
       <div class="category-card__title">
         <h3>${relCat.name[locale]}</h3>
@@ -65,8 +62,8 @@ export function productPage({ locale, t, product, category }) {
   <div class="container">
     <div class="product-layout">
       <div data-reveal>
-        <div class="media-frame product-gallery__main" data-gallery-main data-main-ratio="art-placeholder--wide">
-          ${art({ tone: "ivory", ratio: "wide", glyphName, caption: t.product.zoomHint })}
+        <div class="media-frame product-gallery__main" data-gallery-main>
+          ${photo(product.images[0], altFor(0), { eager: true })}
         </div>
         <div class="product-gallery__thumbs">${thumbs}</div>
       </div>
