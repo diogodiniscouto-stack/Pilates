@@ -1,0 +1,45 @@
+[
+  {
+    "key": "reformer",
+    "slug": "reformer",
+    "productSlug": "reformer",
+    "name": { "pt": "Reformer", "en": "Reformer" },
+    "shortDescription": { "pt": "A peça central do estúdio moderno.", "en": "The centrepiece of the modern studio." }
+  },
+  {
+    "key": "cadillac",
+    "slug": "cadillac",
+    "productSlug": "cadillac",
+    "name": { "pt": "Cadillac", "en": "Cadillac" },
+    "shortDescription": { "pt": "Amplitude e versatilidade clínica.", "en": "Range and clinical versatility." }
+  },
+  {
+    "key": "chair",
+    "slug": "chair",
+    "productSlug": "chair",
+    "name": { "pt": "Chair", "en": "Chair" },
+    "shortDescription": { "pt": "Precisão numa escala compacta.", "en": "Precision at a compact scale." }
+  },
+  {
+    "key": "barrel",
+    "slug": "barrel",
+    "productSlug": "barrel",
+    "name": { "pt": "Barrel", "en": "Barrel" },
+    "shortDescription": { "pt": "Extensão e mobilidade espinhal.", "en": "Spinal extension and mobility." }
+  },
+  {
+    "key": "spine-corrector",
+    "slug": "spine-corrector",
+    "productSlug": "spine-corrector",
+    "name": { "pt": "Spine Corrector", "en": "Spine Corrector" },
+    "shortDescription": { "pt": "Suporte escultural para a coluna.", "en": "Sculptural support for the spine." }
+  },
+  {
+    "key": "accessories",
+    "slug": "acessorios",
+    "slugEn": "accessories",
+    "productSlug": null,
+    "name": { "pt": "Acessórios", "en": "Accessories" },
+    "shortDescription": { "pt": "Os detalhes que completam a prática.", "en": "The details that complete the practice." }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "base-movement",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Base Movement | Pilates Supply — premium ecommerce website",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "http-server public -p 8080 -c-1"
+  }
+}

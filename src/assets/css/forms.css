@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.form-field { margin-bottom: var(--space-md); }
+.form-row { display: grid; gap: var(--space-md); grid-template-columns: 1fr; }
+@media (min-width: 640px) { .form-row--2 { grid-template-columns: 1fr 1fr; } }
+
+.form-field label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  margin-bottom: 0.6rem;
+}
+.form-field label .req { color: var(--c-gold-text); }
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.85em 0;
+  border-bottom: 1px solid var(--c-border-strong);
+  font-size: var(--fs-body);
+  transition: border-color var(--dur-base) var(--ease-out);
+}
+.form-field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237A756C' stroke-width='1.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right center; background-size: 1.1em; padding-right: 1.5em; }
+.form-field textarea { resize: vertical; min-height: 8rem; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+  outline: none;
+  border-color: var(--c-gold);
+}
+.form-field input::placeholder, .form-field textarea::placeholder { color: var(--c-text-muted); opacity: 0.7; }
+
+.form-note { font-size: 0.75rem; color: var(--c-text-muted); margin-top: var(--space-xs); }
+
+.form-success {
+  display: none;
+  padding: var(--space-lg);
+  background: var(--c-bg-muted);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.form-success h3 { font-size: var(--fs-h4); font-family: var(--font-body); font-weight: 600; margin-bottom: 0.5rem; }
+.form-success p { color: var(--c-text-muted); }
+.form-success svg { width: 2.5rem; height: 2.5rem; color: var(--c-gold); margin: 0 auto var(--space-sm); }
+
+form.is-success .form-fields { display: none; }
+form.is-success .form-success { display: block; }
+
+.contact-form-error {
+  display: none;
+  font-size: 0.8rem;
+  color: #B23A2E;
+  margin-top: 0.4rem;
+}
+.form-field.has-error input,
+.form-field.has-error select,
+.form-field.has-error textarea { border-color: #B23A2E; }
+.form-field.has-error .contact-form-error { display: block; }

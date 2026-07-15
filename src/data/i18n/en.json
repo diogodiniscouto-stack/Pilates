@@ -1,0 +1,229 @@
+{
+  "locale": "en",
+  "dir": "ltr",
+  "meta": {
+    "siteName": "Base Movement",
+    "siteTagline": "Pilates Supply",
+    "defaultTitle": "Base Movement | Premium Pilates Equipment for Studios",
+    "defaultDescription": "Pilates equipment and accessories designed for professional studios, hotels, clinics and premium spaces. European craftsmanship, full customisation, timeless elegance.",
+    "ogAlt": "Base Movement — Premium Pilates Equipment"
+  },
+  "nav": {
+    "home": "Home",
+    "catalogue": "Catalogue",
+    "reformer": "Reformer",
+    "cadillac": "Cadillac",
+    "chair": "Chair",
+    "barrel": "Barrel",
+    "spineCorrector": "Spine Corrector",
+    "accessories": "Accessories",
+    "customisation": "Customisation",
+    "about": "About Us",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Base Movement — Pilates Supply",
+    "headlineLines": ["Elevate your studio.", "Inspire every movement."],
+    "subheadline": "Pilates equipment and accessories designed for professional studios and premium spaces.",
+    "ctaPrimary": "Explore Catalogue",
+    "ctaSecondary": "Request a Quote",
+    "scrollHint": "Discover"
+  },
+  "why": {
+    "eyebrow": "Why Base Movement",
+    "heading": "Equipment that elevates the practice",
+    "intro": "Every piece is engineered with architectural precision and noble materials, for studios that accept nothing less than excellence.",
+    "cards": [
+      { "title": "Premium Equipment", "text": "Noble materials, precise engineering and finishes built to withstand time and intensive professional use." },
+      { "title": "Full Customisation", "text": "Colours, upholstery, wood and metal finishes, and brand engraving — every piece reflects your space's identity." },
+      { "title": "Quality Craftsmanship", "text": "European production with rigorous control, following the highest standards of safety and durability." },
+      { "title": "Shipping Across Europe", "text": "Careful logistics, assisted installation and dedicated support, from order to delivery." }
+    ]
+  },
+  "categories": {
+    "eyebrow": "Catalogue",
+    "heading": "Featured Categories",
+    "intro": "A complete collection to equip leading Pilates studios, clinics and wellness spaces.",
+    "viewAll": "View Full Catalogue",
+    "cta": "Discover"
+  },
+  "customisation": {
+    "eyebrow": "Customisation",
+    "headingLines": ["Every studio is unique.", "Your equipment should be too."],
+    "paragraphs": [
+      "From the choice of wood to the exact tone of the upholstery, every detail can be tailored to your space's visual identity.",
+      "We work with you from concept to final installation, ensuring aesthetic coherence across every piece."
+    ],
+    "options": [
+      { "title": "Colours", "text": "A carefully curated palette of neutral tones and discreet accents." },
+      { "title": "Upholstery", "text": "Technical fabrics and premium synthetic leather, built for professional use." },
+      { "title": "Wood Finishes", "text": "Oak, walnut and beech, in natural or lacquered finish." },
+      { "title": "Metal Colours", "text": "Frames in matte black, brushed brass or stainless steel." },
+      { "title": "Brand Engraving", "text": "Subtle engraving of your studio's logo on signature pieces." }
+    ],
+    "cta": "Request Samples"
+  },
+  "designedFor": {
+    "eyebrow": "Designed For",
+    "heading": "Built for spaces of distinction",
+    "intro": "Pilates studios, hotels, clinics and private homes trust Base Movement to elevate the movement experience.",
+    "items": [
+      { "title": "Pilates Studios", "text": "Professional equipment for boutique studios and reformer clinics." },
+      { "title": "Hotels", "text": "Wellness spaces that reflect the brand's standard of excellence." },
+      { "title": "Physiotherapy Clinics", "text": "Clinical precision paired with design that inspires confidence." },
+      { "title": "Luxury Homes", "text": "Private studios tailored to the space and taste of the client." },
+      { "title": "Fitness Clubs", "text": "Robust equipment, built for intensive use without compromising aesthetics." },
+      { "title": "Wellness Centres", "text": "Serene environments, where every detail invites mindful movement." }
+    ]
+  },
+  "whyChoose": {
+    "eyebrow": "Trust",
+    "heading": "Why professionals choose Base Movement",
+    "intro": "Discerning professionals choose us for the consistency between design, engineering and service.",
+    "timeline": [
+      { "title": "Premium Materials", "text": "We select only responsibly sourced materials, tested for continuous professional use." },
+      { "title": "European Quality", "text": "Certified production, with quality control at every stage of the process." },
+      { "title": "Elegant Design", "text": "A timeless visual language, designed to outlast trends." },
+      { "title": "Professional Support", "text": "A dedicated team, from first contact through ongoing equipment care." },
+      { "title": "Long Durability", "text": "Structures engineered for decades of intensive use in professional settings." },
+      { "title": "Warranty", "text": "Extended coverage on structure and mechanisms, with spare parts available." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "heading": "Studios that inspire",
+    "intro": "A selection of spaces equipped by Base Movement, where design and function exist in balance."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "The trust of those who work with us",
+    "items": [
+      { "quote": "The quality of the equipment and the attention to detail completely transformed our studio experience.", "name": "Mariana Oliveira", "role": "Director, Studio Nove — Lisbon" },
+      { "quote": "An impeccable customisation process, from first sketch to final installation. A result worthy of our brand.", "name": "Rui Ferreira", "role": "Founder, Reform Atelier — Porto" },
+      { "quote": "Robust, elegant equipment, and a service that feels genuinely premium at every step.", "name": "Beatriz Nunes", "role": "Wellness Director, Aurora Hotel & Spa" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "heading": "Everything you need to know",
+    "items": [
+      { "q": "What is the average production and delivery time?", "a": "Average lead time ranges from 6 to 10 weeks, depending on the level of customisation and order volume. Exact timelines are confirmed after order validation." },
+      { "q": "Can I visit a showroom before deciding?", "a": "Yes. We arrange visits by appointment, so you can experience the equipment and available finishes in person." },
+      { "q": "What customisation options are available?", "a": "Colour, upholstery, wood finish, metal frame colour and logo engraving — every element can be tailored to your space's identity." },
+      { "q": "Do you deliver outside Portugal?", "a": "Yes, we deliver across Europe, with logistics and assisted installation coordinated with your team." },
+      { "q": "What warranty is offered?", "a": "All equipment includes extended warranty on structure and mechanisms, with long-term spare parts availability." },
+      { "q": "How do I request a quote?", "a": "Through the contact form or the \"Request a Quote\" button, indicating your space type and desired pieces. Our team responds within 48 business hours." }
+    ]
+  },
+  "finalCta": {
+    "heading": "Let's build your next studio.",
+    "text": "Speak with our team and discover how to equip your space with the excellence your project deserves.",
+    "cta": "Get in Touch"
+  },
+  "footer": {
+    "tagline": "Pilates equipment designed for professional studios and premium spaces.",
+    "navHeading": "Navigation",
+    "shopHeading": "Catalogue",
+    "contactHeading": "Contact",
+    "address": "Avenida da Liberdade 110, 1250-146 Lisbon, Portugal",
+    "phone": "+351 210 000 000",
+    "email": "studio@basemovement.pt",
+    "newsletterHeading": "Newsletter",
+    "newsletterText": "New releases, studio inspiration and updates, straight to your inbox.",
+    "newsletterPlaceholder": "Your email",
+    "newsletterCta": "Subscribe",
+    "newsletterSuccess": "Thank you. Your subscription is confirmed.",
+    "newsletterDisclaimer": "By subscribing, you agree to our Privacy Policy.",
+    "languageHeading": "Language",
+    "rights": "All rights reserved.",
+    "legalPrivacy": "Privacy Policy",
+    "legalTerms": "Terms & Conditions"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "heading": "A brand built on movement and form",
+    "intro": "Base Movement was founded on the belief that Pilates equipment can — and should — be as thoughtfully designed as the space that houses it.",
+    "leadParagraphs": [
+      "Founded by design and movement professionals, Base Movement is dedicated to creating Pilates equipment that unites technical rigour, noble materials and a serene visual language.",
+      "We believe a well-equipped studio is also a space of trust — for those who run it, and for those who move within it."
+    ],
+    "pillars": [
+      { "title": "Mission", "text": "To elevate the standard of professional Pilates equipment, uniting technical rigour with Scandinavian design sensibility." },
+      { "title": "Vision", "text": "To be Europe's reference in premium Pilates equipment, recognised for quality, durability and aesthetic coherence." },
+      { "title": "Craftsmanship", "text": "Every piece is produced by selected European partners, combining artisanal process with precision engineering." },
+      { "title": "Design Philosophy", "text": "We draw inspiration from Scandinavian architecture and the attention to detail of fine watchmaking: simple forms, honest materials, nothing superfluous." },
+      { "title": "European Quality", "text": "Certified production, with responsibly sourced materials and quality control at every stage of the process." }
+    ],
+    "closingHeading": "An invitation to mindful movement",
+    "closingText": "Every Base Movement piece is designed to last — in structure, material and taste. We invite you to explore the collection and imagine your next studio."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's talk about your project",
+    "intro": "We're available to answer questions, prepare quotes or arrange a visit to our showroom.",
+    "formHeading": "Send us a message",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "studioType": "Space Type",
+      "studioTypeOptions": ["Pilates Studio", "Hotel", "Physiotherapy Clinic", "Private Home", "Fitness Club", "Wellness Centre", "Other"],
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your space and what you're looking for...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message sent",
+      "successMessage": "Thank you for reaching out. Our team will respond within 48 business hours.",
+      "requiredNote": "All fields marked with * are required."
+    },
+    "infoHeading": "Information",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursLabel": "Hours",
+    "hoursText": "Monday to Friday, 9am–6pm",
+    "socialHeading": "Follow Us",
+    "mapCaption": "Base Movement Showroom — Lisbon"
+  },
+  "product": {
+    "dimensions": "Dimensions",
+    "specifications": "Specifications",
+    "customisationOptions": "Customisation Options",
+    "downloads": "Downloads",
+    "downloadSpec": "Technical Datasheet (PDF)",
+    "download3d": "3D Model (Revit/SketchUp)",
+    "relatedHeading": "You may also like",
+    "requestQuote": "Request a Quote",
+    "category": "Category",
+    "material": "Materials",
+    "dimensionsValue": "Length × Width × Height",
+    "weightCapacity": "Maximum Load",
+    "warranty": "Warranty",
+    "leadTime": "Production Time",
+    "backToCategory": "Back to Catalogue",
+    "overview": "Overview",
+    "startingFrom": "Starting from",
+    "onRequest": "Price on request",
+    "colourways": "Available Colours",
+    "woodFinishes": "Wood Finishes",
+    "metalFinishes": "Metal Finishes",
+    "zoomHint": "Hover to zoom"
+  },
+  "catalogue": {
+    "eyebrow": "Catalogue",
+    "heading": "The complete collection",
+    "intro": "Explore each category and discover the right equipment for your studio."
+  },
+  "common": {
+    "readMore": "Read More",
+    "viewProduct": "View Product",
+    "skipToContent": "Skip to content",
+    "notFoundTitle": "Page not found",
+    "notFoundText": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}

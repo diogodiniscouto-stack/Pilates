@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Art Placeholder
+   Editorial stand-in imagery until real studio photography is supplied.
+   Tonal gradients + fine line-art + grain, in-palette, never generic grey boxes.
+   ========================================================================== */
+
+.art-placeholder {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+  color: var(--c-ink);
+}
+
+.art-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+.art-placeholder__glyph {
+  position: relative;
+  width: 42%;
+  max-width: 15rem;
+  opacity: 0.9;
+  color: currentColor;
+}
+.art-placeholder__glyph svg { width: 100%; height: 100%; }
+
+.art-placeholder__caption {
+  position: absolute;
+  left: var(--space-sm);
+  bottom: var(--space-sm);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.45em 0.85em;
+  font-size: 0.6875rem;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--c-charcoal);
+  border-radius: var(--radius-pill);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.art-placeholder__caption::before {
+  content: "";
+  width: 0.4em; height: 0.4em;
+  border-radius: 50%;
+  background: var(--c-gold);
+  flex-shrink: 0;
+}
+
+/* Tonal variants */
+.art-placeholder--ivory { background: linear-gradient(155deg, #FDFDFC 0%, #F4F1EC 55%, #E9E3D6 100%); }
+.art-placeholder--sand { background: linear-gradient(155deg, #F4F1EC 0%, #E9E1CF 55%, #D8CBAE 100%); }
+.art-placeholder--charcoal { background: linear-gradient(155deg, #3A3A38 0%, #2E2E2E 55%, #1B1B1A 100%); color: var(--c-ivory); }
+.art-placeholder--ink { background: linear-gradient(160deg, #262624 0%, #111111 60%, #000000 100%); color: var(--c-ivory); }
+.art-placeholder--gold-wash { background: linear-gradient(150deg, #F4F1EC 0%, #E7D3AE 60%, #C9A96A 130%); }
+
+.art-placeholder--ink .art-placeholder__caption,
+.art-placeholder--charcoal .art-placeholder__caption {
+  background: rgba(17, 17, 17, 0.55);
+  color: var(--c-ivory);
+}
+
+/* Aspect ratios */
+.art-placeholder--square { aspect-ratio: 1 / 1; }
+.art-placeholder--portrait { aspect-ratio: 3 / 4; }
+.art-placeholder--wide { aspect-ratio: 16 / 10; }
+.art-placeholder--ultra { aspect-ratio: 21 / 9; }
+.art-placeholder--tall { aspect-ratio: 2 / 3; }
+.art-placeholder--fill { position: absolute; inset: 0; aspect-ratio: auto; }
+
+/* Reveal-friendly image frame used across cards */
+.media-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+.media-frame .art-placeholder { width: 100%; height: 100%; transition: transform var(--dur-slow) var(--ease-luxury); }
+.media-frame:hover .art-placeholder { transform: scale(1.045); }
