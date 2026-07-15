@@ -27,7 +27,7 @@ const PUBLIC = nodePath.join(ROOT, "public");
 
 const dict = { pt: ptDict, en: enDict };
 const products = productsDataFile.products;
-const accessories = productsDataFile.accessories;
+const accessoryGroups = productsDataFile.accessoryGroups;
 
 async function writePage(pathname, html) {
   const filePath = pathname.endsWith("/") ? nodePath.join(PUBLIC, pathname, "index.html") : nodePath.join(PUBLIC, pathname);
@@ -156,7 +156,7 @@ async function buildLocale(locale) {
       pageId: "accessories",
       title: `${accessoryCategory.name[locale]} | ${t.meta.siteName}`,
       description: accessoryCategory.shortDescription[locale],
-      content: accessoriesPage({ locale, t, accessories, category: accessoryCategory }),
+      content: accessoriesPage({ locale, t, accessoryGroups, category: accessoryCategory }),
       structuredData: [
         breadcrumbStructuredData(locale, [
           { name: t.nav.home, path: routePath(locale, "home") },

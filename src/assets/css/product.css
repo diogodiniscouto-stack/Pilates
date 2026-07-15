@@ -178,6 +178,24 @@
 .series-card__body .icon-link { font-size: 0.6875rem; margin-top: 0.5rem; }
 
 .accessory-card__cta { font-size: 0.6875rem; margin-top: 0.6rem; display: inline-flex; }
+.accessory-card .series-card__ref { margin-top: 0.1rem; }
+
+/* Accessory group anchor nav (page header) */
+.group-nav {
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.group-nav a {
+  font-size: var(--fs-small);
+  font-weight: 500;
+  padding: 0.45em 1.1em;
+  border: 1px solid var(--c-border-strong);
+  border-radius: var(--radius-pill);
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.group-nav a:hover { background: var(--c-ink); color: var(--c-ivory); border-color: var(--c-ink); }
 
 /* Breadcrumb-adjacent quote banner */
 .quote-banner {
