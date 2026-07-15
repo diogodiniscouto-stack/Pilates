@@ -13,6 +13,7 @@ import { contactPage } from "../src/templates/pages/contact.mjs";
 import { notFoundPage } from "../src/templates/pages/notFound.mjs";
 import { path as routePath, locales } from "../src/templates/routes.mjs";
 import { SITE_URL, SITE_NAME } from "../src/templates/config.mjs";
+import { logoMarkPaths } from "../src/templates/logoMark.mjs";
 
 import categoriesData from "../src/data/categories.json" with { type: "json" };
 import productsDataFile from "../src/data/products.json" with { type: "json" };
@@ -252,11 +253,16 @@ async function buildJs() {
 async function buildStaticAssets() {
   await mkdir(nodePath.join(PUBLIC, "assets", "img"), { recursive: true });
 
-  const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#111111"/>
-  <circle cx="32" cy="32" r="20" fill="none" stroke="#F8F8F6" stroke-width="1.6"/>
-  <line x1="24" y1="32" x2="40" y2="32" stroke="#F8F8F6" stroke-width="1.6"/>
-  <line x1="32" y1="24" x2="32" y2="40" stroke="#C9A96A" stroke-width="1.6"/>
+  // "B" monogram in the same hand-traced style as the full wordmark
+  // (src/templates/logoMark.mjs) — a wide 3.5:1 wordmark doesn't read at
+  // favicon size, so the initial stands in for it there.
+  const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#111111"/>
+  <g fill="none" stroke="#F8F8F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38,18 L38,82" />
+    <path d="M38,18 C60,18 72,24 72,37 C72,49 60,52 38,52" />
+    <path d="M38,52 C62,52 76,56 76,71 C76,87 62,82 38,82" stroke="#C9A96A" />
+  </g>
 </svg>`;
   await writeFile(nodePath.join(PUBLIC, "favicon.svg"), favicon, "utf8");
 
@@ -269,11 +275,10 @@ async function buildStaticAssets() {
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
-  <circle cx="600" cy="255" r="46" fill="none" stroke="#F8F8F6" stroke-width="1.4"/>
-  <line x1="582" y1="255" x2="618" y2="255" stroke="#F8F8F6" stroke-width="1.4"/>
-  <line x1="600" y1="237" x2="600" y2="273" stroke="#C9A96A" stroke-width="1.4"/>
-  <text x="600" y="360" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#F8F8F6" letter-spacing="2">BASE MOVEMENT</text>
-  <text x="600" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" letter-spacing="6" fill="#C9A96A">PILATES SUPPLY</text>
+  <g transform="translate(390,235) scale(1)" fill="none" stroke="#F8F8F6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    ${logoMarkPaths}
+  </g>
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="7" fill="#C9A96A">PILATES SUPPLY</text>
 </svg>`;
   await writeFile(nodePath.join(PUBLIC, "assets", "img", "og-cover.svg"), og, "utf8");
 }

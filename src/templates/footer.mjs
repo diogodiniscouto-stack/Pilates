@@ -1,4 +1,5 @@
 import { icon } from "./icons.mjs";
+import { logoMark } from "./logoMark.mjs";
 import { path } from "./routes.mjs";
 import { INSTAGRAM_URL, LINKEDIN_URL } from "./config.mjs";
 import categoriesData from "../data/categories.json" with { type: "json" };
@@ -21,9 +22,8 @@ export function footer({ locale, t, pageId, param }) {
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand-logo" href="${home}" aria-label="${t.meta.siteName}">
-          <span class="brand-logo__mark"></span>
+          <span class="brand-logo__mark">${logoMark()}</span>
           <span class="brand-logo__text">
-            <span class="brand-logo__name">BASE MOVEMENT</span>
             <span class="brand-logo__tagline">Pilates Supply</span>
           </span>
         </a>

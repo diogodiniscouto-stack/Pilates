@@ -1,5 +1,6 @@
 import { header } from "./header.mjs";
 import { footer } from "./footer.mjs";
+import { logoMark } from "./logoMark.mjs";
 import { path, locales } from "./routes.mjs";
 import { SITE_URL, SITE_NAME } from "./config.mjs";
 import { icon } from "./icons.mjs";
@@ -64,7 +65,7 @@ export function layout({
 </head>
 <body class="${transparentHeader ? "has-transparent-header" : ""} ${bodyClass}">
   <div class="preloader" aria-hidden="true">
-    <div class="brand-logo__mark" style="width:3.5rem;height:3.5rem;"></div>
+    <div class="preloader__mark">${logoMark()}</div>
     <div class="preloader__bar"></div>
   </div>
 

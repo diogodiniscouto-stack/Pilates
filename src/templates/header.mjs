@@ -1,4 +1,5 @@
 import { icon } from "./icons.mjs";
+import { logoMark } from "./logoMark.mjs";
 import { path, otherLocale } from "./routes.mjs";
 import categoriesData from "../data/categories.json" with { type: "json" };
 
@@ -29,9 +30,8 @@ export function header({ locale, t, pageId, transparent, param }) {
 <header class="site-header ${transparent ? "has-transparent" : ""}" data-site-header>
   <div class="container site-header__bar">
     <a class="brand-logo site-header__logo" href="${home}" aria-label="${t.meta.siteName} — ${t.meta.siteTagline}">
-      <span class="brand-logo__mark"></span>
+      <span class="brand-logo__mark">${logoMark()}</span>
       <span class="brand-logo__text">
-        <span class="brand-logo__name">BASE MOVEMENT</span>
         <span class="brand-logo__tagline">Pilates Supply</span>
       </span>
     </a>
