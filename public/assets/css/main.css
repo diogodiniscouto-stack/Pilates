@@ -351,7 +351,7 @@ a:focus-visible, button:focus-visible { outline-offset: 4px; }
   color: var(--c-gold-text);
   margin-top: 0.1rem;
 }
-.site-header.has-transparent:not(.is-scrolled) .brand-logo__tagline { color: var(--c-gold); }
+.site-header.has-transparent:not(.is-scrolled) .brand-logo__tagline { color: var(--c-gold-text); }
 
 .site-header.is-scrolled .brand-logo__mark { width: 5rem; }
 
@@ -522,7 +522,9 @@ body:not(.has-transparent-header) { padding-top: var(--header-h); }
   flex-shrink: 0;
 }
 
-.site-header.has-transparent:not(.is-scrolled) { color: var(--c-ivory); }
+/* The home hero is a light photograph, so the transparent header reads in
+   ink; it gains the solid white treatment on scroll as before. */
+.site-header.has-transparent:not(.is-scrolled) { color: var(--c-ink); }
 .site-header:not(.has-transparent), .site-header.is-scrolled { color: var(--c-ink); }
 
 .site-nav {
@@ -876,6 +878,43 @@ body.menu-open .mobile-menu { opacity: 1; visibility: visible; transform: transl
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(17,17,17,0.15) 0%, rgba(17,17,17,0.05) 35%, rgba(17,17,17,0.75) 100%);
+}
+
+/* Light hero — full-bleed brand photography, ink text, pointer parallax */
+.hero--light {
+  background: var(--c-sand);
+  color: var(--c-ink);
+}
+.hero--light .hero__media::after {
+  background: linear-gradient(180deg, rgba(244,241,236,0.32) 0%, rgba(244,241,236,0) 30%, rgba(244,241,236,0.55) 88%, rgba(244,241,236,0.85) 100%);
+}
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* pointer parallax shifts up to ±1.2%, so render slightly oversized */
+  transform: scale(1.05) translate3d(var(--hero-x, 0), var(--hero-y, 0), 0);
+  transition: transform 900ms var(--ease-luxury);
+  animation: heroSettle 1600ms var(--ease-luxury);
+}
+.js .hero__photo.is-tracking { transition: transform 200ms linear; }
+@keyframes heroSettle {
+  from { transform: scale(1.12); opacity: 0.6; }
+  to { transform: scale(1.05); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__photo { animation: none; transform: scale(1.02); transition: none; }
+}
+
+.hero--light .hero__sub { color: var(--c-charcoal); }
+.hero--light .eyebrow { color: var(--c-gold-text); }
+.hero--light .hero__scroll { color: var(--c-charcoal); }
+.hero--light .hero__scroll-line { background: rgba(17,17,17,0.25); }
+.hero--light .hero__content {
+  text-shadow: 0 1px 24px rgba(248,248,246,0.6);
 }
 
 .hero__content {
@@ -1531,6 +1570,67 @@ form.is-success .form-success { display: block; }
 .accessory-card h3 { font-size: var(--fs-h4); font-family: var(--font-body); font-weight: 600; }
 .accessory-card p { font-size: var(--fs-small); color: var(--c-text-muted); margin-top: 0.3rem; }
 .accessory-card .price { margin-top: 0.5rem; font-weight: 600; color: var(--c-gold-text); font-size: var(--fs-small); }
+
+.quote-note {
+  align-self: center;
+  font-size: var(--fs-small);
+  color: var(--c-text-muted);
+}
+
+/* Complete range grid */
+.series-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) { .series-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1200px) { .series-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.series-card {
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--dur-base) var(--ease-luxury), box-shadow var(--dur-base) var(--ease-luxury), transform var(--dur-base) var(--ease-luxury);
+}
+.series-card:hover {
+  border-color: var(--c-gold);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.series-card .media-frame {
+  aspect-ratio: 4/3;
+  border-radius: 0;
+}
+.series-card__body {
+  padding: var(--space-sm) var(--space-sm) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+.series-card__ref {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+}
+.series-card__body h3 {
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.series-card__dims {
+  font-size: 0.8rem;
+  color: var(--c-text-muted);
+  flex: 1;
+}
+.series-card__body .icon-link { font-size: 0.6875rem; margin-top: 0.5rem; }
+
+.accessory-card__cta { font-size: 0.6875rem; margin-top: 0.6rem; display: inline-flex; }
 
 /* Breadcrumb-adjacent quote banner */
 .quote-banner {

@@ -56,6 +56,8 @@ function orgStructuredData(locale) {
   };
 }
 
+// Quotation-only business model: no price is published anywhere,
+// including structured data (no Offer node).
 function productStructuredData(locale, product, categoryHref) {
   const t = dict[locale];
   return {
@@ -65,13 +67,6 @@ function productStructuredData(locale, product, categoryHref) {
     description: product.description[locale],
     brand: { "@type": "Brand", name: t.meta.siteName },
     url: `${SITE_URL}${categoryHref}`,
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "EUR",
-      price: product.priceFrom,
-      availability: "https://schema.org/InStock",
-      url: `${SITE_URL}${categoryHref}`,
-    },
   };
 }
 
@@ -256,15 +251,14 @@ async function buildStaticAssets() {
   // Product photography (processed catalog assets in src/assets/img)
   await cp(nodePath.join(SRC, "assets", "img", "products"), nodePath.join(PUBLIC, "assets", "img", "products"), { recursive: true });
 
-  // "B" monogram in the same hand-traced style as the full wordmark
-  // (src/templates/logoMark.mjs) — a wide 3.5:1 wordmark doesn't read at
-  // favicon size, so the initial stands in for it there.
+  // "B" monogram matching the brand wordmark's stemless B (three horizontal
+  // bars joined by two right-side curves) — a wide 3.5:1 wordmark doesn't
+  // read at favicon size, so the initial stands in for it there.
   const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <rect width="100" height="100" rx="20" fill="#111111"/>
-  <g fill="none" stroke="#F8F8F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M38,18 L38,82" />
-    <path d="M38,18 C60,18 72,24 72,37 C72,49 60,52 38,52" />
-    <path d="M38,52 C62,52 76,56 76,71 C76,87 62,82 38,82" stroke="#C9A96A" />
+  <g fill="none" stroke="#F8F8F6" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22,22 H50 C68,22 76,30 76,39 C76,49 68,58 50,58 H22" />
+    <path d="M50,58 C70,58 80,67 80,77 C80,88 70,96 50,96 H22" stroke="#C9A96A" />
   </g>
 </svg>`;
   await writeFile(nodePath.join(PUBLIC, "favicon.svg"), favicon, "utf8");

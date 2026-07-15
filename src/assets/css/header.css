@@ -52,7 +52,9 @@ body:not(.has-transparent-header) { padding-top: var(--header-h); }
   flex-shrink: 0;
 }
 
-.site-header.has-transparent:not(.is-scrolled) { color: var(--c-ivory); }
+/* The home hero is a light photograph, so the transparent header reads in
+   ink; it gains the solid white treatment on scroll as before. */
+.site-header.has-transparent:not(.is-scrolled) { color: var(--c-ink); }
 .site-header:not(.has-transparent), .site-header.is-scrolled { color: var(--c-ink); }
 
 .site-nav {

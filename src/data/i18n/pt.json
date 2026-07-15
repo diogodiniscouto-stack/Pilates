@@ -333,7 +333,12 @@
     "colourways": "Cores Disponíveis",
     "woodFinishes": "Acabamentos em Madeira",
     "metalFinishes": "Acabamentos em Metal",
-    "zoomHint": "Passe o cursor para ampliar"
+    "zoomHint": "Passe o cursor para ampliar",
+    "seriesHeading": "A série completa",
+    "seriesIntro": "Todos os modelos desta categoria. Cada equipamento é personalizável e fornecido mediante orçamento.",
+    "refLabel": "Ref.",
+    "quoteNote": "Preço mediante orçamento",
+    "quoteFor": "Solicitar orçamento para este modelo"
   },
   "catalogue": {
     "eyebrow": "Catálogo",

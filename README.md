@@ -76,9 +76,17 @@ public/                  Generated output — this is what you deploy
 - **SITE_URL**: `src/templates/config.mjs` has a placeholder production
   domain (`https://www.basemovement.pt`) used for canonical URLs, hreflang,
   sitemap.xml and JSON-LD — update it once the real domain is set.
-- **Pricing/specs**: dimensions and materials in `src/data/products.json`
-  come from the supplier catalog; prices, lead times and warranty terms
-  are illustrative — confirm before launch.
+- **Quotation-only**: no prices are published anywhere (per business
+  model — every CTA drives a quote request). Product/series/accessory
+  cards link to the contact form with `?produto=<ref>`, which pre-fills
+  the message field. Dimensions and materials come from the supplier
+  catalog; lead times and warranty terms are illustrative — confirm
+  before launch.
+- **Hero photo**: the homepage hero expects the branded lifestyle
+  photograph (BASE MOVEMENT reformer in the cream studio). It was never
+  received as a file — the current `src/assets/img/products/hero.jpg` is
+  a temporary cream-fabric stand-in. To swap: overwrite that file with
+  the real photo (landscape, ~2000px wide) and run `npm run build`.
 - Each category currently ships one flagship model (matching how the brand
   is positioned — a curated line, not a large SKU catalogue). Add more
   products by extending `src/data/products.json`; the build script and

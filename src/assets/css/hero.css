@@ -25,6 +25,43 @@
   background: linear-gradient(180deg, rgba(17,17,17,0.15) 0%, rgba(17,17,17,0.05) 35%, rgba(17,17,17,0.75) 100%);
 }
 
+/* Light hero — full-bleed brand photography, ink text, pointer parallax */
+.hero--light {
+  background: var(--c-sand);
+  color: var(--c-ink);
+}
+.hero--light .hero__media::after {
+  background: linear-gradient(180deg, rgba(244,241,236,0.32) 0%, rgba(244,241,236,0) 30%, rgba(244,241,236,0.55) 88%, rgba(244,241,236,0.85) 100%);
+}
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* pointer parallax shifts up to ±1.2%, so render slightly oversized */
+  transform: scale(1.05) translate3d(var(--hero-x, 0), var(--hero-y, 0), 0);
+  transition: transform 900ms var(--ease-luxury);
+  animation: heroSettle 1600ms var(--ease-luxury);
+}
+.js .hero__photo.is-tracking { transition: transform 200ms linear; }
+@keyframes heroSettle {
+  from { transform: scale(1.12); opacity: 0.6; }
+  to { transform: scale(1.05); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__photo { animation: none; transform: scale(1.02); transition: none; }
+}
+
+.hero--light .hero__sub { color: var(--c-charcoal); }
+.hero--light .eyebrow { color: var(--c-gold-text); }
+.hero--light .hero__scroll { color: var(--c-charcoal); }
+.hero--light .hero__scroll-line { background: rgba(17,17,17,0.25); }
+.hero--light .hero__content {
+  text-shadow: 0 1px 24px rgba(248,248,246,0.6);
+}
+
 .hero__content {
   position: relative;
   z-index: 1;

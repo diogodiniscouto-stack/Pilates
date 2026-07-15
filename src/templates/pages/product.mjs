@@ -3,10 +3,6 @@ import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 import categoriesData from "../../data/categories.json" with { type: "json" };
 
-function fmtEUR(n) {
-  return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);
-}
-
 function swatchRowLocalised(items, locale) {
   if (!items || !items.length) return "";
   return `<div class="swatch-row">
@@ -72,11 +68,11 @@ export function productPage({ locale, t, product, category }) {
         <p class="eyebrow product-info__cat">${category.name[locale]}</p>
         <h1 class="text-h1">${product.name}</h1>
         <p class="tagline">${product.tagline[locale]}</p>
-        <p class="price"><small>${t.product.startingFrom}</small>${fmtEUR(product.priceFrom)}</p>
         <p class="overview">${product.description[locale]}</p>
 
         <div class="product-info__actions">
-          <a class="btn btn--primary" href="${contact}">${t.product.requestQuote}</a>
+          <a class="btn btn--primary" href="${contact}?produto=${encodeURIComponent(product.name)}">${t.product.requestQuote}</a>
+          <span class="quote-note">${t.product.quoteNote}</span>
         </div>
 
         ${
@@ -118,6 +114,36 @@ export function productPage({ locale, t, product, category }) {
     <div class="quote-banner" data-reveal>
       <p class="text-lead">${t.customisation.headingLines[0]}</p>
       <a class="btn btn--secondary" href="${contact}">${t.customisation.cta}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="serie">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">${category.name[locale]}</p>
+      <h2 class="text-h2">${t.product.seriesHeading}</h2>
+      <p class="text-lead">${t.product.seriesIntro}</p>
+    </div>
+    <div class="series-grid">
+      ${product.series
+        .map(
+          (model, i) => `
+      <div class="series-card" data-reveal style="--reveal-delay:${(i % 4) * 60}ms">
+        <div class="media-frame">
+          ${photo(model.image, `${model.name[locale]} — ${category.name[locale]}`)}
+        </div>
+        <div class="series-card__body">
+          <p class="series-card__ref">${t.product.refLabel} ${model.sku}</p>
+          <h3>${model.name[locale]}</h3>
+          <p class="series-card__dims">${model.dims}</p>
+          <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " — " + model.name[locale])}" aria-label="${t.product.quoteFor}">
+            ${t.product.requestQuote} ${icon("arrowRight")}
+          </a>
+        </div>
+      </div>`
+        )
+        .join("")}
     </div>
   </div>
 </section>

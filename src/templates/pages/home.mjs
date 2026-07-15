@@ -14,10 +14,14 @@ export function homePage({ locale, t }) {
   const contact = path(locale, "contact");
   const catalogue = path(locale, "catalogue");
 
+  const heroAlt =
+    locale === "pt"
+      ? "Estúdio Base Movement — reformer com torre e acessórios em tons neutros"
+      : "Base Movement studio — tower reformer and accessories in neutral tones";
   const hero = `
-<section class="hero">
-  <div class="hero__media" data-parallax="0.12">
-    ${art({ tone: "ink", ratio: "fill", glyphName: "interiorA", noCaption: true })}
+<section class="hero hero--light">
+  <div class="hero__media" data-hero-media data-parallax="0.1">
+    ${photo("hero", heroAlt, { eager: true, extraClass: "hero__photo" })}
   </div>
   <div class="container hero__content">
     <p class="eyebrow">${t.hero.eyebrow}</p>
@@ -26,8 +30,8 @@ export function homePage({ locale, t }) {
     </h1>
     <p class="hero__sub">${t.hero.subheadline}</p>
     <div class="hero__actions">
-      <a class="btn btn--gold" href="${catalogue}">${t.hero.ctaPrimary}</a>
-      <a class="btn btn--on-dark" href="${contact}">${t.hero.ctaSecondary}</a>
+      <a class="btn btn--primary" href="${catalogue}">${t.hero.ctaPrimary}</a>
+      <a class="btn btn--secondary" href="${contact}">${t.hero.ctaSecondary}</a>
     </div>
   </div>
   <div class="hero__scroll">

@@ -28,7 +28,7 @@
   color: var(--c-gold-text);
   margin-top: 0.1rem;
 }
-.site-header.has-transparent:not(.is-scrolled) .brand-logo__tagline { color: var(--c-gold); }
+.site-header.has-transparent:not(.is-scrolled) .brand-logo__tagline { color: var(--c-gold-text); }
 
 .site-header.is-scrolled .brand-logo__mark { width: 5rem; }
 

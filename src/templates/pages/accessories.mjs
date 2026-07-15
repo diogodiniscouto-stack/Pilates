@@ -1,9 +1,6 @@
+import { icon } from "../icons.mjs";
 import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
-
-function fmtEUR(n) {
-  return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);
-}
 
 export function accessoriesPage({ locale, t, accessories, category }) {
   const catalogue = path(locale, "catalogue");
@@ -31,7 +28,7 @@ export function accessoriesPage({ locale, t, accessories, category }) {
         </div>
         <h3>${item.name[locale]}</h3>
         <p>${item.description[locale]}</p>
-        <p class="price">${fmtEUR(item.price)}</p>
+        <a class="icon-link accessory-card__cta" href="${contact}?produto=${encodeURIComponent(item.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
       </div>`
         )
         .join("")}

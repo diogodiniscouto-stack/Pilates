@@ -333,7 +333,12 @@
     "colourways": "Available Colours",
     "woodFinishes": "Wood Finishes",
     "metalFinishes": "Metal Finishes",
-    "zoomHint": "Hover to zoom"
+    "zoomHint": "Hover to zoom",
+    "seriesHeading": "The complete range",
+    "seriesIntro": "Every model in this category. Each piece is customisable and supplied on quotation.",
+    "refLabel": "Ref.",
+    "quoteNote": "Price on quotation",
+    "quoteFor": "Request a quote for this model"
   },
   "catalogue": {
     "eyebrow": "Catalogue",

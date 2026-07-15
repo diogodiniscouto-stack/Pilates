@@ -193,6 +193,55 @@
   }
 
   /* ---------------------------------------------------------------------
+   * Hero pointer parallax — the photo drifts gently towards the cursor
+   * ------------------------------------------------------------------- */
+  function initHeroPointer() {
+    if (prefersReducedMotion) return;
+    var media = document.querySelector("[data-hero-media]");
+    if (!media) return;
+    var img = media.querySelector("img");
+    if (!img) return;
+    var hero = media.closest(".hero");
+    var raf = null;
+    var targetX = 0, targetY = 0;
+
+    hero.addEventListener("pointermove", function (e) {
+      if (e.pointerType && e.pointerType !== "mouse") return;
+      var rect = hero.getBoundingClientRect();
+      targetX = ((e.clientX - rect.left) / rect.width - 0.5) * -2; // -1..1
+      targetY = ((e.clientY - rect.top) / rect.height - 0.5) * -2;
+      if (!raf) {
+        raf = requestAnimationFrame(function () {
+          img.classList.add("is-tracking");
+          img.style.setProperty("--hero-x", (targetX * 1.1).toFixed(2) + "%");
+          img.style.setProperty("--hero-y", (targetY * 1.1).toFixed(2) + "%");
+          raf = null;
+        });
+      }
+    });
+    hero.addEventListener("pointerleave", function () {
+      img.classList.remove("is-tracking");
+      img.style.setProperty("--hero-x", "0%");
+      img.style.setProperty("--hero-y", "0%");
+    });
+  }
+
+  /* ---------------------------------------------------------------------
+   * Quote request prefill — /contacto/?produto=REF pre-fills the message
+   * ------------------------------------------------------------------- */
+  function initQuotePrefill() {
+    var message = document.querySelector("form[data-form] #message");
+    if (!message) return;
+    var params = new URLSearchParams(window.location.search);
+    var product = params.get("produto") || params.get("product");
+    if (!product || message.value) return;
+    var lang = document.documentElement.lang || "pt-PT";
+    message.value = lang.indexOf("pt") === 0
+      ? "Gostaria de solicitar um orçamento para: " + product + "\n\n"
+      : "I would like to request a quote for: " + product + "\n\n";
+  }
+
+  /* ---------------------------------------------------------------------
    * Product gallery — thumbnail swap
    * ------------------------------------------------------------------- */
   function initProductGallery() {
@@ -317,6 +366,8 @@
     initAccordion();
     initReveal();
     initParallax();
+    initHeroPointer();
+    initQuotePrefill();
     initProductGallery();
     initTabs();
     initLightbox();
