@@ -232,6 +232,7 @@ async function buildCss() {
     "product.css",
     "misc.css",
     "animations.css",
+    "experience.css",
   ];
   const cssDir = nodePath.join(SRC, "assets", "css");
   const chunks = await Promise.all(order.map((file) => readFile(nodePath.join(cssDir, file), "utf8")));

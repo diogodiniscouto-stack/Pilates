@@ -193,6 +193,166 @@
   }
 
   /* ---------------------------------------------------------------------
+   * Custom cursor — dot + trailing ring with contextual labels
+   * ------------------------------------------------------------------- */
+  function initCursor() {
+    if (prefersReducedMotion) return;
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+
+    var dot = document.createElement("div");
+    dot.className = "cursor";
+    var ring = document.createElement("div");
+    ring.className = "cursor-ring";
+    ring.innerHTML = '<span class="cursor-label"></span>';
+    document.body.appendChild(dot);
+    document.body.appendChild(ring);
+    document.body.classList.add("has-cursor");
+
+    var label = ring.querySelector(".cursor-label");
+    var mx = -100, my = -100, rx = -100, ry = -100;
+
+    document.addEventListener("mousemove", function (e) {
+      mx = e.clientX;
+      my = e.clientY;
+      dot.style.transform = "translate(" + (mx - 3) + "px," + (my - 3) + "px)";
+    }, { passive: true });
+
+    (function loop() {
+      rx += (mx - rx) * 0.16;
+      ry += (my - ry) * 0.16;
+      ring.style.transform = "translate(" + (rx - ring.offsetWidth / 2) + "px," + (ry - ring.offsetHeight / 2) + "px)";
+      requestAnimationFrame(loop);
+    })();
+
+    var hint = document.documentElement.lang.indexOf("pt") === 0
+      ? { drag: "Arraste", view: "Ver" }
+      : { drag: "Drag", view: "View" };
+
+    document.addEventListener("mouseover", function (e) {
+      var strip = e.target.closest("[data-filmstrip]");
+      var media = e.target.closest("[data-lightbox], .chapter__media");
+      var link = e.target.closest("a, button");
+      if (strip) {
+        ring.classList.add("is-hover");
+        label.textContent = hint.drag;
+      } else if (media) {
+        ring.classList.add("is-hover");
+        label.textContent = hint.view;
+      } else if (link) {
+        ring.classList.add("is-hover");
+        label.textContent = "";
+      } else {
+        ring.classList.remove("is-hover");
+        label.textContent = "";
+      }
+    }, { passive: true });
+  }
+
+  /* ---------------------------------------------------------------------
+   * Scroll scrub — chapter numerals drift, chapter media de-zooms
+   * ------------------------------------------------------------------- */
+  function initScrub() {
+    if (prefersReducedMotion) return;
+    var speedEls = Array.prototype.slice.call(document.querySelectorAll("[data-speed]"));
+    var zoomEls = Array.prototype.slice.call(document.querySelectorAll("[data-zoom]"));
+    if (!speedEls.length && !zoomEls.length) return;
+
+    var vh = window.innerHeight;
+    window.addEventListener("resize", function () { vh = window.innerHeight; }, { passive: true });
+
+    var ticking = false;
+    function update() {
+      speedEls.forEach(function (el) {
+        var rect = el.parentElement.getBoundingClientRect();
+        var offset = (rect.top + rect.height / 2 - vh / 2) * parseFloat(el.getAttribute("data-speed"));
+        el.style.transform = "translate3d(0," + offset.toFixed(1) + "px,0)";
+      });
+      zoomEls.forEach(function (el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > vh) return;
+        // progress 0 (entering) -> 1 (leaving): settle from 1.12 to 1
+        var p = Math.min(1, Math.max(0, 1 - rect.top / vh));
+        var img = el.querySelector(".photo, img");
+        if (img) img.style.transform = "scale(" + (1.1 - 0.1 * Math.min(1, p * 1.6)).toFixed(3) + ")";
+      });
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  }
+
+  /* ---------------------------------------------------------------------
+   * Filmstrips — drag-to-scroll
+   * ------------------------------------------------------------------- */
+  function initFilmstrips() {
+    document.querySelectorAll("[data-filmstrip]").forEach(function (strip) {
+      var isDown = false, startX = 0, startScroll = 0, moved = false;
+      strip.addEventListener("pointerdown", function (e) {
+        if (e.pointerType !== "mouse") return;
+        isDown = true;
+        moved = false;
+        startX = e.clientX;
+        startScroll = strip.scrollLeft;
+      });
+      window.addEventListener("pointermove", function (e) {
+        if (!isDown) return;
+        var dx = e.clientX - startX;
+        if (Math.abs(dx) > 4 && !moved) {
+          moved = true;
+          strip.classList.add("is-dragging");
+        }
+        if (moved) strip.scrollLeft = startScroll - dx;
+      }, { passive: true });
+      window.addEventListener("pointerup", function () {
+        if (!isDown) return;
+        isDown = false;
+        setTimeout(function () { strip.classList.remove("is-dragging"); }, 30);
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------------------
+   * Chapter rail — highlights the chapter in view
+   * ------------------------------------------------------------------- */
+  function initChapterRail() {
+    var rail = document.querySelector(".chapter-rail");
+    var chapters = document.querySelectorAll("[data-chapter]");
+    if (!rail || !chapters.length || !("IntersectionObserver" in window)) return;
+    var links = rail.querySelectorAll("[data-rail]");
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = entry.target.id;
+        links.forEach(function (link) {
+          link.classList.toggle("is-active", link.getAttribute("href") === "#" + id);
+        });
+      });
+    }, { rootMargin: "-40% 0px -50% 0px" });
+    chapters.forEach(function (ch) { observer.observe(ch); });
+  }
+
+  /* ---------------------------------------------------------------------
+   * Magnetic buttons — drift a few px toward the cursor
+   * ------------------------------------------------------------------- */
+  function initMagnetic() {
+    if (prefersReducedMotion) return;
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+    document.querySelectorAll(".btn--magnetic").forEach(function (btn) {
+      btn.addEventListener("mousemove", function (e) {
+        var rect = btn.getBoundingClientRect();
+        var dx = (e.clientX - rect.left - rect.width / 2) * 0.18;
+        var dy = (e.clientY - rect.top - rect.height / 2) * 0.3;
+        btn.style.transform = "translate(" + dx.toFixed(1) + "px," + dy.toFixed(1) + "px)";
+      });
+      btn.addEventListener("mouseleave", function () {
+        btn.style.transform = "";
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------------------
    * Hero pointer parallax — the photo drifts gently towards the cursor
    * ------------------------------------------------------------------- */
   function initHeroPointer() {
@@ -201,7 +361,8 @@
     if (!media) return;
     var img = media.querySelector("img");
     if (!img) return;
-    var hero = media.closest(".hero");
+    var hero = media.closest(".hero, .prologue");
+    if (!hero) return;
     var raf = null;
     var targetX = 0, targetY = 0;
 
@@ -366,6 +527,11 @@
     initAccordion();
     initReveal();
     initParallax();
+    initCursor();
+    initScrub();
+    initFilmstrips();
+    initChapterRail();
+    initMagnetic();
     initHeroPointer();
     initQuotePrefill();
     initProductGallery();

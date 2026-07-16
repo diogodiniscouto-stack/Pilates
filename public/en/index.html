@@ -113,19 +113,21 @@
 
   <main id="main">
     
-<section class="hero hero--light">
-  <div class="hero__media" data-hero-media data-parallax="0.1">
+<nav class="chapter-rail" aria-label="Chapter">
+  <a href="#prologo" data-rail>✳</a><span class="chapter-rail__line"></span><a href="#cap-i" data-rail>I</a><span class="chapter-rail__line"></span><a href="#cap-ii" data-rail>II</a><span class="chapter-rail__line"></span><a href="#cap-iii" data-rail>III</a><span class="chapter-rail__line"></span><a href="#cap-iv" data-rail>IV</a><span class="chapter-rail__line"></span><a href="#cap-v" data-rail>V</a><span class="chapter-rail__line"></span><a href="#cap-vi" data-rail>VI</a><span class="chapter-rail__line"></span><a href="#epilogo" data-rail>∞</a>
+</nav>
+
+<section class="prologue" id="prologo" data-chapter data-chapter-label="✳">
+  <div class="prologue__media" data-hero-media data-parallax="0.1">
     <img src="/assets/img/products/hero.jpg" alt="Base Movement studio — tower reformer and accessories in neutral tones" width="1536" height="1024" decoding="async" class="photo hero__photo">
   </div>
-  <div class="container hero__content">
-    <p class="eyebrow">Base Movement — Pilates Supply</p>
-    <h1 class="hero__headline">
-      <span class="line"><span style="--line-delay:150ms">Elevate your studio.</span></span><span class="line"><span style="--line-delay:280ms">Inspire every movement.</span></span>
-    </h1>
-    <p class="hero__sub">Pilates equipment and accessories designed for professional studios and premium spaces.</p>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="/en/catalogue/">Explore Catalogue</a>
-      <a class="btn btn--secondary" href="/en/contact/">Request a Quote</a>
+  <div class="container prologue__content">
+    <p class="prologue__breathe" data-reveal="fade">Breathe.</p>
+    <h1 class="prologue__headline"><span class="line"><span style="--line-delay:200ms">Elevate your <em>studio.</em></span></span><span class="line"><span style="--line-delay:360ms">Inspire every <em>movement.</em></span></span></h1>
+    <p class="prologue__sub" data-reveal style="--reveal-delay:350ms">Pilates equipment and accessories designed for professional studios and premium spaces.</p>
+    <div class="prologue__actions" data-reveal style="--reveal-delay:500ms">
+      <a class="btn btn--primary btn--magnetic" href="/en/catalogue/">Explore Catalogue</a>
+      <a class="btn btn--secondary btn--magnetic" href="/en/contact/">Request a Quote</a>
     </div>
   </div>
   <div class="hero__scroll">
@@ -134,313 +136,716 @@
   </div>
 </section>
 
-<section class="section" id="porque">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Why Base Movement</p>
-      <h2 class="text-h2">Equipment that elevates the practice</h2>
-      <p class="text-lead">Every piece is engineered with architectural precision and noble materials, for studios that accept nothing less than excellence.</p>
-    </div>
-    <div class="why-grid" data-reveal-group>
+<section class="manifesto" id="manifesto">
+  <div class="living"></div>
+  <div class="container" style="position:relative;">
+    <h2 class="manifesto__words" aria-label="Precision. Silence. Movement.">
+      <span class="word" data-reveal style="--reveal-delay:0ms"><span>Precision.</span></span><span class="word" data-reveal style="--reveal-delay:140ms"><span>Silence.</span></span><span class="word" data-reveal style="--reveal-delay:280ms"><span>Movement.</span></span>
+    </h2>
+    <p class="manifesto__lead" data-reveal>Pilates equipment conceived as architecture — structure, proportion and calm. A collection for studios that treat movement as a form of design.</p>
+    <div class="manifesto__index" data-reveal-group>
       
-      <div class="why-card">
-        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l3-5h10l3 5-8 12z"/><path d="M4 9h16M9 4l3 5 3-5M8 9l4 12 4-12"/></svg></div>
+      <div class="manifesto__row">
+        <span class="num">01</span>
         <h3>Premium Equipment</h3>
-        <p>Noble materials, precise engineering and finishes built to withstand time and intensive professional use.</p>
+        <p>Noble materials and precise engineering, for intensive professional use.</p>
       </div>
-      <div class="why-card">
-        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="1.6" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="10" cy="18" r="1.6" fill="currentColor" stroke="none"/></svg></div>
+      <div class="manifesto__row">
+        <span class="num">02</span>
         <h3>Full Customisation</h3>
-        <p>Colours, upholstery, wood and metal finishes, and brand engraving — every piece reflects your space's identity.</p>
+        <p>Colours, upholstery, woods and engraving — every piece reflects your space.</p>
       </div>
-      <div class="why-card">
-        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>Quality Craftsmanship</h3>
-        <p>Certified production and rigorous control, following the highest standards of safety and durability.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg></div>
-        <h3>Shipping Across Europe</h3>
-        <p>Careful logistics, assisted installation and dedicated support, from order to delivery.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--muted" id="catalogo">
-  <div class="container">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">Catalogue</p>
-      <h2 class="text-h2">Featured Categories</h2>
-      <p class="text-lead">A complete collection to equip leading Pilates studios, clinics and wellness spaces.</p>
-    </div>
-    <div class="category-grid">
-      
-      <a class="category-card" href="/en/catalogue/reformer/" data-reveal style="--reveal-delay:0ms">
-        <div class="media-frame">
-          <img src="/assets/img/products/reformer-1.jpg" alt="Reformer — Base Movement" width="1600" height="872" loading="lazy" decoding="async" class="photo ">
-        </div>
-        <div class="category-card__title">
-          <h3>Reformer</h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </div>
-        <p>The centrepiece of the modern studio.</p>
-      </a>
-      <a class="category-card" href="/en/catalogue/cadillac/" data-reveal style="--reveal-delay:80ms">
-        <div class="media-frame">
-          <img src="/assets/img/products/cadillac-1.jpg" alt="Cadillac — Base Movement" width="1600" height="1598" loading="lazy" decoding="async" class="photo ">
-        </div>
-        <div class="category-card__title">
-          <h3>Cadillac</h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </div>
-        <p>Range and clinical versatility.</p>
-      </a>
-      <a class="category-card" href="/en/catalogue/chair/" data-reveal style="--reveal-delay:160ms">
-        <div class="media-frame">
-          <img src="/assets/img/products/chair-1.jpg" alt="Chair — Base Movement" width="1030" height="1358" loading="lazy" decoding="async" class="photo ">
-        </div>
-        <div class="category-card__title">
-          <h3>Chair</h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </div>
-        <p>Precision at a compact scale.</p>
-      </a>
-      <a class="category-card" href="/en/catalogue/barrel/" data-reveal style="--reveal-delay:240ms">
-        <div class="media-frame">
-          <img src="/assets/img/products/barrel-1.jpg" alt="Barrel — Base Movement" width="1330" height="1358" loading="lazy" decoding="async" class="photo ">
-        </div>
-        <div class="category-card__title">
-          <h3>Barrel</h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </div>
-        <p>Spinal extension and mobility.</p>
-      </a>
-      <a class="category-card" href="/en/catalogue/spine-corrector/" data-reveal style="--reveal-delay:320ms">
-        <div class="media-frame">
-          <img src="/assets/img/products/spine-1.jpg" alt="Spine Corrector — Base Movement" width="1350" height="1358" loading="lazy" decoding="async" class="photo ">
-        </div>
-        <div class="category-card__title">
-          <h3>Spine Corrector</h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </div>
-        <p>Sculptural support for the spine.</p>
-      </a>
-      <a class="category-card" href="/en/catalogue/accessories/" data-reveal style="--reveal-delay:400ms">
-        <div class="media-frame">
-          <img src="/assets/img/products/acc-blocks.jpg" alt="Accessories — Base Movement" width="1600" height="1600" loading="lazy" decoding="async" class="photo ">
-        </div>
-        <div class="category-card__title">
-          <h3>Accessories</h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
-        </div>
-        <p>The details that complete the practice.</p>
-      </a>
-    </div>
-    <div class="categories-footer" data-reveal>
-      <a class="btn btn--secondary" href="/en/catalogue/">View Full Catalogue</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section--large" id="personalizacao">
-  <div class="container">
-    <div class="customisation-layout">
-      <div class="customisation-gallery" data-reveal="scale">
-        <div class="media-frame"><img src="/assets/img/products/reformer-2.jpg" alt="Reformer in natural maple wood" width="1600" height="778" loading="lazy" decoding="async" class="photo "></div>
-        <div class="media-frame media-frame--cover"><img src="/assets/img/products/fabric.jpg" alt="Technical upholstery in cream tone" width="1600" height="907" loading="lazy" decoding="async" class="photo "></div>
-        <div class="media-frame"><img src="/assets/img/products/metal-frame.jpg" alt="Metal frame in matte black" width="1502" height="684" loading="lazy" decoding="async" class="photo "></div>
-      </div>
-      <div class="customisation-copy" data-reveal>
-        <p class="eyebrow">Customisation</p>
-        <h2 class="text-h2">Every studio is unique.<br/>Your equipment should be too.</h2>
-        <p>From the choice of wood to the exact tone of the upholstery, every detail can be tailored to your space's visual identity.</p><p>We work with you from concept to final installation, ensuring aesthetic coherence across every piece.</p>
-        <div class="customisation-options">
-          
-          <div class="customisation-option">
-            <h4>Colours</h4>
-            <p>A carefully curated palette of neutral tones and discreet accents.</p>
-          </div>
-          <div class="customisation-option">
-            <h4>Upholstery</h4>
-            <p>Technical fabrics and premium synthetic leather, built for professional use.</p>
-          </div>
-          <div class="customisation-option">
-            <h4>Wood Finishes</h4>
-            <p>Oak, walnut and beech, in natural or lacquered finish.</p>
-          </div>
-          <div class="customisation-option">
-            <h4>Metal Colours</h4>
-            <p>Frames in matte black, brushed brass or stainless steel.</p>
-          </div>
-          <div class="customisation-option">
-            <h4>Brand Engraving</h4>
-            <p>Subtle engraving of your studio's logo on signature pieces.</p>
-          </div>
-        </div>
-        <a class="btn btn--primary" href="/en/contact/">Request Samples</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--sand">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Designed For</p>
-      <h2 class="text-h2">Built for spaces of distinction</h2>
-      <p class="text-lead">Pilates studios, hotels, clinics and private homes trust Base Movement to elevate the movement experience.</p>
-    </div>
-    <div class="designed-grid" data-reveal-group>
-      
-      <div class="designed-card">
-        <div class="designed-card__num">01</div>
-        <h3>Pilates Studios</h3>
-        <p>Professional equipment for boutique studios and reformer clinics.</p>
-      </div>
-      <div class="designed-card">
-        <div class="designed-card__num">02</div>
-        <h3>Hotels</h3>
-        <p>Wellness spaces that reflect the brand's standard of excellence.</p>
-      </div>
-      <div class="designed-card">
-        <div class="designed-card__num">03</div>
-        <h3>Physiotherapy Clinics</h3>
-        <p>Clinical precision paired with design that inspires confidence.</p>
-      </div>
-      <div class="designed-card">
-        <div class="designed-card__num">04</div>
-        <h3>Luxury Homes</h3>
-        <p>Private studios tailored to the space and taste of the client.</p>
-      </div>
-      <div class="designed-card">
-        <div class="designed-card__num">05</div>
-        <h3>Fitness Clubs</h3>
-        <p>Robust equipment, built for intensive use without compromising aesthetics.</p>
-      </div>
-      <div class="designed-card">
-        <div class="designed-card__num">06</div>
-        <h3>Wellness Centres</h3>
-        <p>Serene environments, where every detail invites mindful movement.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Trust</p>
-      <h2 class="text-h2">Why professionals choose Base Movement</h2>
-      <p class="text-lead">Discerning professionals choose us for the consistency between design, engineering and service.</p>
-    </div>
-    <div class="timeline">
-      
-      <div class="timeline-item" data-reveal style="--reveal-delay:0ms">
-        <h3>Premium Materials</h3>
-        <p>We select only responsibly sourced materials, tested for continuous professional use.</p>
-      </div>
-      <div class="timeline-item" data-reveal style="--reveal-delay:60ms">
+      <div class="manifesto__row">
+        <span class="num">03</span>
         <h3>Certified Quality</h3>
-        <p>Certified production, with quality control at every stage of the process.</p>
+        <p>Certified production to the highest safety standards.</p>
       </div>
-      <div class="timeline-item" data-reveal style="--reveal-delay:0ms">
-        <h3>Elegant Design</h3>
-        <p>A timeless visual language, designed to outlast trends.</p>
-      </div>
-      <div class="timeline-item" data-reveal style="--reveal-delay:60ms">
-        <h3>Professional Support</h3>
-        <p>A dedicated team, from first contact through ongoing equipment care.</p>
-      </div>
-      <div class="timeline-item" data-reveal style="--reveal-delay:0ms">
-        <h3>Long Durability</h3>
-        <p>Structures engineered for decades of intensive use in professional settings.</p>
-      </div>
-      <div class="timeline-item" data-reveal style="--reveal-delay:60ms">
-        <h3>Warranty</h3>
-        <p>Extended coverage on structure and mechanisms, with spare parts available.</p>
+      <div class="manifesto__row">
+        <span class="num">04</span>
+        <h3>Shipping Across Europe</h3>
+        <p>Careful logistics and assisted installation, from order to delivery.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--muted">
+<section class="chapter chapter--even " id="cap-i" data-chapter data-chapter-label="I">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">01</div>
   <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Gallery</p>
-      <h2 class="text-h2">Studios that inspire</h2>
-      <p class="text-lead">A selection of spaces equipped by Base Movement, where design and function exist in balance.</p>
+    <div class="chapter__head">
+      <div class="chapter__media" data-reveal="scale" data-zoom>
+        <img src="/assets/img/products/reformer-1.jpg" alt="The Reformer One — Reformer" width="1600" height="872" loading="lazy" decoding="async" class="photo ">
+        <span class="chapter__dim">236 × 74 × 39 cm</span>
+      </div>
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">I</span>
+          <span class="eyebrow">Chapter 01</span>
+        </div>
+        <h2 class="chapter__title" data-reveal>Reformer</h2>
+        <p class="chapter__tagline" data-reveal>The centrepiece of every studio of distinction.</p>
+        <p class="chapter__desc" data-reveal>The centrepiece of the modern studio. Solid maple frame with a silent carriage, precision spring system and technical upholstery.</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="/en/catalogue/reformer/">Explore the chapter <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
     </div>
-    <div class="masonry">
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">Drag — 26 models</p>
+      <div class="filmstrip" data-filmstrip>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/pr-tower.jpg" alt="Reformer with Tower — OKA — Reformer" width="1600" height="1514" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-001</p>
+          <h4>Reformer with Tower — OKA</h4>
+          <p class="series-card__dims">241 × 74 × 38,5 cm · Torre 200 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-001%20%E2%80%94%20Reformer%20with%20Tower%20%E2%80%94%20OKA">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-2.jpg" alt="Reformer — OKA — Reformer" width="1600" height="778" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-002</p>
+          <h4>Reformer — OKA</h4>
+          <p class="series-card__dims">236 × 74 × 38,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-002%20%E2%80%94%20Reformer%20%E2%80%94%20OKA">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/pr-folded-upright.jpg" alt="Upright Folding Reformer — Reformer" width="827" height="1299" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-004</p>
+          <h4>Upright Folding Reformer</h4>
+          <p class="series-card__dims">240 × 62 × 56 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-004%20%E2%80%94%20Upright%20Folding%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/pr-halftower.jpg" alt="Reformer with Half Tower — Reformer" width="1600" height="1444" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-005</p>
+          <h4>Reformer with Half Tower</h4>
+          <p class="series-card__dims">230,5 × 74 × 200 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-005%20%E2%80%94%20Reformer%20with%20Half%20Tower">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-4.jpg" alt="Compact Folding Reformer — Reformer" width="1600" height="563" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-006</p>
+          <h4>Compact Folding Reformer</h4>
+          <p class="series-card__dims">235 × 67 × 30,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-006%20%E2%80%94%20Compact%20Folding%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/pr-folding.jpg" alt="Folding Reformer — Maple — Reformer" width="1600" height="523" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-007</p>
+          <h4>Folding Reformer — Maple</h4>
+          <p class="series-card__dims">235 × 67 × 30,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-007%20%E2%80%94%20Folding%20Reformer%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-1.jpg" alt="Studio Reformer — Maple — Reformer" width="1600" height="872" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-008</p>
+          <h4>Studio Reformer — Maple</h4>
+          <p class="series-card__dims">236 × 74 × 38,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-008%20%E2%80%94%20Studio%20Reformer%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-1.jpg" alt="Full Track Reformer — Maple — Reformer" width="1600" height="872" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-009</p>
+          <h4>Full Track Reformer — Maple</h4>
+          <p class="series-card__dims">236,5 × 96 × 38,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-009%20%E2%80%94%20Full%20Track%20Reformer%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/pr-tower.jpg" alt="Reformer with Tower — Maple — Reformer" width="1600" height="1514" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-010</p>
+          <h4>Reformer with Tower — Maple</h4>
+          <p class="series-card__dims">241 × 74 × 38,5 cm · Torre 200 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-010%20%E2%80%94%20Reformer%20with%20Tower%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-single.jpg" alt="Reformer — Aluminium — Reformer" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-015</p>
+          <h4>Reformer — Aluminium</h4>
+          <p class="series-card__dims">240 × 67 × 35 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-015%20%E2%80%94%20Reformer%20%E2%80%94%20Aluminium">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-pair.jpg" alt="Raised Reformer — Aluminium — Reformer" width="1600" height="1318" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-016</p>
+          <h4>Raised Reformer — Aluminium</h4>
+          <p class="series-card__dims">238 × 74,5 × 102 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-016%20%E2%80%94%20Raised%20Reformer%20%E2%80%94%20Aluminium">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-pair.jpg" alt="Reformer with Tower — Aluminium — Reformer" width="1600" height="1318" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-017</p>
+          <h4>Reformer with Tower — Aluminium</h4>
+          <p class="series-card__dims">245 × 67 × 35 cm · Torre 200 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-017%20%E2%80%94%20Reformer%20with%20Tower%20%E2%80%94%20Aluminium">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-pair.jpg" alt="Raised Reformer with Tower — Aluminium — Reformer" width="1600" height="1318" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-018</p>
+          <h4>Raised Reformer with Tower — Aluminium</h4>
+          <p class="series-card__dims">238 × 74,5 × 186 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-018%20%E2%80%94%20Raised%20Reformer%20with%20Tower%20%E2%80%94%20Aluminium">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-3.jpg" alt="White Core Bed — Reformer" width="1600" height="482" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-019</p>
+          <h4>White Core Bed</h4>
+          <p class="series-card__dims">241 × 70 × 34 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-019%20%E2%80%94%20White%20Core%20Bed">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-3.jpg" alt="Full Track White Core Bed — Reformer" width="1600" height="482" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-020</p>
+          <h4>Full Track White Core Bed</h4>
+          <p class="series-card__dims">239 × 82 × 89 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-020%20%E2%80%94%20Full%20Track%20White%20Core%20Bed">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-3.jpg" alt="White Core Bed with Tower — Reformer" width="1600" height="482" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-021</p>
+          <h4>White Core Bed with Tower</h4>
+          <p class="series-card__dims">241 × 80 × 35 cm · Torre 205 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-021%20%E2%80%94%20White%20Core%20Bed%20with%20Tower">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/reformer-3.jpg" alt="Full Track White Core Bed with Tower — Reformer" width="1600" height="482" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-022</p>
+          <h4>Full Track White Core Bed with Tower</h4>
+          <p class="series-card__dims">240 × 82 × 196 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-022%20%E2%80%94%20Full%20Track%20White%20Core%20Bed%20with%20Tower">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/metal-frame.jpg" alt="Full Track Black Core Bed — Reformer" width="1502" height="684" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-024</p>
+          <h4>Full Track Black Core Bed</h4>
+          <p class="series-card__dims">239 × 90 × 73 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-024%20%E2%80%94%20Full%20Track%20Black%20Core%20Bed">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/metal-frame.jpg" alt="Full Track Black Core Bed with Tower — Reformer" width="1502" height="684" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-025</p>
+          <h4>Full Track Black Core Bed with Tower</h4>
+          <p class="series-card__dims">239 × 90 × 196 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-025%20%E2%80%94%20Full%20Track%20Black%20Core%20Bed%20with%20Tower">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/wall-mounted.jpg" alt="Wall-Mounted Reformer — Reformer" width="728" height="1600" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-028</p>
+          <h4>Wall-Mounted Reformer</h4>
+          <p class="series-card__dims">183 × 59 × 7 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-028%20%E2%80%94%20Wall-Mounted%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/megaformer-low.jpg" alt="Megaformer — Reformer" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-031</p>
+          <h4>Megaformer</h4>
+          <p class="series-card__dims">320 × 120 × 107 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-031%20%E2%80%94%20Megaformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/megaformer.jpg" alt="Studio Training Tower — Reformer" width="1600" height="1600" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-032</p>
+          <h4>Studio Training Tower</h4>
+          <p class="series-card__dims">129 × 93 × 212 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-032%20%E2%80%94%20Studio%20Training%20Tower">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-single.jpg" alt="Lightweight Home Reformer — Reformer" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-S1E</p>
+          <h4>Lightweight Home Reformer</h4>
+          <p class="series-card__dims">190 × 57 × 64 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-S1E%20%E2%80%94%20Lightweight%20Home%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-single.jpg" alt="Home Reformer — Reformer" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-S1</p>
+          <h4>Home Reformer</h4>
+          <p class="series-card__dims">197 × 57 × 72,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-S1%20%E2%80%94%20Home%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-single.jpg" alt="Extended Track Home Reformer — Reformer" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-S2</p>
+          <h4>Extended Track Home Reformer</h4>
+          <p class="series-card__dims">197 × 57 × 72,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-S2%20%E2%80%94%20Extended%20Track%20Home%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/alu-single.jpg" alt="Extended Frame Home Reformer — Reformer" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-S3</p>
+          <h4>Extended Frame Home Reformer</h4>
+          <p class="series-card__dims">234 × 64 × 63,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-S3%20%E2%80%94%20Extended%20Frame%20Home%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="chapter chapter--odd chapter--muted" id="cap-ii" data-chapter data-chapter-label="II">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">02</div>
+  <div class="container">
+    <div class="chapter__head">
+      <div class="chapter__media" data-reveal="scale" data-zoom>
+        <img src="/assets/img/products/cadillac-1.jpg" alt="The Cadillac Frame — Cadillac" width="1600" height="1598" loading="lazy" decoding="async" class="photo ">
+        <span class="chapter__dim">231 × 74 × 200 cm</span>
+      </div>
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">II</span>
+          <span class="eyebrow">Chapter 02</span>
+        </div>
+        <h2 class="chapter__title" data-reveal>Cadillac</h2>
+        <p class="chapter__tagline" data-reveal>Range of movement within a sculptural frame.</p>
+        <p class="chapter__desc" data-reveal>Range and clinical versatility. A complete tower with bars, springs and precision straps, designed as an architectural centrepiece for any studio.</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="/en/catalogue/cadillac/">Explore the chapter <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">Drag — 8 models</p>
+      <div class="filmstrip" data-filmstrip>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/cad-beech.jpg" alt="Cadillac Reformer — Beech — Cadillac" width="1600" height="1594" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-003</p>
+          <h4>Cadillac Reformer — Beech</h4>
+          <p class="series-card__dims">234 × 77,5 × 201 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-003%20%E2%80%94%20Cadillac%20Reformer%20%E2%80%94%20Beech">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/cadillac-2.jpg" alt="Cadillac Reformer — Cadillac" width="1471" height="1600" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-011</p>
+          <h4>Cadillac Reformer</h4>
+          <p class="series-card__dims">224,5 × 78 × 200 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-011%20%E2%80%94%20Cadillac%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/cadillac-1.jpg" alt="Cadillac with Tower — Cadillac" width="1600" height="1598" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-012</p>
+          <h4>Cadillac with Tower</h4>
+          <p class="series-card__dims">230,5 × 74 × 200 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-012%20%E2%80%94%20Cadillac%20with%20Tower">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/cadillac-3.jpg" alt="High Cadillac Reformer — Cadillac" width="1500" height="1600" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-013</p>
+          <h4>High Cadillac Reformer</h4>
+          <p class="series-card__dims">225 × 87,5 × 200 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-013%20%E2%80%94%20High%20Cadillac%20Reformer">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/cadillac-4.jpg" alt="Compact Cadillac — Cadillac" width="1600" height="1316" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-014</p>
+          <h4>Compact Cadillac</h4>
+          <p class="series-card__dims">236 × 74 × 38,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-014%20%E2%80%94%20Compact%20Cadillac">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/ladder-tower.jpg" alt="Two-Way Ladder Bed — Cadillac" width="1222" height="1600" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-027</p>
+          <h4>Two-Way Ladder Bed</h4>
+          <p class="series-card__dims">183 × 94,5 × 233,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-027%20%E2%80%94%20Two-Way%20Ladder%20Bed">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/gyrotonic.jpg" alt="Gyrotonic Tower — Maple — Cadillac" width="1567" height="1600" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-029</p>
+          <h4>Gyrotonic Tower — Maple</h4>
+          <p class="series-card__dims">165 × 59 × 90 cm · Torre 198 × 17 × 199 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-029%20%E2%80%94%20Gyrotonic%20Tower%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/gyrotonic.jpg" alt="Gyrotonic Tower — Beech — Cadillac" width="1567" height="1600" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PR-030</p>
+          <h4>Gyrotonic Tower — Beech</h4>
+          <p class="series-card__dims">165 × 59 × 90 cm · Torre 198 × 17 × 199 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PR-030%20%E2%80%94%20Gyrotonic%20Tower%20%E2%80%94%20Beech">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="chapter chapter--even " id="cap-iii" data-chapter data-chapter-label="III">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">03</div>
+  <div class="container">
+    <div class="chapter__head">
+      <div class="chapter__media" data-reveal="scale" data-zoom>
+        <img src="/assets/img/products/chair-1.jpg" alt="The Combo Chair — Chair" width="1030" height="1358" loading="lazy" decoding="async" class="photo ">
+        <span class="chapter__dim">85 × 68 × 60 cm</span>
+      </div>
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">III</span>
+          <span class="eyebrow">Chapter 03</span>
+        </div>
+        <h2 class="chapter__title" data-reveal>Chair</h2>
+        <p class="chapter__tagline" data-reveal>Compact in form, demanding in movement.</p>
+        <p class="chapter__desc" data-reveal>Precision at a compact scale. A compact solid-wood frame with variable-resistance split pedal and high handles, ideal for boutique studios and precision sessions.</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="/en/catalogue/chair/">Explore the chapter <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">Drag — 2 models</p>
+      <div class="filmstrip" data-filmstrip>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/chair-1.jpg" alt="Combo Chair — Maple — Chair" width="1030" height="1358" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PC-001</p>
+          <h4>Combo Chair — Maple</h4>
+          <p class="series-card__dims">85 × 67,5 × 59,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PC-001%20%E2%80%94%20Combo%20Chair%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/chair-2.jpg" alt="Combo Chair — Beech — Chair" width="1020" height="1340" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. PC-002</p>
+          <h4>Combo Chair — Beech</h4>
+          <p class="series-card__dims">81 × 57,5 × 61 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=PC-002%20%E2%80%94%20Combo%20Chair%20%E2%80%94%20Beech">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="chapter chapter--odd chapter--muted" id="cap-iv" data-chapter data-chapter-label="IV">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">04</div>
+  <div class="container">
+    <div class="chapter__head">
+      <div class="chapter__media" data-reveal="scale" data-zoom>
+        <img src="/assets/img/products/barrel-1.jpg" alt="The Ladder Barrel — Barrel" width="1330" height="1358" loading="lazy" decoding="async" class="photo ">
+        <span class="chapter__dim">111 × 62 × 98 cm</span>
+      </div>
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">IV</span>
+          <span class="eyebrow">Chapter 04</span>
+        </div>
+        <h2 class="chapter__title" data-reveal>Barrel</h2>
+        <p class="chapter__tagline" data-reveal>Precise curvature for extension and mobility.</p>
+        <p class="chapter__desc" data-reveal>Spinal extension and mobility. Curved wood barrel finished in technical upholstery, with an adjustable rung ladder for spinal extension, stretching and mobility work in comfort and safety.</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="/en/catalogue/barrel/">Explore the chapter <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">Drag — 2 models</p>
+      <div class="filmstrip" data-filmstrip>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/barrel-1.jpg" alt="Ladder Barrel — Maple — Barrel" width="1330" height="1358" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. LB-001</p>
+          <h4>Ladder Barrel — Maple</h4>
+          <p class="series-card__dims">111 × 62 × 98 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=LB-001%20%E2%80%94%20Ladder%20Barrel%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/barrel-2.jpg" alt="Ladder Barrel — Beech — Barrel" width="1340" height="1340" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. LB-002</p>
+          <h4>Ladder Barrel — Beech</h4>
+          <p class="series-card__dims">111 × 62 × 98 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=LB-002%20%E2%80%94%20Ladder%20Barrel%20%E2%80%94%20Beech">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="chapter chapter--even " id="cap-v" data-chapter data-chapter-label="V">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">05</div>
+  <div class="container">
+    <div class="chapter__head">
+      <div class="chapter__media" data-reveal="scale" data-zoom>
+        <img src="/assets/img/products/spine-1.jpg" alt="The Corrector Arc — Spine Corrector" width="1350" height="1358" loading="lazy" decoding="async" class="photo ">
+        <span class="chapter__dim">94 × 48 × 33 cm</span>
+      </div>
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">V</span>
+          <span class="eyebrow">Chapter 05</span>
+        </div>
+        <h2 class="chapter__title" data-reveal>Spine Corrector</h2>
+        <p class="chapter__tagline" data-reveal>Sculptural support for the spine.</p>
+        <p class="chapter__desc" data-reveal>Sculptural support for the spine. Solid-wood arc finished in technical upholstery, designed for safe, progressive spinal lengthening.</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="/en/catalogue/spine-corrector/">Explore the chapter <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">Drag — 2 models</p>
+      <div class="filmstrip" data-filmstrip>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/spine-1.jpg" alt="Spine Corrector — Maple — Spine Corrector" width="1350" height="1358" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. SC-001</p>
+          <h4>Spine Corrector — Maple</h4>
+          <p class="series-card__dims">94 × 47,5 × 32,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=SC-001%20%E2%80%94%20Spine%20Corrector%20%E2%80%94%20Maple">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="series-card">
+        <div class="media-frame"><img src="/assets/img/products/spine-2.jpg" alt="Spine Corrector — Beech — Spine Corrector" width="1347" height="1340" loading="lazy" decoding="async" class="photo "></div>
+        <div class="series-card__body">
+          <p class="series-card__ref">Ref. SC-002</p>
+          <h4>Spine Corrector — Beech</h4>
+          <p class="series-card__dims">94 × 47,5 × 32,5 cm</p>
+          <a class="icon-link" href="/en/contact/?produto=SC-002%20%E2%80%94%20Spine%20Corrector%20%E2%80%94%20Beech">Request a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="matter" id="materia">
+  <div class="living living--dark"></div>
+  <div class="container" style="position:relative;">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Interlude</p>
+      <h2 class="text-h2">The matter</h2>
+      <p class="text-lead">Every piece begins here: in the touch of the upholstery, the grain of the wood, the silence of the metal.</p>
+    </div>
+    <div class="matter__bands" data-reveal-group>
       
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:0ms">
-        <img src="/assets/img/products/cadillac-1.jpg" alt="Maple Cadillac with black upholstery" width="1600" height="1598" loading="lazy" decoding="async" class="photo ">
+      <a class="matter__band" href="/en/#personalizacao-detalhe" data-band>
+        <img src="/assets/img/products/fabric.jpg" alt="Upholstery" width="1600" height="907" loading="lazy" decoding="async" class="photo ">
+        <span class="matter__band-label">
+          <span class="big">Upholstery</span>
+          <span class="sub">Technical fabrics in sand tones</span>
+        </span>
+      </a>
+      <a class="matter__band" href="/en/#personalizacao-detalhe" data-band>
+        <img src="/assets/img/products/reformer-2.jpg" alt="Wood" width="1600" height="778" loading="lazy" decoding="async" class="photo ">
+        <span class="matter__band-label">
+          <span class="big">Wood</span>
+          <span class="sub">Responsibly sourced maple and beech</span>
+        </span>
+      </a>
+      <a class="matter__band" href="/en/#personalizacao-detalhe" data-band>
+        <img src="/assets/img/products/metal-frame.jpg" alt="Metal" width="1502" height="684" loading="lazy" decoding="async" class="photo ">
+        <span class="matter__band-label">
+          <span class="big">Metal</span>
+          <span class="sub">Precision steel and aluminium</span>
+        </span>
+      </a>
+    </div>
+    <div id="personalizacao-detalhe" style="margin-top:var(--space-2xl);display:grid;gap:var(--space-md);grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));" data-reveal-group>
+      
+      <div class="customisation-option">
+        <h4 style="color:var(--c-gold);">Colours</h4>
+        <p style="color:rgba(248,248,246,0.65);">A carefully curated palette of neutral tones and discreet accents.</p>
       </div>
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:70ms">
-        <img src="/assets/img/products/reformer-1.jpg" alt="Professional maple reformer" width="1600" height="872" loading="lazy" decoding="async" class="photo ">
+      <div class="customisation-option">
+        <h4 style="color:var(--c-gold);">Upholstery</h4>
+        <p style="color:rgba(248,248,246,0.65);">Technical fabrics and premium synthetic leather, built for professional use.</p>
       </div>
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:140ms">
-        <img src="/assets/img/products/ladder-tower.jpg" alt="Wooden ladder tower" width="1222" height="1600" loading="lazy" decoding="async" class="photo ">
+      <div class="customisation-option">
+        <h4 style="color:var(--c-gold);">Wood Finishes</h4>
+        <p style="color:rgba(248,248,246,0.65);">Oak, walnut and beech, in natural or lacquered finish.</p>
       </div>
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:210ms">
-        <img src="/assets/img/products/fabric.jpg" alt="Technical upholstery in cream tone" width="1600" height="907" loading="lazy" decoding="async" class="photo ">
+      <div class="customisation-option">
+        <h4 style="color:var(--c-gold);">Metal Colours</h4>
+        <p style="color:rgba(248,248,246,0.65);">Frames in matte black, brushed brass or stainless steel.</p>
       </div>
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:0ms">
-        <img src="/assets/img/products/reformer-2.jpg" alt="Wood reformer with black carriage" width="1600" height="778" loading="lazy" decoding="async" class="photo ">
+      <div class="customisation-option">
+        <h4 style="color:var(--c-gold);">Brand Engraving</h4>
+        <p style="color:rgba(248,248,246,0.65);">Subtle engraving of your studio's logo on signature pieces.</p>
       </div>
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:70ms">
-        <img src="/assets/img/products/trio-beech.jpg" alt="Beech Chair, Ladder Barrel and Spine Corrector" width="1600" height="593" loading="lazy" decoding="async" class="photo ">
+    </div>
+    <div style="margin-top:var(--space-xl);" data-reveal>
+      <a class="btn btn--gold btn--magnetic" href="/en/contact/">Request Samples</a>
+    </div>
+  </div>
+</section>
+
+<section class="chapter chapter--even" id="cap-vi" data-chapter data-chapter-label="VI">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">06</div>
+  <div class="container">
+    <div class="chapter__head">
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">VI</span>
+          <span class="eyebrow">Chapter 06</span>
+        </div>
+        <h2 class="chapter__title" data-reveal>The Details</h2>
+        <p class="chapter__desc" data-reveal>Fifty-four objects that complete the practice — cream-toned weights, natural cork, studio textiles.</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="/en/catalogue/accessories/">See all accessories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
       </div>
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:140ms">
-        <img src="/assets/img/products/cadillac-4.jpg" alt="Complete Cadillac frame" width="1600" height="1316" loading="lazy" decoding="async" class="photo ">
-      </div>
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:210ms">
+      <div class="chapter__media" data-reveal="scale" data-zoom>
         <img src="/assets/img/products/acc-blocks.jpg" alt="Natural cork accessories" width="1600" height="1600" loading="lazy" decoding="async" class="photo ">
       </div>
     </div>
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">Drag — 54 objects</p>
+      <div class="filmstrip" data-filmstrip>
+        
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/acc-board.jpg" alt="Folding Pilates Board — Base Movement" width="1600" height="1600" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Folding Pilates Board</h4>
+          <p>99 × 41 × 6,5 cm · 3 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-2.jpg" alt="Reformer Board with Carriage — Base Movement" width="420" height="600" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Reformer Board with Carriage</h4>
+          <p>152 × 55 × 13,5 cm · 8,7 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-3.jpg" alt="Board with Straps and Handles — Base Movement" width="1125" height="1125" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Board with Straps and Handles</h4>
+          <p>106 × 41 × 7 cm · 4,6 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-6.jpg" alt="Complete Training Board — Base Movement" width="581" height="564" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Complete Training Board</h4>
+          <p>106 × 41 × 7 cm · 5,5 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-5.jpg" alt="Multi-Function Training Bar — Base Movement" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Multi-Function Training Bar</h4>
+          <p>145 × 15 × 14 cm · 2,35 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-1.jpg" alt="Compact Board — Base Movement" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Compact Board</h4>
+          <p>102 × 36 × 6 cm · 2,85 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-7.jpg" alt="A-Frame Folding Board — Base Movement" width="1125" height="1125" loading="lazy" decoding="async" class="photo "></div>
+          <h4>A-Frame Folding Board</h4>
+          <p>100 × 41 × 4,5 cm · 4 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-8.jpg" alt="Wooden Board — Base Movement" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Wooden Board</h4>
+          <p>83 × 43 × 6 cm · 7 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/board-4.jpg" alt="Board with Wheels — Base Movement" width="800" height="800" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Board with Wheels</h4>
+          <p>120 × 38 × 38 cm · 8 kg</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/acc-rings.jpg" alt="Weighted Rings — Base Movement" width="630" height="580" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Weighted Rings</h4>
+          <p>2,3 e 4,5 kg · silicone + ferro</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/acc-bracelet.jpg" alt="Square Weighted Bracelet — Base Movement" width="576" height="490" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Square Weighted Bracelet</h4>
+          <p>0,25–1 kg por par · velcro</p>
+        </div>
+        <div class="accessory-card">
+          <div class="media-frame"><img src="/assets/img/products/acc-flat-dumbbell.jpg" alt="Handprint Dumbbells — Base Movement" width="589" height="417" loading="lazy" decoding="async" class="photo "></div>
+          <h4>Handprint Dumbbells</h4>
+          <p>1–2,5 kg · silicone + ferro</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ticker" aria-label="Built for spaces of distinction">
+  <div class="ticker__inner"><span class="ticker__item">Pilates Studios</span><span class="ticker__item">Hotels</span><span class="ticker__item">Physiotherapy Clinics</span><span class="ticker__item">Luxury Homes</span><span class="ticker__item">Fitness Clubs</span><span class="ticker__item">Wellness Centres</span><span class="ticker__item">Pilates Studios</span><span class="ticker__item">Hotels</span><span class="ticker__item">Physiotherapy Clinics</span><span class="ticker__item">Luxury Homes</span><span class="ticker__item">Fitness Clubs</span><span class="ticker__item">Wellness Centres</span></div>
+</section>
+
+<section class="quotes">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Voices</p>
+      <h2 class="text-h2">The trust of those who work with us</h2>
+    </div>
+  </div>
+  <div class="quotes__strip" data-filmstrip>
+    
+    <div class="quote-slide">
+      <blockquote>The quality of the equipment and the attention to detail completely transformed our studio experience.</blockquote>
+      <footer><cite>Mariana Oliveira</cite><span class="role">Director, Studio Nove — Lisbon</span></footer>
+    </div>
+    <div class="quote-slide">
+      <blockquote>An impeccable customisation process, from first sketch to final installation. A result worthy of our brand.</blockquote>
+      <footer><cite>Rui Ferreira</cite><span class="role">Founder, Reform Atelier — Porto</span></footer>
+    </div>
+    <div class="quote-slide">
+      <blockquote>Robust, elegant equipment, and a service that feels genuinely premium at every step.</blockquote>
+      <footer><cite>Beatriz Nunes</cite><span class="role">Wellness Director, Aurora Hotel & Spa</span></footer>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Testimonials</p>
-      <h2 class="text-h2">The trust of those who work with us</h2>
-    </div>
-    <div class="testimonial-grid" data-reveal-group>
-      
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;The quality of the equipment and the attention to detail completely transformed our studio experience.&rdquo;</blockquote>
-        <footer>
-          <cite>Mariana Oliveira</cite>
-          <span class="role">Director, Studio Nove — Lisbon</span>
-        </footer>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;An impeccable customisation process, from first sketch to final installation. A result worthy of our brand.&rdquo;</blockquote>
-        <footer>
-          <cite>Rui Ferreira</cite>
-          <span class="role">Founder, Reform Atelier — Porto</span>
-        </footer>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;Robust, elegant equipment, and a service that feels genuinely premium at every step.&rdquo;</blockquote>
-        <footer>
-          <cite>Beatriz Nunes</cite>
-          <span class="role">Wellness Director, Aurora Hotel & Spa</span>
-        </footer>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--muted">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Frequently Asked Questions</p>
+      <p class="eyebrow eyebrow--center">Final Notes</p>
       <h2 class="text-h2">Everything you need to know</h2>
     </div>
     <div class="faq-list" data-reveal>
@@ -515,22 +920,13 @@
   </div>
 </section>
 
-<section class="section section--dark final-cta">
-  <div class="hero__media" data-parallax="0.08" style="opacity:0.5;">
-    <div class="art-placeholder art-placeholder--ink art-placeholder--fill ">
-    <span class="art-placeholder__glyph"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" aria-hidden="true"><line x1="10" y1="150" x2="190" y2="150"/>
-     <line x1="40" y1="150" x2="40" y2="20"/>
-     <line x1="160" y1="150" x2="160" y2="20"/>
-     <line x1="10" y1="20" x2="190" y2="20"/>
-     <rect x="70" y="90" width="60" height="60"/>
-     <circle cx="100" cy="120" r="14"/></svg></span>
-    
-  </div>
-  </div>
-  <div class="container final-cta__inner" data-reveal>
-    <h2 class="text-h2">Let's build your next studio.</h2>
-    <p class="text-lead" style="color:rgba(248,248,246,0.75);">Speak with our team and discover how to equip your space with the excellence your project deserves.</p>
-    <a class="btn btn--gold" href="/en/contact/">Get in Touch</a>
+<section class="epilogue" id="epilogo" data-chapter data-chapter-label="∞">
+  <div class="living living--dark"></div>
+  <div class="container epilogue__content">
+    <p class="eyebrow eyebrow--center" style="color:var(--c-gold);" data-reveal>Epilogue</p>
+    <h2 data-reveal>Let's build your next <em>studio.</em></h2>
+    <p data-reveal>Speak with our team and discover how to equip your space with the excellence your project deserves.</p>
+    <a class="btn btn--gold btn--magnetic" href="/en/contact/" data-reveal>Get in Touch</a>
   </div>
 </section>
   </main>

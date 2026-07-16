@@ -125,25 +125,28 @@ export function productPage({ locale, t, product, category }) {
       <h2 class="text-h2">${t.product.seriesHeading}</h2>
       <p class="text-lead">${t.product.seriesIntro}</p>
     </div>
-    <div class="series-grid">
-      ${product.series
-        .map(
-          (model, i) => `
-      <div class="series-card" data-reveal style="--reveal-delay:${(i % 4) * 60}ms">
-        <div class="media-frame">
-          ${photo(model.image, `${model.name[locale]} — ${category.name[locale]}`)}
-        </div>
-        <div class="series-card__body">
-          <p class="series-card__ref">${t.product.refLabel} ${model.sku}</p>
-          <h3>${model.name[locale]}</h3>
-          <p class="series-card__dims">${model.dims}</p>
-          <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " — " + model.name[locale])}" aria-label="${t.product.quoteFor}">
-            ${t.product.requestQuote} ${icon("arrowRight")}
-          </a>
-        </div>
-      </div>`
-        )
-        .join("")}
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">${product.series.length} ${locale === "pt" ? "modelos" : "models"}</p>
+      <div class="filmstrip" data-filmstrip>
+        ${product.series
+          .map(
+            (model) => `
+        <div class="series-card">
+          <div class="media-frame">
+            ${photo(model.image, `${model.name[locale]} — ${category.name[locale]}`)}
+          </div>
+          <div class="series-card__body">
+            <p class="series-card__ref">${t.product.refLabel} ${model.sku}</p>
+            <h3>${model.name[locale]}</h3>
+            <p class="series-card__dims">${model.dims}</p>
+            <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " — " + model.name[locale])}" aria-label="${t.product.quoteFor}">
+              ${t.product.requestQuote} ${icon("arrowRight")}
+            </a>
+          </div>
+        </div>`
+          )
+          .join("")}
+      </div>
     </div>
   </div>
 </section>

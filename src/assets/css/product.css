@@ -164,12 +164,14 @@
   text-transform: uppercase;
   color: var(--c-text-muted);
 }
-.series-card__body h3 {
+.series-card__body h3,
+.series-card__body h4 {
   font-family: var(--font-body);
   font-size: var(--fs-small);
   font-weight: 600;
   line-height: 1.35;
 }
+.accessory-card h4 { font-size: var(--fs-h4); font-family: var(--font-body); font-weight: 600; }
 .series-card__dims {
   font-size: 0.8rem;
   color: var(--c-text-muted);

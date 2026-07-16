@@ -352,5 +352,63 @@
     "notFoundTitle": "Página não encontrada",
     "notFoundText": "A página que procura não existe ou foi movida.",
     "backHome": "Voltar ao Início"
+  },
+  "experience": {
+    "prologueIntro": "Respire.",
+    "chapterLabel": "Capítulo",
+    "dragHint": "Arraste",
+    "viewHint": "Ver",
+    "exploreChapter": "Explorar o capítulo",
+    "manifestoWords": [
+      "Precisão.",
+      "Silêncio.",
+      "Movimento."
+    ],
+    "manifestoLead": "Equipamento de Pilates concebido como arquitetura — estrutura, proporção e calma. Uma coleção para estúdios que tratam o movimento como uma forma de design.",
+    "manifestoIndex": [
+      {
+        "num": "01",
+        "title": "Equipamentos Premium",
+        "text": "Materiais nobres e engenharia precisa, para uso profissional intensivo."
+      },
+      {
+        "num": "02",
+        "title": "Personalização Total",
+        "text": "Cores, estofos, madeiras e gravação — cada peça reflete o seu espaço."
+      },
+      {
+        "num": "03",
+        "title": "Qualidade Certificada",
+        "text": "Produção certificada segundo os mais altos padrões de segurança."
+      },
+      {
+        "num": "04",
+        "title": "Envio para toda a Europa",
+        "text": "Logística cuidada e instalação assistida, do pedido à entrega."
+      }
+    ],
+    "matterEyebrow": "Interlúdio",
+    "matterTitle": "A matéria",
+    "matterIntro": "Cada peça começa aqui: no tacto do estofo, no veio da madeira, no silêncio do metal.",
+    "matterBands": [
+      {
+        "label": "Estofo",
+        "sub": "Tecidos técnicos em tons de areia"
+      },
+      {
+        "label": "Madeira",
+        "sub": "Bordo e faia de origem responsável"
+      },
+      {
+        "label": "Metal",
+        "sub": "Aço e alumínio de precisão"
+      }
+    ],
+    "quotesEyebrow": "Vozes",
+    "epilogueEyebrow": "Epílogo",
+    "accessoriesChapterTitle": "Os Detalhes",
+    "accessoriesChapterText": "Cinquenta e quatro objetos que completam a prática — pesos em tons de creme, cortiça natural, têxteis de estúdio.",
+    "accessoriesCta": "Ver todos os acessórios",
+    "faqEyebrow": "Notas Finais"
   }
 }

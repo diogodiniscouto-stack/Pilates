@@ -1,37 +1,49 @@
 import { icon } from "../icons.mjs";
-import { art } from "../art.mjs";
 import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 import categoriesData from "../../data/categories.json" with { type: "json" };
+import productsData from "../../data/products.json" with { type: "json" };
 
-const whyIcons = ["gem", "sliders", "shieldCheck", "truck"];
+const ROMANS = ["I", "II", "III", "IV", "V", "VI"];
 
 function categoryHref(locale, cat) {
   return cat.productSlug ? path(locale, "product", cat.productSlug) : path(locale, "accessories");
 }
 
+/* Split the two headline lines, italicising one word for editorial rhythm */
+function headlineLines(t) {
+  return t.hero.headlineLines
+    .map((line, i) => {
+      const words = line.split(" ");
+      const last = words.pop().replace(/\.$/, "");
+      const lead = words.join(" ");
+      return `<span class="line"><span style="--line-delay:${200 + i * 160}ms">${lead} <em>${last}.</em></span></span>`;
+    })
+    .join("");
+}
+
 export function homePage({ locale, t }) {
   const contact = path(locale, "contact");
   const catalogue = path(locale, "catalogue");
+  const x = t.experience;
 
+  /* ---------- Prologue ---------- */
   const heroAlt =
     locale === "pt"
       ? "Estúdio Base Movement — reformer com torre e acessórios em tons neutros"
       : "Base Movement studio — tower reformer and accessories in neutral tones";
-  const hero = `
-<section class="hero hero--light">
-  <div class="hero__media" data-hero-media data-parallax="0.1">
+  const prologue = `
+<section class="prologue" id="prologo" data-chapter data-chapter-label="✳">
+  <div class="prologue__media" data-hero-media data-parallax="0.1">
     ${photo("hero", heroAlt, { eager: true, extraClass: "hero__photo" })}
   </div>
-  <div class="container hero__content">
-    <p class="eyebrow">${t.hero.eyebrow}</p>
-    <h1 class="hero__headline">
-      ${t.hero.headlineLines.map((line, i) => `<span class="line"><span style="--line-delay:${150 + i * 130}ms">${line}</span></span>`).join("")}
-    </h1>
-    <p class="hero__sub">${t.hero.subheadline}</p>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="${catalogue}">${t.hero.ctaPrimary}</a>
-      <a class="btn btn--secondary" href="${contact}">${t.hero.ctaSecondary}</a>
+  <div class="container prologue__content">
+    <p class="prologue__breathe" data-reveal="fade">${x.prologueIntro}</p>
+    <h1 class="prologue__headline">${headlineLines(t)}</h1>
+    <p class="prologue__sub" data-reveal style="--reveal-delay:350ms">${t.hero.subheadline}</p>
+    <div class="prologue__actions" data-reveal style="--reveal-delay:500ms">
+      <a class="btn btn--primary btn--magnetic" href="${catalogue}">${t.hero.ctaPrimary}</a>
+      <a class="btn btn--secondary btn--magnetic" href="${contact}">${t.hero.ctaSecondary}</a>
     </div>
   </div>
   <div class="hero__scroll">
@@ -40,22 +52,23 @@ export function homePage({ locale, t }) {
   </div>
 </section>`;
 
-  const why = `
-<section class="section" id="porque">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">${t.why.eyebrow}</p>
-      <h2 class="text-h2">${t.why.heading}</h2>
-      <p class="text-lead">${t.why.intro}</p>
-    </div>
-    <div class="why-grid" data-reveal-group>
-      ${t.why.cards
+  /* ---------- Manifesto ---------- */
+  const manifesto = `
+<section class="manifesto" id="manifesto">
+  <div class="living"></div>
+  <div class="container" style="position:relative;">
+    <h2 class="manifesto__words" aria-label="${x.manifestoWords.join(" ")}">
+      ${x.manifestoWords.map((w, i) => `<span class="word" data-reveal style="--reveal-delay:${i * 140}ms"><span>${w}</span></span>`).join("")}
+    </h2>
+    <p class="manifesto__lead" data-reveal>${x.manifestoLead}</p>
+    <div class="manifesto__index" data-reveal-group>
+      ${x.manifestoIndex
         .map(
-          (card, i) => `
-      <div class="why-card">
-        <div class="why-card__icon">${icon(whyIcons[i % whyIcons.length])}</div>
-        <h3>${card.title}</h3>
-        <p>${card.text}</p>
+          (row) => `
+      <div class="manifesto__row">
+        <span class="num">${row.num}</span>
+        <h3>${row.title}</h3>
+        <p>${row.text}</p>
       </div>`
         )
         .join("")}
@@ -63,173 +76,180 @@ export function homePage({ locale, t }) {
   </div>
 </section>`;
 
-  const categories = `
-<section class="section section--muted" id="catalogo">
-  <div class="container">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">${t.categories.eyebrow}</p>
-      <h2 class="text-h2">${t.categories.heading}</h2>
-      <p class="text-lead">${t.categories.intro}</p>
-    </div>
-    <div class="category-grid">
-      ${categoriesData
+  /* ---------- Chapters I–V (equipment) ---------- */
+  const chapters = productsData.products
+    .map((product, i) => {
+      const cat = categoriesData.find((c) => c.key === product.categoryKey);
+      const roman = ROMANS[i];
+      const odd = i % 2 === 1;
+      const href = categoryHref(locale, cat);
+      const dims = product.dimensions;
+      const strip = product.series
         .map(
-          (cat, i) => `
-      <a class="category-card" href="${categoryHref(locale, cat)}" data-reveal style="--reveal-delay:${i * 80}ms">
-        <div class="media-frame">
-          ${photo(cat.image, `${cat.name[locale]} — Base Movement`)}
+          (model) => `
+      <div class="series-card">
+        <div class="media-frame">${photo(model.image, `${model.name[locale]} — ${cat.name[locale]}`)}</div>
+        <div class="series-card__body">
+          <p class="series-card__ref">${t.product.refLabel} ${model.sku}</p>
+          <h4>${model.name[locale]}</h4>
+          <p class="series-card__dims">${model.dims}</p>
+          <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " — " + model.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
         </div>
-        <div class="category-card__title">
-          <h3>${cat.name[locale]}</h3>
-          ${icon("arrowUpRight")}
+      </div>`
+        )
+        .join("");
+
+      return `
+<section class="chapter ${odd ? "chapter--odd" : "chapter--even"} ${i % 2 === 0 ? "" : "chapter--muted"}" id="cap-${roman.toLowerCase()}" data-chapter data-chapter-label="${roman}">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">${String(i + 1).padStart(2, "0")}</div>
+  <div class="container">
+    <div class="chapter__head">
+      <div class="chapter__media" data-reveal="scale" data-zoom>
+        ${photo(product.images[0], `${product.name} — ${cat.name[locale]}`)}
+        <span class="chapter__dim">${dims.length_cm} × ${dims.width_cm} × ${dims.height_cm} cm</span>
+      </div>
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">${roman}</span>
+          <span class="eyebrow">${x.chapterLabel} ${String(i + 1).padStart(2, "0")}</span>
         </div>
-        <p>${cat.shortDescription[locale]}</p>
+        <h2 class="chapter__title" data-reveal>${cat.name[locale]}</h2>
+        <p class="chapter__tagline" data-reveal>${product.tagline[locale]}</p>
+        <p class="chapter__desc" data-reveal>${cat.shortDescription[locale]} ${product.description[locale].split(".")[0]}.</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="${href}">${x.exploreChapter} ${icon("arrowUpRight")}</a>
+        </div>
+      </div>
+    </div>
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">${x.dragHint} — ${product.series.length} ${locale === "pt" ? "modelos" : "models"}</p>
+      <div class="filmstrip" data-filmstrip>${strip}</div>
+    </div>
+  </div>
+</section>`;
+    })
+    .join("");
+
+  /* ---------- Interlude: matter ---------- */
+  const matterImages = ["fabric", "reformer-2", "metal-frame"];
+  const matter = `
+<section class="matter" id="materia">
+  <div class="living living--dark"></div>
+  <div class="container" style="position:relative;">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">${x.matterEyebrow}</p>
+      <h2 class="text-h2">${x.matterTitle}</h2>
+      <p class="text-lead">${x.matterIntro}</p>
+    </div>
+    <div class="matter__bands" data-reveal-group>
+      ${x.matterBands
+        .map(
+          (band, i) => `
+      <a class="matter__band" href="${path(locale, "home")}#personalizacao-detalhe" data-band>
+        ${photo(matterImages[i], band.label)}
+        <span class="matter__band-label">
+          <span class="big">${band.label}</span>
+          <span class="sub">${band.sub}</span>
+        </span>
       </a>`
         )
         .join("")}
     </div>
-    <div class="categories-footer" data-reveal>
-      <a class="btn btn--secondary" href="${catalogue}">${t.categories.viewAll}</a>
+    <div id="personalizacao-detalhe" style="margin-top:var(--space-2xl);display:grid;gap:var(--space-md);grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));" data-reveal-group>
+      ${t.customisation.options
+        .map(
+          (opt) => `
+      <div class="customisation-option">
+        <h4 style="color:var(--c-gold);">${opt.title}</h4>
+        <p style="color:rgba(248,248,246,0.65);">${opt.text}</p>
+      </div>`
+        )
+        .join("")}
+    </div>
+    <div style="margin-top:var(--space-xl);" data-reveal>
+      <a class="btn btn--gold btn--magnetic" href="${contact}">${t.customisation.cta}</a>
     </div>
   </div>
 </section>`;
 
-  const customisation = `
-<section class="section section--large" id="personalizacao">
+  /* ---------- Chapter VI: accessories ---------- */
+  const accTeaser = productsData.accessoryGroups
+    .flatMap((g) => g.items)
+    .filter((item, idx, arr) => arr.findIndex((o) => o.image === item.image) === idx)
+    .slice(0, 12);
+  const accessories = `
+<section class="chapter chapter--even" id="cap-vi" data-chapter data-chapter-label="VI">
+  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">06</div>
   <div class="container">
-    <div class="customisation-layout">
-      <div class="customisation-gallery" data-reveal="scale">
-        <div class="media-frame">${photo("reformer-2", locale === "pt" ? "Reformer em madeira de bordo natural" : "Reformer in natural maple wood")}</div>
-        <div class="media-frame media-frame--cover">${photo("fabric", locale === "pt" ? "Estofo técnico em tom creme" : "Technical upholstery in cream tone")}</div>
-        <div class="media-frame">${photo("metal-frame", locale === "pt" ? "Estrutura metálica em preto fosco" : "Metal frame in matte black")}</div>
-      </div>
-      <div class="customisation-copy" data-reveal>
-        <p class="eyebrow">${t.customisation.eyebrow}</p>
-        <h2 class="text-h2">${t.customisation.headingLines.join("<br/>")}</h2>
-        ${t.customisation.paragraphs.map((p) => `<p>${p}</p>`).join("")}
-        <div class="customisation-options">
-          ${t.customisation.options
-            .map(
-              (opt) => `
-          <div class="customisation-option">
-            <h4>${opt.title}</h4>
-            <p>${opt.text}</p>
-          </div>`
-            )
-            .join("")}
+    <div class="chapter__head">
+      <div>
+        <div class="chapter__kicker" data-reveal>
+          <span class="roman">VI</span>
+          <span class="eyebrow">${x.chapterLabel} 06</span>
         </div>
-        <a class="btn btn--primary" href="${contact}">${t.customisation.cta}</a>
+        <h2 class="chapter__title" data-reveal>${x.accessoriesChapterTitle}</h2>
+        <p class="chapter__desc" data-reveal>${x.accessoriesChapterText}</p>
+        <div class="chapter__cta" data-reveal>
+          <a class="icon-link" href="${path(locale, "accessories")}">${x.accessoriesCta} ${icon("arrowUpRight")}</a>
+        </div>
+      </div>
+      <div class="chapter__media" data-reveal="scale" data-zoom>
+        ${photo("acc-blocks", locale === "pt" ? "Acessórios de cortiça natural" : "Natural cork accessories")}
+      </div>
+    </div>
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">${x.dragHint} — 54 ${locale === "pt" ? "objetos" : "objects"}</p>
+      <div class="filmstrip" data-filmstrip>
+        ${accTeaser
+          .map(
+            (item) => `
+        <div class="accessory-card">
+          <div class="media-frame">${photo(item.image, `${item.name[locale]} — Base Movement`)}</div>
+          <h4>${item.name[locale]}</h4>
+          <p>${item.spec}</p>
+        </div>`
+          )
+          .join("")}
       </div>
     </div>
   </div>
 </section>`;
 
-  const designedFor = `
-<section class="section section--sand">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">${t.designedFor.eyebrow}</p>
-      <h2 class="text-h2">${t.designedFor.heading}</h2>
-      <p class="text-lead">${t.designedFor.intro}</p>
-    </div>
-    <div class="designed-grid" data-reveal-group>
-      ${t.designedFor.items
-        .map(
-          (item, i) => `
-      <div class="designed-card">
-        <div class="designed-card__num">${String(i + 1).padStart(2, "0")}</div>
-        <h3>${item.title}</h3>
-        <p>${item.text}</p>
-      </div>`
-        )
-        .join("")}
-    </div>
-  </div>
+  /* ---------- Contexts ticker ---------- */
+  const tickerItems = t.designedFor.items.map((item) => `<span class="ticker__item">${item.title}</span>`).join("");
+  const ticker = `
+<section class="ticker" aria-label="${t.designedFor.heading}">
+  <div class="ticker__inner">${tickerItems}${tickerItems}</div>
 </section>`;
 
-  const whyChoose = `
-<section class="section">
+  /* ---------- Giant quotes ---------- */
+  const quotes = `
+<section class="quotes">
   <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">${t.whyChoose.eyebrow}</p>
-      <h2 class="text-h2">${t.whyChoose.heading}</h2>
-      <p class="text-lead">${t.whyChoose.intro}</p>
-    </div>
-    <div class="timeline">
-      ${t.whyChoose.timeline
-        .map(
-          (item, i) => `
-      <div class="timeline-item" data-reveal style="--reveal-delay:${(i % 2) * 60}ms">
-        <h3>${item.title}</h3>
-        <p>${item.text}</p>
-      </div>`
-        )
-        .join("")}
-    </div>
-  </div>
-</section>`;
-
-  const galleryShots = [
-    ["cadillac-1", { pt: "Cadillac em madeira de bordo com estofo preto", en: "Maple Cadillac with black upholstery" }],
-    ["reformer-1", { pt: "Reformer profissional em madeira de bordo", en: "Professional maple reformer" }],
-    ["ladder-tower", { pt: "Torre de barras em madeira", en: "Wooden ladder tower" }],
-    ["fabric", { pt: "Estofo técnico em tom creme", en: "Technical upholstery in cream tone" }],
-    ["reformer-2", { pt: "Reformer em madeira com carruagem preta", en: "Wood reformer with black carriage" }],
-    ["trio-beech", { pt: "Chair, Ladder Barrel e Spine Corrector em faia", en: "Beech Chair, Ladder Barrel and Spine Corrector" }],
-    ["cadillac-4", { pt: "Estrutura Cadillac completa", en: "Complete Cadillac frame" }],
-    ["acc-blocks", { pt: "Acessórios de cortiça natural", en: "Natural cork accessories" }],
-  ];
-  const gallery = `
-<section class="section section--muted">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">${t.gallery.eyebrow}</p>
-      <h2 class="text-h2">${t.gallery.heading}</h2>
-      <p class="text-lead">${t.gallery.intro}</p>
-    </div>
-    <div class="masonry">
-      ${galleryShots
-        .map(
-          ([name, alt], i) => `
-      <div class="media-frame" data-lightbox data-reveal="scale" style="--reveal-delay:${(i % 4) * 70}ms">
-        ${photo(name, alt[locale])}
-      </div>`
-        )
-        .join("")}
-    </div>
-  </div>
-</section>`;
-
-  const testimonials = `
-<section class="section">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">${t.testimonials.eyebrow}</p>
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">${x.quotesEyebrow}</p>
       <h2 class="text-h2">${t.testimonials.heading}</h2>
     </div>
-    <div class="testimonial-grid" data-reveal-group>
-      ${t.testimonials.items
-        .map(
-          (item) => `
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;${item.quote}&rdquo;</blockquote>
-        <footer>
-          <cite>${item.name}</cite>
-          <span class="role">${item.role}</span>
-        </footer>
-      </div>`
-        )
-        .join("")}
-    </div>
+  </div>
+  <div class="quotes__strip" data-filmstrip>
+    ${t.testimonials.items
+      .map(
+        (item) => `
+    <div class="quote-slide">
+      <blockquote>${item.quote}</blockquote>
+      <footer><cite>${item.name}</cite><span class="role">${item.role}</span></footer>
+    </div>`
+      )
+      .join("")}
   </div>
 </section>`;
 
+  /* ---------- FAQ (final notes) ---------- */
   const faq = `
-<section class="section section--muted">
+<section class="section">
   <div class="container">
     <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">${t.faq.eyebrow}</p>
+      <p class="eyebrow eyebrow--center">${x.faqEyebrow}</p>
       <h2 class="text-h2">${t.faq.heading}</h2>
     </div>
     <div class="faq-list" data-reveal>
@@ -253,17 +273,30 @@ export function homePage({ locale, t }) {
   </div>
 </section>`;
 
-  const finalCta = `
-<section class="section section--dark final-cta">
-  <div class="hero__media" data-parallax="0.08" style="opacity:0.5;">
-    ${art({ tone: "ink", ratio: "fill", glyphName: "interiorB", noCaption: true })}
-  </div>
-  <div class="container final-cta__inner" data-reveal>
-    <h2 class="text-h2">${t.finalCta.heading}</h2>
-    <p class="text-lead" style="color:rgba(248,248,246,0.75);">${t.finalCta.text}</p>
-    <a class="btn btn--gold" href="${contact}">${t.finalCta.cta}</a>
+  /* ---------- Epilogue ---------- */
+  const finalWords = t.finalCta.heading.split(" ");
+  const finalLast = finalWords.pop().replace(/\.$/, "");
+  const epilogue = `
+<section class="epilogue" id="epilogo" data-chapter data-chapter-label="∞">
+  <div class="living living--dark"></div>
+  <div class="container epilogue__content">
+    <p class="eyebrow eyebrow--center" style="color:var(--c-gold);" data-reveal>${x.epilogueEyebrow}</p>
+    <h2 data-reveal>${finalWords.join(" ")} <em>${finalLast}.</em></h2>
+    <p data-reveal>${t.finalCta.text}</p>
+    <a class="btn btn--gold btn--magnetic" href="${contact}" data-reveal>${t.finalCta.cta}</a>
   </div>
 </section>`;
 
-  return [hero, why, categories, customisation, designedFor, whyChoose, gallery, testimonials, faq, finalCta].join("\n");
+  /* ---------- Chapter rail ---------- */
+  const rail = `
+<nav class="chapter-rail" aria-label="${x.chapterLabel}">
+  ${["✳", ...ROMANS, "∞"]
+    .map((label, i) => {
+      const targets = ["prologo", "cap-i", "cap-ii", "cap-iii", "cap-iv", "cap-v", "cap-vi", "epilogo"];
+      return `<a href="#${targets[i]}" data-rail>${label}</a>${i < 7 ? '<span class="chapter-rail__line"></span>' : ""}`;
+    })
+    .join("")}
+</nav>`;
+
+  return [rail, prologue, manifesto, chapters, matter, accessories, ticker, quotes, faq, epilogue].join("\n");
 }

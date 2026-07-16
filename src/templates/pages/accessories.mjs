@@ -20,21 +20,24 @@ export function accessoriesPage({ locale, t, accessoryGroups, category }) {
       <h2 class="text-h2">${group.title[locale]}</h2>
       <p class="text-lead">${group.intro[locale]}</p>
     </div>
-    <div class="accessory-grid">
-      ${group.items
-        .map(
-          (item, i) => `
-      <div class="accessory-card" data-reveal style="--reveal-delay:${(i % 3) * 70}ms">
-        <div class="media-frame">
-          ${photo(item.image, `${item.name[locale]} — Base Movement`)}
-        </div>
-        ${item.sku ? `<p class="series-card__ref">${t.product.refLabel} ${item.sku}</p>` : ""}
-        <h3>${item.name[locale]}</h3>
-        <p>${item.spec}</p>
-        <a class="icon-link accessory-card__cta" href="${contact}?produto=${encodeURIComponent((item.sku ? item.sku + " — " : "") + item.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
-      </div>`
-        )
-        .join("")}
+    <div class="filmstrip-zone" data-reveal>
+      <p class="filmstrip-hint">${group.items.length} ${locale === "pt" ? "objetos" : "objects"}</p>
+      <div class="filmstrip" data-filmstrip>
+        ${group.items
+          .map(
+            (item) => `
+        <div class="accessory-card">
+          <div class="media-frame">
+            ${photo(item.image, `${item.name[locale]} — Base Movement`)}
+          </div>
+          ${item.sku ? `<p class="series-card__ref">${t.product.refLabel} ${item.sku}</p>` : ""}
+          <h3>${item.name[locale]}</h3>
+          <p>${item.spec}</p>
+          <a class="icon-link accessory-card__cta" href="${contact}?produto=${encodeURIComponent((item.sku ? item.sku + " — " : "") + item.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
+        </div>`
+          )
+          .join("")}
+      </div>
     </div>
   </div>
 </section>`

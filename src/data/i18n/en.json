@@ -352,5 +352,63 @@
     "notFoundTitle": "Page not found",
     "notFoundText": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "experience": {
+    "prologueIntro": "Breathe.",
+    "chapterLabel": "Chapter",
+    "dragHint": "Drag",
+    "viewHint": "View",
+    "exploreChapter": "Explore the chapter",
+    "manifestoWords": [
+      "Precision.",
+      "Silence.",
+      "Movement."
+    ],
+    "manifestoLead": "Pilates equipment conceived as architecture — structure, proportion and calm. A collection for studios that treat movement as a form of design.",
+    "manifestoIndex": [
+      {
+        "num": "01",
+        "title": "Premium Equipment",
+        "text": "Noble materials and precise engineering, for intensive professional use."
+      },
+      {
+        "num": "02",
+        "title": "Full Customisation",
+        "text": "Colours, upholstery, woods and engraving — every piece reflects your space."
+      },
+      {
+        "num": "03",
+        "title": "Certified Quality",
+        "text": "Certified production to the highest safety standards."
+      },
+      {
+        "num": "04",
+        "title": "Shipping Across Europe",
+        "text": "Careful logistics and assisted installation, from order to delivery."
+      }
+    ],
+    "matterEyebrow": "Interlude",
+    "matterTitle": "The matter",
+    "matterIntro": "Every piece begins here: in the touch of the upholstery, the grain of the wood, the silence of the metal.",
+    "matterBands": [
+      {
+        "label": "Upholstery",
+        "sub": "Technical fabrics in sand tones"
+      },
+      {
+        "label": "Wood",
+        "sub": "Responsibly sourced maple and beech"
+      },
+      {
+        "label": "Metal",
+        "sub": "Precision steel and aluminium"
+      }
+    ],
+    "quotesEyebrow": "Voices",
+    "epilogueEyebrow": "Epilogue",
+    "accessoriesChapterTitle": "The Details",
+    "accessoriesChapterText": "Fifty-four objects that complete the practice — cream-toned weights, natural cork, studio textiles.",
+    "accessoriesCta": "See all accessories",
+    "faqEyebrow": "Final Notes"
   }
 }
