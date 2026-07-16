@@ -82,15 +82,14 @@ public/                  Generated output — this is what you deploy
   the message field. Dimensions and materials come from the supplier
   catalog; lead times and warranty terms are illustrative — confirm
   before launch.
-- **Hero photo**: the homepage hero expects the branded lifestyle
-  photograph (BASE MOVEMENT reformer in the cream studio). It was never
-  received as a file — the current `src/assets/img/products/hero.jpg` is
-  a temporary cream-fabric stand-in. To swap: overwrite that file with
-  the real photo (landscape, ~2000px wide) and run `npm run build`.
-- Each category currently ships one flagship model (matching how the brand
-  is positioned — a curated line, not a large SKU catalogue). Add more
-  products by extending `src/data/products.json`; the build script and
-  templates already handle an arbitrary number of products per category.
+- **Hero photo**: the homepage hero uses the branded BASE MOVEMENT
+  lifestyle photograph at `src/assets/img/products/hero.jpg`. To swap it
+  for a newer shot, overwrite that file (landscape, ~1500–2000px wide)
+  and run `npm run build`.
+- Each category page presents a flagship model plus a "complete range"
+  grid listing every model in that category (`series` arrays in
+  `src/data/products.json`); accessories live in `accessoryGroups` in the
+  same file. Add or edit models there and rebuild.
 
 ## i18n
 
