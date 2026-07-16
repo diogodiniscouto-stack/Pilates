@@ -252,14 +252,14 @@ async function buildStaticAssets() {
   // Product photography (processed catalog assets in src/assets/img)
   await cp(nodePath.join(SRC, "assets", "img", "products"), nodePath.join(PUBLIC, "assets", "img", "products"), { recursive: true });
 
-  // "B" monogram matching the brand wordmark's stemless B (three horizontal
-  // bars joined by two right-side curves) — a wide 3.5:1 wordmark doesn't
-  // read at favicon size, so the initial stands in for it there.
+  // Brand favicon per supplied reference: the wordmark's stemless "B"
+  // (two horizontal bars joined by right-side curves) in white on a
+  // solid black square, monochrome.
   const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="20" fill="#111111"/>
-  <g fill="none" stroke="#F8F8F6" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M22,22 H50 C68,22 76,30 76,39 C76,49 68,58 50,58 H22" />
-    <path d="M50,58 C70,58 80,67 80,77 C80,88 70,96 50,96 H22" stroke="#C9A96A" />
+  <rect width="100" height="100" fill="#0B0B0B"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="butt" stroke-linejoin="round">
+    <path d="M21,15 H55 C76,15 86,25 86,37.5 C86,50 76,50 55,50 H21" />
+    <path d="M55,50 C78,50 88,60 88,72.5 C88,85 78,85 55,85 H21" />
   </g>
 </svg>`;
   await writeFile(nodePath.join(PUBLIC, "favicon.svg"), favicon, "utf8");
