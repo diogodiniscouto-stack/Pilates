@@ -23,7 +23,7 @@ export function accessoryCategoryPage({ locale, t, category }) {
         ${item.sku ? `<p class="series-card__ref">${t.product.refLabel} ${item.sku}</p>` : ""}
         <h3>${item.name[locale]}</h3>
         <p>${item.spec}</p>
-        <a class="icon-link accessory-card__cta" href="${contact}?produto=${encodeURIComponent((item.sku ? item.sku + " — " : "") + item.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
+        <a class="icon-link accessory-card__cta" href="${contact}?produto=${encodeURIComponent((item.sku ? item.sku + " · " : "") + item.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
       </div>`
     )
     .join("");

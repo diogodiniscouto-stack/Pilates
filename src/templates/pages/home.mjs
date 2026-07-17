@@ -145,7 +145,7 @@ export function homePage({ locale, t }) {
           <p class="series-card__ref">${t.product.refLabel} ${model.sku}</p>
           <h4>${model.name[locale]}</h4>
           <p class="series-card__dims">${model.dims}</p>
-          <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " — " + model.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
+          <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " · " + model.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
         </div>
       </div>`
         )
@@ -173,7 +173,7 @@ export function homePage({ locale, t }) {
         </div>
       </div>
     </div>
-    <p class="grid-hint" data-reveal>${x.viewHint} — ${product.series.length} ${modelsWord(product.series.length)}</p>
+    <p class="grid-hint" data-reveal>${x.viewHint} <span class="grid-hint__sep" aria-hidden="true">·</span> ${product.series.length} ${modelsWord(product.series.length)}</p>
     <div class="series-grid">${preview}</div>
     <div style="margin-top:var(--space-lg)" data-reveal>
       <a class="btn btn--secondary btn--magnetic" href="${href}">${t.categories.viewAll}</a>
@@ -298,19 +298,23 @@ export function homePage({ locale, t }) {
   </div>
 </section>`;
 
-  /* ---------- Chapter rail ---------- */
+  /* ---------- Chapter rail — minimal dots with a name revealed on hover ---------- */
+  const chapterNames = productsData.products.map((p) => {
+    const c = categoriesData.find((c) => c.key === p.categoryKey);
+    return c ? c.name[locale] : "";
+  });
   const railStops = [
-    { label: "✳", target: "prologo" },
-    { label: "◇", target: "colecao" },
-    ...ROMANS.map((r) => ({ label: r, target: `cap-${r.toLowerCase()}` })),
-    { label: "∞", target: "epilogo" },
+    { name: t.nav.home, target: "prologo" },
+    { name: t.nav.catalogue, target: "colecao" },
+    ...ROMANS.map((r, i) => ({ name: chapterNames[i], target: `cap-${r.toLowerCase()}` })),
+    { name: t.nav.contact, target: "epilogo" },
   ];
   const rail = `
 <nav class="chapter-rail" aria-label="${x.chapterLabel}">
   ${railStops
     .map(
-      (s, i) =>
-        `<a href="#${s.target}" data-rail>${s.label}</a>${i < railStops.length - 1 ? '<span class="chapter-rail__line"></span>' : ""}`
+      (s) =>
+        `<a href="#${s.target}" data-rail aria-label="${s.name}"><span class="chapter-rail__name">${s.name}</span><span class="chapter-rail__dot"></span></a>`
     )
     .join("")}
 </nav>`;

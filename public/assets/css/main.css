@@ -1690,6 +1690,7 @@ form.is-success .form-success { display: block; }
   color: var(--c-text-muted);
   margin-bottom: var(--space-sm);
 }
+.grid-hint__sep { color: var(--c-gold-text); font-weight: 400; }
 .grid-hint::after { content: ""; width: 3rem; height: 1px; background: var(--c-border-strong); }
 
 /* Accessory category page grid: card with contain-fit product photo */
@@ -1986,33 +1987,54 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
 /* ---- Chapter rail (fixed narrative index, desktop) ---- */
 .chapter-rail {
   position: fixed;
-  right: clamp(0.9rem, 2vw, 2.2rem);
+  right: clamp(1rem, 2vw, 2.4rem);
   top: 50%;
   transform: translateY(-50%);
   z-index: calc(var(--z-header) - 2);
   display: none;
   flex-direction: column;
-  gap: 1.1rem;
-  align-items: center;
+  gap: 1.05rem;
+  align-items: flex-end;
 }
 @media (min-width: 1100px) { .js .chapter-rail { display: flex; } }
 .chapter-rail a {
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  color: var(--c-text-muted);
-  line-height: 1;
+  display: block;
   position: relative;
-  padding: 0.15rem 0.3rem;
-  transition: color var(--dur-base) var(--ease-luxury), transform var(--dur-base) var(--ease-luxury);
+  padding: 0.2rem;
+  line-height: 0;
 }
-.chapter-rail a.is-active {
-  color: var(--c-ink);
-  transform: scale(1.5);
-}
-.chapter-rail__line {
-  width: 1px;
-  height: 2.4rem;
+.chapter-rail__dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
   background: var(--c-border-strong);
+  transition: transform var(--dur-base) var(--ease-luxury), background-color var(--dur-base) var(--ease-luxury);
+}
+.chapter-rail a:hover .chapter-rail__dot { background: var(--c-charcoal); }
+.chapter-rail a.is-active .chapter-rail__dot {
+  background: var(--c-ink);
+  transform: scale(1.7);
+}
+.chapter-rail__name {
+  position: absolute;
+  right: calc(100% + 0.6rem);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--dur-base) var(--ease-luxury), transform var(--dur-base) var(--ease-luxury);
+}
+.chapter-rail a:hover .chapter-rail__name {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
 }
 
 /* ---- Prologue ---- */
@@ -2336,15 +2358,12 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
   font-size: clamp(2.2rem, 1.6rem + 3.4vw, 4.6rem);
   line-height: 1;
   white-space: nowrap;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--c-charcoal);
+  color: var(--c-ink);
   display: inline-flex;
   align-items: center;
   gap: 3.5rem;
-  transition: color 400ms var(--ease-luxury);
 }
-.ticker__item:hover { color: var(--c-ink); -webkit-text-stroke-color: transparent; }
-.ticker__item::after { content: "—"; color: var(--c-gold); -webkit-text-stroke: 0; }
+.ticker__item::after { content: "·"; color: var(--c-gold); }
 
 /* ---- Giant quotes ---- */
 .quotes { padding-block: var(--space-3xl); background: var(--c-bg-muted); overflow: hidden; }
@@ -2410,5 +2429,5 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
 
 @media (prefers-reduced-motion: reduce) {
   .matter__band { transition: none; }
-  .chapter-rail a { transition: none; }
+  .chapter-rail__dot, .chapter-rail__name { transition: none; }
 }

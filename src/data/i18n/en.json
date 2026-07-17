@@ -6,7 +6,7 @@
     "siteTagline": "Pilates Supply",
     "defaultTitle": "Base Movement | Premium Pilates Equipment for Studios",
     "defaultDescription": "Pilates equipment and accessories designed for professional studios, hotels, clinics and premium spaces. Certified quality, full customisation, timeless elegance.",
-    "ogAlt": "Base Movement — Premium Pilates Equipment"
+    "ogAlt": "Base Movement, Premium Pilates Equipment"
   },
   "nav": {
     "home": "Home",
@@ -31,7 +31,7 @@
       "We equip studios.",
       "We inspire movement."
     ],
-    "subheadline": "Equipment and accessories crafted for professional studios — premium quality, made to your specification.",
+    "subheadline": "Equipment and accessories crafted for professional studios, premium quality, made to your specification.",
     "benefits": [
       "Customisation",
       "Premium Quality",
@@ -54,7 +54,7 @@
       },
       {
         "title": "Full Customisation",
-        "text": "Colours, upholstery, wood and metal finishes, and brand engraving — every piece reflects your space's identity."
+        "text": "Colours, upholstery, wood and metal finishes, and brand engraving, every piece reflects your space's identity."
       },
       {
         "title": "Quality Craftsmanship",
@@ -181,12 +181,12 @@
       {
         "quote": "The quality of the equipment and the attention to detail completely transformed our studio experience.",
         "name": "Mariana Oliveira",
-        "role": "Director, Studio Nove — Lisbon"
+        "role": "Director, Studio Nove, Lisbon"
       },
       {
         "quote": "An impeccable customisation process, from first sketch to final installation. A result worthy of our brand.",
         "name": "Rui Ferreira",
-        "role": "Founder, Reform Atelier — Porto"
+        "role": "Founder, Reform Atelier, Porto"
       },
       {
         "quote": "Robust, elegant equipment, and a service that feels genuinely premium at every step.",
@@ -209,7 +209,7 @@
       },
       {
         "q": "What customisation options are available?",
-        "a": "Colour, upholstery, wood finish, metal frame colour and logo engraving — every element can be tailored to your space's identity."
+        "a": "Colour, upholstery, wood finish, metal frame colour and logo engraving, every element can be tailored to your space's identity."
       },
       {
         "q": "Do you deliver outside Portugal?",
@@ -252,10 +252,10 @@
   "about": {
     "eyebrow": "About Us",
     "heading": "A brand built on movement and form",
-    "intro": "Base Movement was founded on the belief that Pilates equipment can — and should — be as thoughtfully designed as the space that houses it.",
+    "intro": "Base Movement was founded on the belief that Pilates equipment can, and should, be as thoughtfully designed as the space that houses it.",
     "leadParagraphs": [
       "Founded by design and movement professionals, Base Movement is dedicated to creating Pilates equipment that unites technical rigour, noble materials and a serene visual language.",
-      "We believe a well-equipped studio is also a space of trust — for those who run it, and for those who move within it."
+      "We believe a well-equipped studio is also a space of trust, for those who run it, and for those who move within it."
     ],
     "pillars": [
       {
@@ -280,7 +280,7 @@
       }
     ],
     "closingHeading": "An invitation to mindful movement",
-    "closingText": "Every Base Movement piece is designed to last — in structure, material and taste. We invite you to explore the collection and imagine your next studio."
+    "closingText": "Every Base Movement piece is designed to last, in structure, material and taste. We invite you to explore the collection and imagine your next studio."
   },
   "contact": {
     "eyebrow": "Contact",
@@ -316,7 +316,7 @@
     "hoursLabel": "Hours",
     "hoursText": "Monday to Friday, 9am–6pm",
     "socialHeading": "Follow Us",
-    "mapCaption": "Base Movement Showroom — Lisbon"
+    "mapCaption": "Base Movement Showroom, Lisbon"
   },
   "product": {
     "dimensions": "Dimensions",
@@ -371,7 +371,7 @@
       "Silence.",
       "Movement."
     ],
-    "manifestoLead": "Pilates equipment conceived as architecture — structure, proportion and calm. A collection for studios that treat movement as a form of design.",
+    "manifestoLead": "Pilates equipment conceived as architecture, structure, proportion and calm. A collection for studios that treat movement as a form of design.",
     "manifestoIndex": [
       {
         "num": "01",
@@ -381,7 +381,7 @@
       {
         "num": "02",
         "title": "Full Customisation",
-        "text": "Colours, upholstery, woods and engraving — every piece reflects your space."
+        "text": "Colours, upholstery, woods and engraving, every piece reflects your space."
       },
       {
         "num": "03",
@@ -414,7 +414,7 @@
     "quotesEyebrow": "Voices",
     "epilogueEyebrow": "Epilogue",
     "accessoriesChapterTitle": "The Details",
-    "accessoriesChapterText": "Fifty-four objects that complete the practice — cream-toned weights, natural cork, studio textiles.",
+    "accessoriesChapterText": "Fifty-four objects that complete the practice, cream-toned weights, natural cork, studio textiles.",
     "accessoriesCta": "See all accessories",
     "faqEyebrow": "Final Notes"
   }

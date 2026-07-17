@@ -6,7 +6,7 @@
     "siteTagline": "Pilates Supply",
     "defaultTitle": "Base Movement | Equipamento de Pilates Premium para Estúdios",
     "defaultDescription": "Equipamentos e acessórios de Pilates concebidos para estúdios profissionais, hotéis, clínicas e espaços premium. Qualidade certificada, personalização total, elegância atemporal.",
-    "ogAlt": "Base Movement — Equipamento de Pilates Premium"
+    "ogAlt": "Base Movement, Equipamento de Pilates Premium"
   },
   "nav": {
     "home": "Início",
@@ -54,7 +54,7 @@
       },
       {
         "title": "Personalização Total",
-        "text": "Cores, estofos, acabamentos em madeira e metal, e gravação de marca — cada peça reflete a identidade do seu espaço."
+        "text": "Cores, estofos, acabamentos em madeira e metal, e gravação de marca, cada peça reflete a identidade do seu espaço."
       },
       {
         "title": "Fabrico de Qualidade",
@@ -181,12 +181,12 @@
       {
         "quote": "A qualidade do equipamento e a atenção ao detalhe transformaram por completo a experiência do nosso estúdio.",
         "name": "Mariana Oliveira",
-        "role": "Diretora, Studio Nove — Lisboa"
+        "role": "Diretora, Studio Nove, Lisboa"
       },
       {
         "quote": "Um processo de personalização impecável, do primeiro esboço à instalação final. Resultado à altura da nossa marca.",
         "name": "Rui Ferreira",
-        "role": "Fundador, Reform Atelier — Porto"
+        "role": "Fundador, Reform Atelier, Porto"
       },
       {
         "quote": "Equipamento robusto, elegante, e um serviço que se sente verdadeiramente premium em cada etapa.",
@@ -209,7 +209,7 @@
       },
       {
         "q": "Que opções de personalização estão disponíveis?",
-        "a": "Cor, estofo, acabamento em madeira, cor da estrutura metálica e gravação de logótipo — cada elemento pode ser adaptado à identidade do seu espaço."
+        "a": "Cor, estofo, acabamento em madeira, cor da estrutura metálica e gravação de logótipo, cada elemento pode ser adaptado à identidade do seu espaço."
       },
       {
         "q": "Fazem entregas fora de Portugal?",
@@ -252,10 +252,10 @@
   "about": {
     "eyebrow": "Sobre Nós",
     "heading": "Uma marca construída sobre movimento e forma",
-    "intro": "A Base Movement nasce da convicção de que o equipamento de Pilates pode — e deve — ser tão bem desenhado quanto o espaço que o acolhe.",
+    "intro": "A Base Movement nasce da convicção de que o equipamento de Pilates pode, e deve, ser tão bem desenhado quanto o espaço que o acolhe.",
     "leadParagraphs": [
       "Fundada por profissionais de design e de movimento, a Base Movement dedica-se à criação de equipamento de Pilates que une rigor técnico, materiais nobres e uma linguagem visual serena.",
-      "Acreditamos que um estúdio bem equipado é, também, um espaço de confiança — para quem o gere e para quem nele se move."
+      "Acreditamos que um estúdio bem equipado é, também, um espaço de confiança, para quem o gere e para quem nele se move."
     ],
     "pillars": [
       {
@@ -280,7 +280,7 @@
       }
     ],
     "closingHeading": "Um convite ao movimento consciente",
-    "closingText": "Cada peça Base Movement é desenhada para durar — na estrutura, no material e no gosto. Convidamo-lo a conhecer a coleção e a imaginar o seu próximo estúdio."
+    "closingText": "Cada peça Base Movement é desenhada para durar, na estrutura, no material e no gosto. Convidamo-lo a conhecer a coleção e a imaginar o seu próximo estúdio."
   },
   "contact": {
     "eyebrow": "Contacto",
@@ -316,7 +316,7 @@
     "hoursLabel": "Horário",
     "hoursText": "Segunda a Sexta, 9h–18h",
     "socialHeading": "Siga-nos",
-    "mapCaption": "Showroom Base Movement — Lisboa"
+    "mapCaption": "Showroom Base Movement, Lisboa"
   },
   "product": {
     "dimensions": "Dimensões",
@@ -371,7 +371,7 @@
       "Silêncio.",
       "Movimento."
     ],
-    "manifestoLead": "Equipamento de Pilates concebido como arquitetura — estrutura, proporção e calma. Uma coleção para estúdios que tratam o movimento como uma forma de design.",
+    "manifestoLead": "Equipamento de Pilates concebido como arquitetura, estrutura, proporção e calma. Uma coleção para estúdios que tratam o movimento como uma forma de design.",
     "manifestoIndex": [
       {
         "num": "01",
@@ -381,7 +381,7 @@
       {
         "num": "02",
         "title": "Personalização Total",
-        "text": "Cores, estofos, madeiras e gravação — cada peça reflete o seu espaço."
+        "text": "Cores, estofos, madeiras e gravação, cada peça reflete o seu espaço."
       },
       {
         "num": "03",
@@ -414,7 +414,7 @@
     "quotesEyebrow": "Vozes",
     "epilogueEyebrow": "Epílogo",
     "accessoriesChapterTitle": "Os Detalhes",
-    "accessoriesChapterText": "Cinquenta e quatro objetos que completam a prática — pesos em tons de creme, cortiça natural, têxteis de estúdio.",
+    "accessoriesChapterText": "Cinquenta e quatro objetos que completam a prática, pesos em tons de creme, cortiça natural, têxteis de estúdio.",
     "accessoriesCta": "Ver todos os acessórios",
     "faqEyebrow": "Notas Finais"
   }

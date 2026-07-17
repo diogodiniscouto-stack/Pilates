@@ -138,7 +138,7 @@ export function productPage({ locale, t, product, category }) {
           <p class="series-card__ref">${t.product.refLabel} ${model.sku}</p>
           <h3>${model.name[locale]}</h3>
           <p class="series-card__dims">${model.dims}</p>
-          <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " — " + model.name[locale])}" aria-label="${t.product.quoteFor}">
+          <a class="icon-link" href="${contact}?produto=${encodeURIComponent(model.sku + " · " + model.name[locale])}" aria-label="${t.product.quoteFor}">
             ${t.product.requestQuote} ${icon("arrowRight")}
           </a>
         </div>

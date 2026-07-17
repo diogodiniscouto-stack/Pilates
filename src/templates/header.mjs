@@ -22,7 +22,7 @@ export function header({ locale, t, pageId, transparent, param }) {
 
   const altHref = (loc) => path(loc, pageId || "home", param);
   const langOption = (loc) => {
-    return `<a class="lang-switch__option" href="${altHref(loc)}" ${locale === loc ? 'aria-current="true"' : ""} hreflang="${loc}">${loc.toUpperCase()} — ${loc === "pt" ? "Português" : "English"}</a>`;
+    return `<a class="lang-switch__option" href="${altHref(loc)}" ${locale === loc ? 'aria-current="true"' : ""} hreflang="${loc}">${loc.toUpperCase()} · ${loc === "pt" ? "Português" : "English"}</a>`;
   };
 
   return `

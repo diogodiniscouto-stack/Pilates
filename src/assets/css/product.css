@@ -232,6 +232,7 @@
   color: var(--c-text-muted);
   margin-bottom: var(--space-sm);
 }
+.grid-hint__sep { color: var(--c-gold-text); font-weight: 400; }
 .grid-hint::after { content: ""; width: 3rem; height: 1px; background: var(--c-border-strong); }
 
 /* Accessory category page grid: card with contain-fit product photo */
