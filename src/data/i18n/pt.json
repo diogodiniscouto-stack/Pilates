@@ -26,12 +26,19 @@
     "language": "Idioma"
   },
   "hero": {
-    "eyebrow": "Base Movement — Pilates Supply",
+    "eyebrow": "Equipamentos Premium de Pilates para estúdios profissionais",
     "headlineLines": [
       "Eleve o seu estúdio.",
       "Inspire cada movimento."
     ],
-    "subheadline": "Equipamentos e acessórios de Pilates concebidos para estúdios profissionais e espaços premium.",
+    "subheadline": "Equipamentos e acessórios concebidos para estúdios profissionais, com qualidade premium e personalização.",
+    "benefits": [
+      "Personalização",
+      "Qualidade Premium",
+      "Entrega Internacional"
+    ],
+    "rating": "4.9/5",
+    "proof": "Mais de 300 estúdios equipados",
     "ctaPrimary": "Explorar Catálogo",
     "ctaSecondary": "Solicitar Orçamento",
     "scrollHint": "Descubra"

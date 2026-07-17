@@ -49,13 +49,22 @@ export function homePage({ locale, t }) {
     ${photo("hero", heroAlt, { eager: true, extraClass: "hero__photo" })}
   </div>
   <div class="container prologue__content">
-    <p class="prologue__breathe" data-reveal="fade">${x.prologueIntro}</p>
+    <p class="prologue__eyebrow" data-reveal="fade">${t.hero.eyebrow}</p>
     <h1 class="prologue__headline">${headlineLines(t)}</h1>
     <p class="prologue__sub" data-reveal style="--reveal-delay:350ms">${t.hero.subheadline}</p>
+    <ul class="prologue__benefits" data-reveal style="--reveal-delay:430ms">
+      ${t.hero.benefits.map((b) => `<li>${b}</li>`).join("")}
+    </ul>
     <div class="prologue__actions" data-reveal style="--reveal-delay:500ms">
       <a class="btn btn--primary btn--magnetic" href="${catalogue}">${t.hero.ctaPrimary}</a>
       <a class="btn btn--secondary btn--magnetic" href="${contact}">${t.hero.ctaSecondary}</a>
     </div>
+    <p class="prologue__proof" data-reveal style="--reveal-delay:580ms">
+      <span class="prologue__stars" aria-hidden="true">★★★★★</span>
+      <span class="prologue__rating">${t.hero.rating}</span>
+      <span class="prologue__proof-sep" aria-hidden="true">·</span>
+      <span>${t.hero.proof}</span>
+    </p>
   </div>
   <div class="hero__scroll">
     <span>${t.hero.scrollHint}</span>
