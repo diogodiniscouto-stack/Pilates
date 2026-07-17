@@ -182,6 +182,67 @@
 .accessory-card__cta { font-size: 0.6875rem; margin-top: 0.6rem; display: inline-flex; }
 .accessory-card .series-card__ref { margin-top: 0.1rem; }
 
+/* ==========================================================================
+   Collection grid — the full catalogue page (all categories, no h-scroll)
+   ========================================================================== */
+.collection-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 720px) { .collection-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1180px) { .collection-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.collection-card { display: flex; flex-direction: column; }
+.collection-card .media-frame {
+  aspect-ratio: 4/5;
+  margin-bottom: var(--space-sm);
+}
+.collection-card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+.collection-card__title h3 { font-size: var(--fs-h4); font-family: var(--font-display); font-weight: 500; letter-spacing: -0.01em; }
+.collection-card__title svg {
+  width: 1.15rem; height: 1.15rem; flex-shrink: 0; color: var(--c-text-muted);
+  transition: transform var(--dur-base) var(--ease-luxury), color var(--dur-base) var(--ease-luxury);
+}
+.collection-card:hover .collection-card__title svg { transform: translate(3px, -3px); color: var(--c-gold-text); }
+.collection-card p { margin-top: 0.3rem; color: var(--c-text-muted); font-size: var(--fs-small); }
+.collection-card__meta {
+  margin-top: 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--c-gold-text);
+}
+
+/* Grid section rhythm on the catalogue + category pages */
+.grid-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  margin-bottom: var(--space-sm);
+}
+.grid-hint::after { content: ""; width: 3rem; height: 1px; background: var(--c-border-strong); }
+
+/* Accessory category page grid: card with contain-fit product photo */
+.item-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 640px) { .item-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1180px) { .item-grid { grid-template-columns: repeat(4, 1fr); } }
+
 /* Accessory group anchor nav (page header) */
 .group-nav {
   margin-top: var(--space-lg);

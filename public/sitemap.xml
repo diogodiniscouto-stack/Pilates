@@ -25,18 +25,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.basemovement.pt/catalogo/acessorios/</loc>
-      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/acessorios/" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/accessories/" />
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.basemovement.pt/en/catalogue/accessories/</loc>
-      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/acessorios/" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/accessories/" />
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://www.basemovement.pt/sobre-nos/</loc>
       <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/sobre-nos/" />
       <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/about/" />
@@ -118,6 +106,126 @@
     <loc>https://www.basemovement.pt/en/catalogue/spine-corrector/</loc>
       <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/spine-corrector/" />
       <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/spine-corrector/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/mat/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/mat/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/mat/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/mat/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/mat/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/mat/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/pilates-ball/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/pilates-ball/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/pilates-ball/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/pilates-ball/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/pilates-ball/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/pilates-ball/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/pilates-ring/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/pilates-ring/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/pilates-ring/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/pilates-ring/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/pilates-ring/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/pilates-ring/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/weights/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/weights/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/weights/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/weights/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/weights/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/weights/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/resistance-bands/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/resistance-bands/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/resistance-bands/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/resistance-bands/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/resistance-bands/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/resistance-bands/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/socks/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/socks/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/socks/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/socks/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/socks/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/socks/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/boards/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/boards/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/boards/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/boards/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/boards/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/boards/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/blocks/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/blocks/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/blocks/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/blocks/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/blocks/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/blocks/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/comfort/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/comfort/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/comfort/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/comfort/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/comfort/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/comfort/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/catalogo/training/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/training/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/training/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/training/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/training/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/training/" />
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

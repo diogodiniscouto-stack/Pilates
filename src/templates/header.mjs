@@ -4,7 +4,7 @@ import { path, otherLocale } from "./routes.mjs";
 import categoriesData from "../data/categories.json" with { type: "json" };
 
 function categoryHref(locale, cat) {
-  return cat.productSlug ? path(locale, "product", cat.productSlug) : path(locale, "accessories");
+  return path(locale, "category", cat.kind === "equipment" ? cat.productSlug : cat.slug);
 }
 
 export function header({ locale, t, pageId, transparent, param }) {
@@ -39,7 +39,7 @@ export function header({ locale, t, pageId, transparent, param }) {
     <nav class="site-nav" aria-label="Main">
       <div class="site-nav__item">
         <a class="site-nav__link" href="${catalogue}"${current("catalogue")}>${t.nav.catalogue}</a>
-        <div class="site-nav__dropdown">${dropdown}</div>
+        <div class="site-nav__dropdown site-nav__dropdown--mega">${dropdown}</div>
       </div>
       <a class="site-nav__link" href="${home}#personalizacao">${t.nav.customisation}</a>
       <a class="site-nav__link" href="${about}"${current("about")}>${t.nav.about}</a>

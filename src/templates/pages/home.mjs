@@ -4,10 +4,19 @@ import { path } from "../routes.mjs";
 import categoriesData from "../../data/categories.json" with { type: "json" };
 import productsData from "../../data/products.json" with { type: "json" };
 
-const ROMANS = ["I", "II", "III", "IV", "V", "VI"];
+const ROMANS = ["I", "II", "III", "IV", "V"];
 
 function categoryHref(locale, cat) {
-  return cat.productSlug ? path(locale, "product", cat.productSlug) : path(locale, "accessories");
+  return path(locale, "category", cat.kind === "equipment" ? cat.productSlug : cat.slug);
+}
+
+function catCount(cat) {
+  if (cat.kind === "equipment") {
+    const p = productsData.products.find((p) => p.categoryKey === cat.key);
+    return p ? p.series.length : 0;
+  }
+  const a = productsData.accessoryCategories.find((a) => a.key === cat.key);
+  return a ? a.items.length : 0;
 }
 
 /* Split the two headline lines, italicising one word for editorial rhythm */
@@ -26,6 +35,8 @@ export function homePage({ locale, t }) {
   const contact = path(locale, "contact");
   const catalogue = path(locale, "catalogue");
   const x = t.experience;
+  const modelsWord = (n) =>
+    locale === "pt" ? (n === 1 ? "modelo" : "modelos") : n === 1 ? "model" : "models";
 
   /* ---------- Prologue ---------- */
   const heroAlt =
@@ -76,7 +87,38 @@ export function homePage({ locale, t }) {
   </div>
 </section>`;
 
-  /* ---------- Chapters I–V (equipment) ---------- */
+  /* ---------- The Collection — every category, one full grid, accessories
+       first, equal weight, no horizontal scroll. This is where a visitor
+       immediately sees everything, including the accessory lines. ---------- */
+  const collection = `
+<section class="section section--muted" id="colecao" data-chapter data-chapter-label="◇">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">${t.categories.eyebrow}</p>
+      <h2 class="text-h2">${t.categories.heading}</h2>
+      <p class="text-lead">${t.categories.intro}</p>
+    </div>
+    <div class="collection-grid">
+      ${categoriesData
+        .map(
+          (cat, i) => `
+      <a class="collection-card" href="${categoryHref(locale, cat)}" data-reveal style="--reveal-delay:${(i % 4) * 55}ms">
+        <div class="media-frame">${photo(cat.image, `${cat.name[locale]} — Base Movement`)}</div>
+        <div class="collection-card__title">
+          <h3>${cat.name[locale]}</h3>
+          ${icon("arrowUpRight")}
+        </div>
+        <p>${cat.shortDescription[locale]}</p>
+        <span class="collection-card__meta">${catCount(cat)} ${modelsWord(catCount(cat))}</span>
+      </a>`
+        )
+        .join("")}
+    </div>
+  </div>
+</section>`;
+
+  /* ---------- Equipment chapters I–V — editorial storytelling, each with a
+       compact preview grid (first models) linking to the full category. ---------- */
   const chapters = productsData.products
     .map((product, i) => {
       const cat = categoriesData.find((c) => c.key === product.categoryKey);
@@ -84,7 +126,8 @@ export function homePage({ locale, t }) {
       const odd = i % 2 === 1;
       const href = categoryHref(locale, cat);
       const dims = product.dimensions;
-      const strip = product.series
+      const preview = product.series
+        .slice(0, 4)
         .map(
           (model) => `
       <div class="series-card">
@@ -121,9 +164,10 @@ export function homePage({ locale, t }) {
         </div>
       </div>
     </div>
-    <div class="filmstrip-zone" data-reveal>
-      <p class="filmstrip-hint">${x.dragHint} — ${product.series.length} ${locale === "pt" ? "modelos" : "models"}</p>
-      <div class="filmstrip" data-filmstrip>${strip}</div>
+    <p class="grid-hint" data-reveal>${x.viewHint} — ${product.series.length} ${modelsWord(product.series.length)}</p>
+    <div class="series-grid">${preview}</div>
+    <div style="margin-top:var(--space-lg)" data-reveal>
+      <a class="btn btn--secondary btn--magnetic" href="${href}">${t.categories.viewAll}</a>
     </div>
   </div>
 </section>`;
@@ -172,49 +216,6 @@ export function homePage({ locale, t }) {
   </div>
 </section>`;
 
-  /* ---------- Chapter VI: accessories ---------- */
-  const accTeaser = productsData.accessoryGroups
-    .flatMap((g) => g.items)
-    .filter((item, idx, arr) => arr.findIndex((o) => o.image === item.image) === idx)
-    .slice(0, 12);
-  const accessories = `
-<section class="chapter chapter--even" id="cap-vi" data-chapter data-chapter-label="VI">
-  <div class="chapter__num" aria-hidden="true" data-speed="-0.06">06</div>
-  <div class="container">
-    <div class="chapter__head">
-      <div>
-        <div class="chapter__kicker" data-reveal>
-          <span class="roman">VI</span>
-          <span class="eyebrow">${x.chapterLabel} 06</span>
-        </div>
-        <h2 class="chapter__title" data-reveal>${x.accessoriesChapterTitle}</h2>
-        <p class="chapter__desc" data-reveal>${x.accessoriesChapterText}</p>
-        <div class="chapter__cta" data-reveal>
-          <a class="icon-link" href="${path(locale, "accessories")}">${x.accessoriesCta} ${icon("arrowUpRight")}</a>
-        </div>
-      </div>
-      <div class="chapter__media" data-reveal="scale" data-zoom>
-        ${photo("acc-blocks", locale === "pt" ? "Acessórios de cortiça natural" : "Natural cork accessories")}
-      </div>
-    </div>
-    <div class="filmstrip-zone" data-reveal>
-      <p class="filmstrip-hint">${x.dragHint} — 54 ${locale === "pt" ? "objetos" : "objects"}</p>
-      <div class="filmstrip" data-filmstrip>
-        ${accTeaser
-          .map(
-            (item) => `
-        <div class="accessory-card">
-          <div class="media-frame">${photo(item.image, `${item.name[locale]} — Base Movement`)}</div>
-          <h4>${item.name[locale]}</h4>
-          <p>${item.spec}</p>
-        </div>`
-          )
-          .join("")}
-      </div>
-    </div>
-  </div>
-</section>`;
-
   /* ---------- Contexts ticker ---------- */
   const tickerItems = t.designedFor.items.map((item) => `<span class="ticker__item">${item.title}</span>`).join("");
   const ticker = `
@@ -222,31 +223,32 @@ export function homePage({ locale, t }) {
   <div class="ticker__inner">${tickerItems}${tickerItems}</div>
 </section>`;
 
-  /* ---------- Giant quotes ---------- */
+  /* ---------- Voices — static grid (no horizontal scroll) ---------- */
   const quotes = `
 <section class="quotes">
   <div class="container">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">${x.quotesEyebrow}</p>
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow eyebrow--center">${x.quotesEyebrow}</p>
       <h2 class="text-h2">${t.testimonials.heading}</h2>
     </div>
-  </div>
-  <div class="quotes__strip" data-filmstrip>
-    ${t.testimonials.items
-      .map(
-        (item) => `
-    <div class="quote-slide">
-      <blockquote>${item.quote}</blockquote>
-      <footer><cite>${item.name}</cite><span class="role">${item.role}</span></footer>
-    </div>`
-      )
-      .join("")}
+    <div class="testimonial-grid" data-reveal-group>
+      ${t.testimonials.items
+        .map(
+          (item) => `
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>&ldquo;${item.quote}&rdquo;</blockquote>
+        <footer><cite>${item.name}</cite><span class="role">${item.role}</span></footer>
+      </div>`
+        )
+        .join("")}
+    </div>
   </div>
 </section>`;
 
   /* ---------- FAQ (final notes) ---------- */
   const faq = `
-<section class="section">
+<section class="section section--muted">
   <div class="container">
     <div class="section-head section-head--center" data-reveal>
       <p class="eyebrow eyebrow--center">${x.faqEyebrow}</p>
@@ -288,15 +290,21 @@ export function homePage({ locale, t }) {
 </section>`;
 
   /* ---------- Chapter rail ---------- */
+  const railStops = [
+    { label: "✳", target: "prologo" },
+    { label: "◇", target: "colecao" },
+    ...ROMANS.map((r) => ({ label: r, target: `cap-${r.toLowerCase()}` })),
+    { label: "∞", target: "epilogo" },
+  ];
   const rail = `
 <nav class="chapter-rail" aria-label="${x.chapterLabel}">
-  ${["✳", ...ROMANS, "∞"]
-    .map((label, i) => {
-      const targets = ["prologo", "cap-i", "cap-ii", "cap-iii", "cap-iv", "cap-v", "cap-vi", "epilogo"];
-      return `<a href="#${targets[i]}" data-rail>${label}</a>${i < 7 ? '<span class="chapter-rail__line"></span>' : ""}`;
-    })
+  ${railStops
+    .map(
+      (s, i) =>
+        `<a href="#${s.target}" data-rail>${s.label}</a>${i < railStops.length - 1 ? '<span class="chapter-rail__line"></span>' : ""}`
+    )
     .join("")}
 </nav>`;
 
-  return [rail, prologue, manifesto, chapters, matter, accessories, ticker, quotes, faq, epilogue].join("\n");
+  return [rail, prologue, manifesto, collection, chapters, matter, ticker, quotes, faq, epilogue].join("\n");
 }

@@ -1,8 +1,98 @@
 [
   {
+    "key": "mat",
+    "kind": "accessory",
+    "slug": "mat",
+    "name": {
+      "pt": "Tapete",
+      "en": "Mat"
+    },
+    "shortDescription": {
+      "pt": "A base de cada movimento.",
+      "en": "The base of every movement."
+    },
+    "image": "acc-mat",
+    "accessoryKey": "mat"
+  },
+  {
+    "key": "pilates-ball",
+    "kind": "accessory",
+    "slug": "pilates-ball",
+    "name": {
+      "pt": "Bola de Pilates",
+      "en": "Pilates Ball"
+    },
+    "shortDescription": {
+      "pt": "Controlo, equilíbrio e core.",
+      "en": "Control, balance and core."
+    },
+    "image": "acc-ball",
+    "accessoryKey": "pilates-ball"
+  },
+  {
+    "key": "pilates-ring",
+    "kind": "accessory",
+    "slug": "pilates-ring",
+    "name": {
+      "pt": "Aro de Pilates",
+      "en": "Pilates Ring"
+    },
+    "shortDescription": {
+      "pt": "Resistência que tonifica.",
+      "en": "Resistance that tones."
+    },
+    "image": "acc-ring-c",
+    "accessoryKey": "pilates-ring"
+  },
+  {
+    "key": "weights",
+    "kind": "accessory",
+    "slug": "weights",
+    "name": {
+      "pt": "Pesos",
+      "en": "Weights"
+    },
+    "shortDescription": {
+      "pt": "Tonificação em tons de creme.",
+      "en": "Toning in cream tones."
+    },
+    "image": "acc-rings",
+    "accessoryKey": "weights"
+  },
+  {
+    "key": "resistance-bands",
+    "kind": "accessory",
+    "slug": "resistance-bands",
+    "name": {
+      "pt": "Faixas de Resistência",
+      "en": "Resistance Bands"
+    },
+    "shortDescription": {
+      "pt": "Progressão para todos os níveis.",
+      "en": "Progression for every level."
+    },
+    "image": "acc-bands",
+    "accessoryKey": "resistance-bands"
+  },
+  {
+    "key": "socks",
+    "kind": "accessory",
+    "slug": "socks",
+    "name": {
+      "pt": "Meias",
+      "en": "Socks"
+    },
+    "shortDescription": {
+      "pt": "Aderência de estúdio.",
+      "en": "Studio grip."
+    },
+    "image": "acc-socks",
+    "accessoryKey": "socks"
+  },
+  {
     "key": "reformer",
+    "kind": "equipment",
     "slug": "reformer",
-    "productSlug": "reformer",
     "name": {
       "pt": "Reformer",
       "en": "Reformer"
@@ -11,12 +101,13 @@
       "pt": "A peça central do estúdio moderno.",
       "en": "The centrepiece of the modern studio."
     },
-    "image": "reformer-1"
+    "image": "reformer-1",
+    "productSlug": "reformer"
   },
   {
     "key": "cadillac",
+    "kind": "equipment",
     "slug": "cadillac",
-    "productSlug": "cadillac",
     "name": {
       "pt": "Cadillac",
       "en": "Cadillac"
@@ -25,12 +116,13 @@
       "pt": "Amplitude e versatilidade clínica.",
       "en": "Range and clinical versatility."
     },
-    "image": "cadillac-1"
+    "image": "cadillac-1",
+    "productSlug": "cadillac"
   },
   {
     "key": "chair",
+    "kind": "equipment",
     "slug": "chair",
-    "productSlug": "chair",
     "name": {
       "pt": "Chair",
       "en": "Chair"
@@ -39,12 +131,13 @@
       "pt": "Precisão numa escala compacta.",
       "en": "Precision at a compact scale."
     },
-    "image": "chair-1"
+    "image": "chair-1",
+    "productSlug": "chair"
   },
   {
     "key": "barrel",
+    "kind": "equipment",
     "slug": "barrel",
-    "productSlug": "barrel",
     "name": {
       "pt": "Barrel",
       "en": "Barrel"
@@ -53,12 +146,13 @@
       "pt": "Extensão e mobilidade espinhal.",
       "en": "Spinal extension and mobility."
     },
-    "image": "barrel-1"
+    "image": "barrel-1",
+    "productSlug": "barrel"
   },
   {
     "key": "spine-corrector",
+    "kind": "equipment",
     "slug": "spine-corrector",
-    "productSlug": "spine-corrector",
     "name": {
       "pt": "Spine Corrector",
       "en": "Spine Corrector"
@@ -67,21 +161,67 @@
       "pt": "Suporte escultural para a coluna.",
       "en": "Sculptural support for the spine."
     },
-    "image": "spine-1"
+    "image": "spine-1",
+    "productSlug": "spine-corrector"
   },
   {
-    "key": "accessories",
-    "slug": "acessorios",
-    "slugEn": "accessories",
-    "productSlug": null,
+    "key": "boards",
+    "kind": "accessory",
+    "slug": "boards",
     "name": {
-      "pt": "Acessórios",
-      "en": "Accessories"
+      "pt": "Boards",
+      "en": "Boards"
     },
     "shortDescription": {
-      "pt": "Os detalhes que completam a prática.",
-      "en": "The details that complete the practice."
+      "pt": "Reformer em formato compacto.",
+      "en": "Reformer, made compact."
     },
-    "image": "acc-blocks"
+    "image": "acc-board",
+    "accessoryKey": "boards"
+  },
+  {
+    "key": "blocks",
+    "kind": "accessory",
+    "slug": "blocks",
+    "name": {
+      "pt": "Blocos e Rolos",
+      "en": "Blocks & Rollers"
+    },
+    "shortDescription": {
+      "pt": "Apoio e libertação.",
+      "en": "Support and release."
+    },
+    "image": "acc-blocks",
+    "accessoryKey": "blocks"
+  },
+  {
+    "key": "comfort",
+    "kind": "accessory",
+    "slug": "comfort",
+    "name": {
+      "pt": "Conforto de Estúdio",
+      "en": "Studio Comfort"
+    },
+    "shortDescription": {
+      "pt": "Os detalhes que acolhem.",
+      "en": "The details that welcome."
+    },
+    "image": "acc-cushion-round",
+    "accessoryKey": "comfort"
+  },
+  {
+    "key": "training",
+    "kind": "accessory",
+    "slug": "training",
+    "name": {
+      "pt": "Treino de Estúdio",
+      "en": "Studio Training"
+    },
+    "shortDescription": {
+      "pt": "Complementos de treino.",
+      "en": "Training complements."
+    },
+    "image": "acc-hip-1",
+    "accessoryKey": "training"
   }
 ]

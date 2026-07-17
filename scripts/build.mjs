@@ -7,7 +7,7 @@ import { layout } from "../src/templates/layout.mjs";
 import { homePage } from "../src/templates/pages/home.mjs";
 import { cataloguePage } from "../src/templates/pages/catalogue.mjs";
 import { productPage } from "../src/templates/pages/product.mjs";
-import { accessoriesPage } from "../src/templates/pages/accessories.mjs";
+import { accessoryCategoryPage } from "../src/templates/pages/accessoryCategory.mjs";
 import { aboutPage } from "../src/templates/pages/about.mjs";
 import { contactPage } from "../src/templates/pages/contact.mjs";
 import { notFoundPage } from "../src/templates/pages/notFound.mjs";
@@ -27,7 +27,7 @@ const PUBLIC = nodePath.join(ROOT, "public");
 
 const dict = { pt: ptDict, en: enDict };
 const products = productsDataFile.products;
-const accessoryGroups = productsDataFile.accessoryGroups;
+const accessoryCategories = productsDataFile.accessoryCategories;
 
 async function writePage(pathname, html) {
   const filePath = pathname.endsWith("/") ? nodePath.join(PUBLIC, pathname, "index.html") : nodePath.join(PUBLIC, pathname);
@@ -146,26 +146,29 @@ async function buildLocale(locale) {
     );
   }
 
-  // Accessories collection
-  const accessoryCategory = categoriesData.find((c) => c.key === "accessories");
-  await writePage(
-    routePath(locale, "accessories"),
-    layout({
-      locale,
-      t,
-      pageId: "accessories",
-      title: `${accessoryCategory.name[locale]} | ${t.meta.siteName}`,
-      description: accessoryCategory.shortDescription[locale],
-      content: accessoriesPage({ locale, t, accessoryGroups, category: accessoryCategory }),
-      structuredData: [
-        breadcrumbStructuredData(locale, [
-          { name: t.nav.home, path: routePath(locale, "home") },
-          { name: t.nav.catalogue, path: routePath(locale, "catalogue") },
-          { name: accessoryCategory.name[locale], path: routePath(locale, "accessories") },
-        ]),
-      ],
-    })
-  );
+  // Accessory category pages — one per line (Mat, Weights, Pilates Ring, …)
+  for (const category of accessoryCategories) {
+    const pagePath = routePath(locale, "category", category.slug);
+    await writePage(
+      pagePath,
+      layout({
+        locale,
+        t,
+        pageId: "category",
+        param: category.slug,
+        title: `${category.name[locale]} | ${t.meta.siteName}`,
+        description: category.intro[locale],
+        content: accessoryCategoryPage({ locale, t, category }),
+        structuredData: [
+          breadcrumbStructuredData(locale, [
+            { name: t.nav.home, path: routePath(locale, "home") },
+            { name: t.nav.catalogue, path: routePath(locale, "catalogue") },
+            { name: category.name[locale], path: pagePath },
+          ]),
+        ],
+      })
+    );
+  }
 
   // About
   await writePage(
@@ -285,10 +288,10 @@ async function buildSitemap() {
   const pageIds = [
     { id: "home" },
     { id: "catalogue" },
-    { id: "accessories" },
     { id: "about" },
     { id: "contact" },
     ...products.map((p) => ({ id: "product", param: p.slug })),
+    ...accessoryCategories.map((c) => ({ id: "category", param: c.slug })),
   ];
 
   const urls = [];

@@ -5,7 +5,7 @@ import { INSTAGRAM_URL, LINKEDIN_URL } from "./config.mjs";
 import categoriesData from "../data/categories.json" with { type: "json" };
 
 function categoryHref(locale, cat) {
-  return cat.productSlug ? path(locale, "product", cat.productSlug) : path(locale, "accessories");
+  return path(locale, "category", cat.kind === "equipment" ? cat.productSlug : cat.slug);
 }
 
 export function footer({ locale, t, pageId, param }) {

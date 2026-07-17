@@ -583,6 +583,11 @@ body:not(.has-transparent-header) { padding-top: var(--header-h); }
   display: grid;
   gap: 0.15rem;
 }
+.site-nav__dropdown--mega {
+  min-width: 27rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.15rem 0.75rem;
+}
 .site-nav__dropdown a {
   display: block;
   padding: 0.6em 0.75em;
@@ -1635,6 +1640,67 @@ form.is-success .form-success { display: block; }
 .accessory-card__cta { font-size: 0.6875rem; margin-top: 0.6rem; display: inline-flex; }
 .accessory-card .series-card__ref { margin-top: 0.1rem; }
 
+/* ==========================================================================
+   Collection grid — the full catalogue page (all categories, no h-scroll)
+   ========================================================================== */
+.collection-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 720px) { .collection-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1180px) { .collection-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.collection-card { display: flex; flex-direction: column; }
+.collection-card .media-frame {
+  aspect-ratio: 4/5;
+  margin-bottom: var(--space-sm);
+}
+.collection-card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+.collection-card__title h3 { font-size: var(--fs-h4); font-family: var(--font-display); font-weight: 500; letter-spacing: -0.01em; }
+.collection-card__title svg {
+  width: 1.15rem; height: 1.15rem; flex-shrink: 0; color: var(--c-text-muted);
+  transition: transform var(--dur-base) var(--ease-luxury), color var(--dur-base) var(--ease-luxury);
+}
+.collection-card:hover .collection-card__title svg { transform: translate(3px, -3px); color: var(--c-gold-text); }
+.collection-card p { margin-top: 0.3rem; color: var(--c-text-muted); font-size: var(--fs-small); }
+.collection-card__meta {
+  margin-top: 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--c-gold-text);
+}
+
+/* Grid section rhythm on the catalogue + category pages */
+.grid-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  margin-bottom: var(--space-sm);
+}
+.grid-hint::after { content: ""; width: 3rem; height: 1px; background: var(--c-border-strong); }
+
+/* Accessory category page grid: card with contain-fit product photo */
+.item-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 640px) { .item-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1180px) { .item-grid { grid-template-columns: repeat(4, 1fr); } }
+
 /* Accessory group anchor nav (page header) */
 .group-nav {
   margin-top: var(--space-lg);
@@ -2200,45 +2266,8 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
 }
 .chapter__dim::before { content: ""; width: 2rem; height: 1px; background: var(--c-gold); }
 
-/* ---- Filmstrip (replaces all product grids) ---- */
-.filmstrip-zone { position: relative; }
-.filmstrip {
-  display: flex;
-  gap: var(--space-md);
-  overflow-x: auto;
-  padding: 0.5rem var(--container-pad) var(--space-md);
-  margin-inline: calc(-1 * var(--container-pad));
-  scroll-snap-type: x proximity;
-  scrollbar-width: none;
-}
-.filmstrip::-webkit-scrollbar { display: none; }
-.filmstrip.is-dragging { scroll-snap-type: none; }
-.filmstrip.is-dragging * { pointer-events: none; }
-.filmstrip > * {
-  flex: 0 0 auto;
-  width: clamp(240px, 26vw, 360px);
-  scroll-snap-align: start;
-}
-.filmstrip .series-card, .filmstrip .accessory-card {
-  background: var(--c-bg);
-}
-.filmstrip-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: var(--ls-eyebrow);
-  text-transform: uppercase;
-  color: var(--c-text-muted);
-  margin-bottom: var(--space-sm);
-}
-.filmstrip-hint::after {
-  content: "";
-  width: 3rem; height: 1px;
-  background: var(--c-border-strong);
-}
-.filmstrip .accessory-card .media-frame { aspect-ratio: 1/1; margin-bottom: var(--space-sm); }
+/* Product ranges are shown as full grids (series-grid / item-grid /
+   collection-grid in product.css) — no horizontal scrolling anywhere. */
 
 /* ---- Matter (material bands) ---- */
 .matter { padding-block: var(--space-3xl); background: var(--c-ink); color: var(--c-ivory); position: relative; overflow: hidden; }

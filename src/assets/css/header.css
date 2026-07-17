@@ -113,6 +113,11 @@ body:not(.has-transparent-header) { padding-top: var(--header-h); }
   display: grid;
   gap: 0.15rem;
 }
+.site-nav__dropdown--mega {
+  min-width: 27rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.15rem 0.75rem;
+}
 .site-nav__dropdown a {
   display: block;
   padding: 0.6em 0.75em;

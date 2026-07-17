@@ -2,7 +2,6 @@ export const locales = ["pt", "en"];
 export const defaultLocale = "pt";
 
 const catalogueSlug = { pt: "catalogo", en: "catalogue" };
-const accessoriesSlug = { pt: "acessorios", en: "accessories" };
 const aboutSlug = { pt: "sobre-nos", en: "about" };
 const contactSlug = { pt: "contacto", en: "contact" };
 
@@ -22,10 +21,12 @@ export function path(locale, pageId, param) {
       return `${p}/`;
     case "catalogue":
       return `${p}/${catalogueSlug[locale]}/`;
+    // Both equipment products and accessory categories live at
+    // /<catalogue>/<slug>/ — slugs are locale-agnostic so the language
+    // switcher resolves the equivalent page with the same param.
     case "product":
+    case "category":
       return `${p}/${catalogueSlug[locale]}/${param}/`;
-    case "accessories":
-      return `${p}/${catalogueSlug[locale]}/${accessoriesSlug[locale]}/`;
     case "about":
       return `${p}/${aboutSlug[locale]}/`;
     case "contact":

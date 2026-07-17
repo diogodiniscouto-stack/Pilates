@@ -225,17 +225,13 @@
     })();
 
     var hint = document.documentElement.lang.indexOf("pt") === 0
-      ? { drag: "Arraste", view: "Ver" }
-      : { drag: "Drag", view: "View" };
+      ? { view: "Ver" }
+      : { view: "View" };
 
     document.addEventListener("mouseover", function (e) {
-      var strip = e.target.closest("[data-filmstrip]");
       var media = e.target.closest("[data-lightbox], .chapter__media");
       var link = e.target.closest("a, button");
-      if (strip) {
-        ring.classList.add("is-hover");
-        label.textContent = hint.drag;
-      } else if (media) {
+      if (media) {
         ring.classList.add("is-hover");
         label.textContent = hint.view;
       } else if (link) {
@@ -281,36 +277,6 @@
       if (!ticking) { requestAnimationFrame(update); ticking = true; }
     }, { passive: true });
     update();
-  }
-
-  /* ---------------------------------------------------------------------
-   * Filmstrips — drag-to-scroll
-   * ------------------------------------------------------------------- */
-  function initFilmstrips() {
-    document.querySelectorAll("[data-filmstrip]").forEach(function (strip) {
-      var isDown = false, startX = 0, startScroll = 0, moved = false;
-      strip.addEventListener("pointerdown", function (e) {
-        if (e.pointerType !== "mouse") return;
-        isDown = true;
-        moved = false;
-        startX = e.clientX;
-        startScroll = strip.scrollLeft;
-      });
-      window.addEventListener("pointermove", function (e) {
-        if (!isDown) return;
-        var dx = e.clientX - startX;
-        if (Math.abs(dx) > 4 && !moved) {
-          moved = true;
-          strip.classList.add("is-dragging");
-        }
-        if (moved) strip.scrollLeft = startScroll - dx;
-      }, { passive: true });
-      window.addEventListener("pointerup", function () {
-        if (!isDown) return;
-        isDown = false;
-        setTimeout(function () { strip.classList.remove("is-dragging"); }, 30);
-      });
-    });
   }
 
   /* ---------------------------------------------------------------------
@@ -529,7 +495,6 @@
     initParallax();
     initCursor();
     initScrub();
-    initFilmstrips();
     initChapterRail();
     initMagnetic();
     initHeroPointer();

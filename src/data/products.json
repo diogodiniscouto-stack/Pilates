@@ -786,128 +786,142 @@
       ]
     }
   ],
-  "accessoryGroups": [
+  "accessoryCategories": [
     {
-      "key": "boards",
-      "title": {
-        "pt": "Pilates Boards",
-        "en": "Pilates Boards"
+      "key": "mat",
+      "slug": "mat",
+      "image": "acc-mat",
+      "name": {
+        "pt": "Tapete",
+        "en": "Mat"
+      },
+      "tagline": {
+        "pt": "A base de cada movimento.",
+        "en": "The base of every movement."
       },
       "intro": {
-        "pt": "Treino estilo reformer em formato compacto e dobrável — para casa, viagem e aulas de grupo.",
-        "en": "Reformer-style training in a compact, foldable format — for home, travel and group classes."
+        "pt": "Tapetes técnicos antiderrapantes, em cortiça, PU e versões dobráveis.",
+        "en": "Non-slip technical mats in cork, PU and foldable versions."
       },
       "items": [
         {
-          "sku": "PB1",
+          "sku": null,
           "name": {
-            "pt": "Pilates Board Dobrável",
-            "en": "Folding Pilates Board"
+            "pt": "Tapete de Treino PU",
+            "en": "PU Training Mat"
           },
-          "spec": "99 × 41 × 6,5 cm · 3 kg",
-          "image": "acc-board"
+          "spec": "183 × 68 cm · 2–5 mm",
+          "image": "acc-mat"
         },
         {
-          "sku": "PB2",
+          "sku": null,
           "name": {
-            "pt": "Board Reformer com Carruagem",
-            "en": "Reformer Board with Carriage"
+            "pt": "Tapete Arqueado",
+            "en": "Arched Mat"
           },
-          "spec": "152 × 55 × 13,5 cm · 8,7 kg",
-          "image": "board-2"
+          "spec": "183 × 68 cm · 5,5 mm",
+          "image": "acc-mat"
         },
         {
-          "sku": "PB3",
+          "sku": null,
           "name": {
-            "pt": "Board com Faixas e Pegas",
-            "en": "Board with Straps and Handles"
+            "pt": "Tapete de Cortiça",
+            "en": "Cork Mat"
           },
-          "spec": "106 × 41 × 7 cm · 4,6 kg",
-          "image": "board-3"
+          "spec": "PU + cortiça natural",
+          "image": "acc-cork-mat"
         },
         {
-          "sku": "PB4",
+          "sku": null,
           "name": {
-            "pt": "Board de Treino Completo",
-            "en": "Complete Training Board"
+            "pt": "Tapete Dobrável",
+            "en": "Foldable Mat"
           },
-          "spec": "106 × 41 × 7 cm · 5,5 kg",
-          "image": "board-6"
+          "spec": "TPE · 6–10 mm",
+          "image": "acc-mat-fold"
+        }
+      ]
+    },
+    {
+      "key": "pilates-ball",
+      "slug": "pilates-ball",
+      "image": "acc-ball",
+      "name": {
+        "pt": "Bola de Pilates",
+        "en": "Pilates Ball"
+      },
+      "tagline": {
+        "pt": "Controlo, equilíbrio e core.",
+        "en": "Control, balance and core."
+      },
+      "intro": {
+        "pt": "Bolas de Pilates e de ginástica para trabalho de precisão e estabilidade.",
+        "en": "Pilates and gym balls for precision and stability work."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Bola de Pilates",
+            "en": "Pilates Ball"
+          },
+          "spec": "Ø 20–25 cm",
+          "image": "acc-ball"
         },
         {
-          "sku": "PB5",
+          "sku": null,
           "name": {
-            "pt": "Barra de Treino Multifunções",
-            "en": "Multi-Function Training Bar"
+            "pt": "Bola de Ginástica",
+            "en": "Gym Ball"
           },
-          "spec": "145 × 15 × 14 cm · 2,35 kg",
-          "image": "board-5"
-        },
+          "spec": "Ø 55–75 cm",
+          "image": "acc-gym-ball"
+        }
+      ]
+    },
+    {
+      "key": "pilates-ring",
+      "slug": "pilates-ring",
+      "image": "acc-ring-c",
+      "name": {
+        "pt": "Aro de Pilates",
+        "en": "Pilates Ring"
+      },
+      "tagline": {
+        "pt": "Resistência que tonifica.",
+        "en": "Resistance that tones."
+      },
+      "intro": {
+        "pt": "Aro de resistência com núcleo em fibra de vidro, para tonificação e controlo.",
+        "en": "Resistance ring with a glass-fibre core, for toning and control."
+      },
+      "items": [
         {
-          "sku": "PB6",
+          "sku": null,
           "name": {
-            "pt": "Board Compacto",
-            "en": "Compact Board"
+            "pt": "Aro de Pilates",
+            "en": "Pilates Ring"
           },
-          "spec": "102 × 36 × 6 cm · 2,85 kg",
-          "image": "board-1"
-        },
-        {
-          "sku": "PB7",
-          "name": {
-            "pt": "Board Dobrável em A",
-            "en": "A-Frame Folding Board"
-          },
-          "spec": "100 × 41 × 4,5 cm · 4 kg",
-          "image": "board-7"
-        },
-        {
-          "sku": "PB8",
-          "name": {
-            "pt": "Board em Madeira",
-            "en": "Wooden Board"
-          },
-          "spec": "83 × 43 × 6 cm · 7 kg",
-          "image": "board-8"
-        },
-        {
-          "sku": "PB10",
-          "name": {
-            "pt": "Board com Rodas",
-            "en": "Board with Wheels"
-          },
-          "spec": "120 × 38 × 38 cm · 8 kg",
-          "image": "board-4"
-        },
-        {
-          "sku": "PB11",
-          "name": {
-            "pt": "Board de Torção",
-            "en": "Twist Board"
-          },
-          "spec": "53 × 33 × 11,5 cm · 4 kg",
-          "image": "board-8"
-        },
-        {
-          "sku": "PB12",
-          "name": {
-            "pt": "Board Longo",
-            "en": "Long Board"
-          },
-          "spec": "126 × 28 × 8 cm · 2,7 kg",
-          "image": "board-1"
+          "spec": "Ø 38 cm · fibra de vidro",
+          "image": "acc-ring-c"
         }
       ]
     },
     {
       "key": "weights",
-      "title": {
-        "pt": "Pesos e Tonificação",
-        "en": "Weights & Toning"
+      "slug": "weights",
+      "image": "acc-rings",
+      "name": {
+        "pt": "Pesos",
+        "en": "Weights"
+      },
+      "tagline": {
+        "pt": "Tonificação em tons de creme.",
+        "en": "Toning in cream tones."
       },
       "intro": {
-        "pt": "Pesos revestidos a silicone em tons neutros, para trabalho de precisão e controlo.",
-        "en": "Silicone-coated weights in neutral tones, for precision and control work."
+        "pt": "Pesos revestidos a silicone — anilhas, halteres, kettlebell e barras — na paleta neutra da marca.",
+        "en": "Silicone-coated weights — rings, dumbbells, kettlebell and bars — in the brand's neutral palette."
       },
       "items": [
         {
@@ -1012,14 +1026,20 @@
       ]
     },
     {
-      "key": "resistance",
-      "title": {
-        "pt": "Resistência",
-        "en": "Resistance"
+      "key": "resistance-bands",
+      "slug": "resistance-bands",
+      "image": "acc-bands",
+      "name": {
+        "pt": "Faixas de Resistência",
+        "en": "Resistance Bands"
+      },
+      "tagline": {
+        "pt": "Progressão para todos os níveis.",
+        "en": "Progression for every level."
       },
       "intro": {
-        "pt": "Faixas e elásticos técnicos para todos os níveis de progressão.",
-        "en": "Technical bands and elastics for every level of progression."
+        "pt": "Faixas e elásticos técnicos em tecido, silicone e TPE.",
+        "en": "Technical bands and elastics in fabric, silicone and TPE."
       },
       "items": [
         {
@@ -1066,65 +1086,190 @@
           },
           "spec": "loop contínuo",
           "image": "acc-band-heavy"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Aro de Pilates",
-            "en": "Pilates Ring"
-          },
-          "spec": "Ø 38 cm · fibra de vidro",
-          "image": "acc-ring-c"
         }
       ]
     },
     {
-      "key": "mats",
-      "title": {
-        "pt": "Tapetes, Blocos e Bolas",
-        "en": "Mats, Blocks & Balls"
+      "key": "socks",
+      "slug": "socks",
+      "image": "acc-socks",
+      "name": {
+        "pt": "Meias",
+        "en": "Socks"
+      },
+      "tagline": {
+        "pt": "Aderência de estúdio.",
+        "en": "Studio grip."
       },
       "intro": {
-        "pt": "Bases de treino e apoios em materiais naturais e técnicos.",
-        "en": "Training surfaces and props in natural and technical materials."
+        "pt": "Meias antiderrapantes em algodão técnico, edição de estúdio.",
+        "en": "Non-slip technical cotton socks, studio edition."
       },
       "items": [
         {
-          "sku": null,
+          "sku": "YS1",
           "name": {
-            "pt": "Tapete de Treino PU",
-            "en": "PU Training Mat"
+            "pt": "Meias de Pilates",
+            "en": "Pilates Socks"
           },
-          "spec": "183 × 68 cm · 2–5 mm",
-          "image": "acc-mat"
+          "spec": "algodão antiderrapante",
+          "image": "acc-socks"
         },
         {
-          "sku": null,
+          "sku": "YS2",
           "name": {
-            "pt": "Tapete Arqueado",
-            "en": "Arched Mat"
+            "pt": "Meias de Dedos",
+            "en": "Toe Socks"
           },
-          "spec": "183 × 68 cm · 5,5 mm",
-          "image": "acc-mat"
+          "spec": "algodão antiderrapante",
+          "image": "acc-socks-2"
         },
         {
-          "sku": null,
+          "sku": "YS3",
           "name": {
-            "pt": "Tapete de Cortiça",
-            "en": "Cork Mat"
+            "pt": "Meias Altas",
+            "en": "Crew Socks"
           },
-          "spec": "PU + cortiça natural",
-          "image": "acc-cork-mat"
+          "spec": "algodão antiderrapante",
+          "image": "acc-socks-3"
+        }
+      ]
+    },
+    {
+      "key": "boards",
+      "slug": "boards",
+      "image": "acc-board",
+      "name": {
+        "pt": "Boards",
+        "en": "Boards"
+      },
+      "tagline": {
+        "pt": "Reformer em formato compacto.",
+        "en": "Reformer, made compact."
+      },
+      "intro": {
+        "pt": "Boards de treino estilo reformer, dobráveis — para casa, viagem e aulas de grupo.",
+        "en": "Reformer-style training boards, foldable — for home, travel and group classes."
+      },
+      "items": [
+        {
+          "sku": "PB1",
+          "name": {
+            "pt": "Pilates Board Dobrável",
+            "en": "Folding Pilates Board"
+          },
+          "spec": "99 × 41 × 6,5 cm · 3 kg",
+          "image": "acc-board"
         },
         {
-          "sku": null,
+          "sku": "PB2",
           "name": {
-            "pt": "Tapete Dobrável",
-            "en": "Foldable Mat"
+            "pt": "Board Reformer com Carruagem",
+            "en": "Reformer Board with Carriage"
           },
-          "spec": "TPE · 6–10 mm",
-          "image": "acc-mat-fold"
+          "spec": "152 × 55 × 13,5 cm · 8,7 kg",
+          "image": "board-2"
         },
+        {
+          "sku": "PB3",
+          "name": {
+            "pt": "Board com Faixas e Pegas",
+            "en": "Board with Straps and Handles"
+          },
+          "spec": "106 × 41 × 7 cm · 4,6 kg",
+          "image": "board-3"
+        },
+        {
+          "sku": "PB4",
+          "name": {
+            "pt": "Board de Treino Completo",
+            "en": "Complete Training Board"
+          },
+          "spec": "106 × 41 × 7 cm · 5,5 kg",
+          "image": "board-6"
+        },
+        {
+          "sku": "PB5",
+          "name": {
+            "pt": "Barra de Treino Multifunções",
+            "en": "Multi-Function Training Bar"
+          },
+          "spec": "145 × 15 × 14 cm · 2,35 kg",
+          "image": "board-5"
+        },
+        {
+          "sku": "PB6",
+          "name": {
+            "pt": "Board Compacto",
+            "en": "Compact Board"
+          },
+          "spec": "102 × 36 × 6 cm · 2,85 kg",
+          "image": "board-1"
+        },
+        {
+          "sku": "PB7",
+          "name": {
+            "pt": "Board Dobrável em A",
+            "en": "A-Frame Folding Board"
+          },
+          "spec": "100 × 41 × 4,5 cm · 4 kg",
+          "image": "board-7"
+        },
+        {
+          "sku": "PB8",
+          "name": {
+            "pt": "Board em Madeira",
+            "en": "Wooden Board"
+          },
+          "spec": "83 × 43 × 6 cm · 7 kg",
+          "image": "board-8"
+        },
+        {
+          "sku": "PB10",
+          "name": {
+            "pt": "Board com Rodas",
+            "en": "Board with Wheels"
+          },
+          "spec": "120 × 38 × 38 cm · 8 kg",
+          "image": "board-4"
+        },
+        {
+          "sku": "PB11",
+          "name": {
+            "pt": "Board de Torção",
+            "en": "Twist Board"
+          },
+          "spec": "53 × 33 × 11,5 cm · 4 kg",
+          "image": "board-8"
+        },
+        {
+          "sku": "PB12",
+          "name": {
+            "pt": "Board Longo",
+            "en": "Long Board"
+          },
+          "spec": "126 × 28 × 8 cm · 2,7 kg",
+          "image": "board-1"
+        }
+      ]
+    },
+    {
+      "key": "blocks",
+      "slug": "blocks",
+      "image": "acc-blocks",
+      "name": {
+        "pt": "Blocos e Rolos",
+        "en": "Blocks & Rollers"
+      },
+      "tagline": {
+        "pt": "Apoio e libertação.",
+        "en": "Support and release."
+      },
+      "intro": {
+        "pt": "Blocos de cortiça e EVA e rolos de massagem para apoio e libertação miofascial.",
+        "en": "Cork and EVA blocks and massage rollers for support and myofascial release."
+      },
+      "items": [
         {
           "sku": null,
           "name": {
@@ -1155,24 +1300,6 @@
         {
           "sku": null,
           "name": {
-            "pt": "Bola de Pilates",
-            "en": "Pilates Ball"
-          },
-          "spec": "Ø 20–25 cm",
-          "image": "acc-ball"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Bola de Ginástica",
-            "en": "Gym Ball"
-          },
-          "spec": "Ø 55–75 cm",
-          "image": "acc-gym-ball"
-        },
-        {
-          "sku": null,
-          "name": {
             "pt": "Rolo de Massagem",
             "en": "Massage Roller"
           },
@@ -1183,60 +1310,21 @@
     },
     {
       "key": "comfort",
-      "title": {
-        "pt": "Meias, Toalhas e Conforto",
-        "en": "Socks, Towels & Comfort"
+      "slug": "comfort",
+      "image": "acc-cushion-round",
+      "name": {
+        "pt": "Conforto de Estúdio",
+        "en": "Studio Comfort"
+      },
+      "tagline": {
+        "pt": "Os detalhes que acolhem.",
+        "en": "The details that welcome."
       },
       "intro": {
-        "pt": "Os detalhes têxteis que completam a experiência de estúdio.",
-        "en": "The textile details that complete the studio experience."
+        "pt": "Almofadas de meditação, bolsters, toalhas e o saco de estúdio.",
+        "en": "Meditation cushions, bolsters, towels and the studio bag."
       },
       "items": [
-        {
-          "sku": "YS1",
-          "name": {
-            "pt": "Meias de Pilates",
-            "en": "Pilates Socks"
-          },
-          "spec": "algodão antiderrapante",
-          "image": "acc-socks"
-        },
-        {
-          "sku": "YS2",
-          "name": {
-            "pt": "Meias de Dedos",
-            "en": "Toe Socks"
-          },
-          "spec": "algodão antiderrapante",
-          "image": "acc-socks-2"
-        },
-        {
-          "sku": "YS3",
-          "name": {
-            "pt": "Meias Altas",
-            "en": "Crew Socks"
-          },
-          "spec": "algodão antiderrapante",
-          "image": "acc-socks-3"
-        },
-        {
-          "sku": "TT1",
-          "name": {
-            "pt": "Toalha de Treino",
-            "en": "Training Towel"
-          },
-          "spec": "microfibra · 42 × 95 cm",
-          "image": "acc-towel-1"
-        },
-        {
-          "sku": "TT2",
-          "name": {
-            "pt": "Toalha com Bolsa",
-            "en": "Towel with Pouch"
-          },
-          "spec": "microfibra · 40 × 80 cm",
-          "image": "acc-towel-2"
-        },
         {
           "sku": null,
           "name": {
@@ -1274,6 +1362,24 @@
           "image": "acc-eye"
         },
         {
+          "sku": "TT1",
+          "name": {
+            "pt": "Toalha de Treino",
+            "en": "Training Towel"
+          },
+          "spec": "microfibra · 42 × 95 cm",
+          "image": "acc-towel-1"
+        },
+        {
+          "sku": "TT2",
+          "name": {
+            "pt": "Toalha com Bolsa",
+            "en": "Towel with Pouch"
+          },
+          "spec": "microfibra · 40 × 80 cm",
+          "image": "acc-towel-2"
+        },
+        {
           "sku": null,
           "name": {
             "pt": "Saco de Estúdio",
@@ -1285,14 +1391,20 @@
       ]
     },
     {
-      "key": "functional",
-      "title": {
-        "pt": "Treino Funcional",
-        "en": "Functional Training"
+      "key": "training",
+      "slug": "training",
+      "image": "acc-hip-1",
+      "name": {
+        "pt": "Treino de Estúdio",
+        "en": "Studio Training"
+      },
+      "tagline": {
+        "pt": "Complementos de treino.",
+        "en": "Training complements."
       },
       "intro": {
-        "pt": "Complementos de treino para estúdios e espaços fitness.",
-        "en": "Training complements for studios and fitness spaces."
+        "pt": "Trainers pélvicos, pisos e superfícies de treino para estúdios e espaços fitness.",
+        "en": "Pelvic trainers, flooring and training surfaces for studios and fitness spaces."
       },
       "items": [
         {
