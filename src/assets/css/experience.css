@@ -1,57 +1,7 @@
 /* ==========================================================================
    "O MOVIMENTO" — cinematic experience layer
-   Scroll-storytelling homepage, custom cursor, living gradients, chapter
-   system, horizontal filmstrips (no traditional product grids anywhere).
+   Scroll-storytelling homepage, living gradients, chapter system.
    ========================================================================== */
-
-/* ---- Custom cursor (fine pointers only) ---- */
-@media (pointer: fine) {
-  .js body.has-cursor { cursor: none; }
-  .js body.has-cursor a,
-  .js body.has-cursor button,
-  .js body.has-cursor [data-lightbox],
-  .js body.has-cursor .filmstrip { cursor: none; }
-}
-.cursor, .cursor-ring {
-  position: fixed;
-  top: 0; left: 0;
-  z-index: 9000;
-  pointer-events: none;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-@media (pointer: fine) {
-  .js .cursor, .js .cursor-ring { display: block; }
-}
-.cursor {
-  width: 6px; height: 6px;
-  background: var(--c-ink);
-}
-.cursor-ring {
-  width: 38px; height: 38px;
-  border: 1px solid rgba(17, 17, 17, 0.35);
-  transition: width 300ms var(--ease-luxury), height 300ms var(--ease-luxury),
-              background-color 300ms var(--ease-luxury), border-color 300ms var(--ease-luxury);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.5625rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--c-ivory);
-}
-@media (pointer: fine) {
-  .js .cursor-ring { display: flex; }
-}
-.cursor-ring .cursor-label { opacity: 0; transition: opacity 200ms var(--ease-out); }
-.cursor-ring.is-hover {
-  width: 64px; height: 64px;
-  background: rgba(17, 17, 17, 0.9);
-  border-color: transparent;
-}
-.cursor-ring.is-hover .cursor-label { opacity: 1; }
 
 /* ---- Living gradient backdrop ---- */
 .living {

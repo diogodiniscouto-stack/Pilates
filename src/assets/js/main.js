@@ -193,58 +193,6 @@
   }
 
   /* ---------------------------------------------------------------------
-   * Custom cursor — dot + trailing ring with contextual labels
-   * ------------------------------------------------------------------- */
-  function initCursor() {
-    if (prefersReducedMotion) return;
-    if (!window.matchMedia("(pointer: fine)").matches) return;
-
-    var dot = document.createElement("div");
-    dot.className = "cursor";
-    var ring = document.createElement("div");
-    ring.className = "cursor-ring";
-    ring.innerHTML = '<span class="cursor-label"></span>';
-    document.body.appendChild(dot);
-    document.body.appendChild(ring);
-    document.body.classList.add("has-cursor");
-
-    var label = ring.querySelector(".cursor-label");
-    var mx = -100, my = -100, rx = -100, ry = -100;
-
-    document.addEventListener("mousemove", function (e) {
-      mx = e.clientX;
-      my = e.clientY;
-      dot.style.transform = "translate(" + (mx - 3) + "px," + (my - 3) + "px)";
-    }, { passive: true });
-
-    (function loop() {
-      rx += (mx - rx) * 0.16;
-      ry += (my - ry) * 0.16;
-      ring.style.transform = "translate(" + (rx - ring.offsetWidth / 2) + "px," + (ry - ring.offsetHeight / 2) + "px)";
-      requestAnimationFrame(loop);
-    })();
-
-    var hint = document.documentElement.lang.indexOf("pt") === 0
-      ? { view: "Ver" }
-      : { view: "View" };
-
-    document.addEventListener("mouseover", function (e) {
-      var media = e.target.closest("[data-lightbox], .chapter__media");
-      var link = e.target.closest("a, button");
-      if (media) {
-        ring.classList.add("is-hover");
-        label.textContent = hint.view;
-      } else if (link) {
-        ring.classList.add("is-hover");
-        label.textContent = "";
-      } else {
-        ring.classList.remove("is-hover");
-        label.textContent = "";
-      }
-    }, { passive: true });
-  }
-
-  /* ---------------------------------------------------------------------
    * Scroll scrub — chapter numerals drift, chapter media de-zooms
    * ------------------------------------------------------------------- */
   function initScrub() {
@@ -493,7 +441,6 @@
     initAccordion();
     initReveal();
     initParallax();
-    initCursor();
     initScrub();
     initChapterRail();
     initMagnetic();
