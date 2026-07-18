@@ -12,7 +12,7 @@ import { aboutPage } from "../src/templates/pages/about.mjs";
 import { contactPage } from "../src/templates/pages/contact.mjs";
 import { notFoundPage } from "../src/templates/pages/notFound.mjs";
 import { path as routePath, locales } from "../src/templates/routes.mjs";
-import { SITE_URL, SITE_NAME } from "../src/templates/config.mjs";
+import { SITE_URL, SITE_NAME, INSTAGRAM_URL, LINKEDIN_URL } from "../src/templates/config.mjs";
 import { logoMarkPaths } from "../src/templates/logoMark.mjs";
 
 import categoriesData from "../src/data/categories.json" with { type: "json" };
@@ -52,7 +52,7 @@ function orgStructuredData(locale) {
       postalCode: "1250-146",
       addressCountry: "PT",
     },
-    sameAs: ["https://www.instagram.com/basemovement.pt", "https://www.linkedin.com/company/basemovement"],
+    sameAs: [INSTAGRAM_URL, LINKEDIN_URL],
   };
 }
 

@@ -3,5 +3,5 @@
 // hreflang tags, sitemap.xml and JSON-LD).
 export const SITE_URL = "https://www.basemovement.pt";
 export const SITE_NAME = "Base Movement";
-export const INSTAGRAM_URL = "https://www.instagram.com/basemovement.pt";
-export const LINKEDIN_URL = "https://www.linkedin.com/company/basemovement";
+export const INSTAGRAM_URL = "https://www.instagram.com/basemovement.pilates/";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/basemovement.pilates/";
