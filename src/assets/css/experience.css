@@ -84,7 +84,8 @@
   pointer-events: none;
   transition: opacity var(--dur-base) var(--ease-luxury), transform var(--dur-base) var(--ease-luxury);
 }
-.chapter-rail a:hover .chapter-rail__name {
+.chapter-rail a:hover .chapter-rail__name,
+.chapter-rail a.is-active .chapter-rail__name {
   opacity: 1;
   transform: translateY(-50%) translateX(0);
 }
