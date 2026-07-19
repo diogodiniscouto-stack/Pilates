@@ -862,7 +862,7 @@
     {
       "key": "boards",
       "slug": "boards",
-      "image": "base-000",
+      "image": "base-002",
       "name": {
         "pt": "Pranchas & Treinadores",
         "en": "Boards & Trainers"
@@ -1164,7 +1164,7 @@
             "en": "Pilates Ball"
           },
           "spec": "PVC · 300 g · Ø 20 cm",
-          "image": "base-028"
+          "image": "base-049"
         },
         {
           "sku": null,
@@ -1401,7 +1401,7 @@
             "en": "PVC Yoga Ball"
           },
           "spec": "PVC · Ø 25 / 55 / 65 / 75 cm",
-          "image": "base-028"
+          "image": "base-049"
         },
         {
           "sku": null,
@@ -1620,7 +1620,7 @@
             "en": "Glute Trainer MT1"
           },
           "spec": "Espuma + elástico + PP · 31 × 17 × 11,5 cm · 340 g",
-          "image": "base-067"
+          "image": "base-068"
         },
         {
           "sku": null,
