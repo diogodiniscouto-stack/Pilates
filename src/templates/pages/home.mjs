@@ -4,7 +4,7 @@ import { path } from "../routes.mjs";
 import categoriesData from "../../data/categories.json" with { type: "json" };
 import productsData from "../../data/products.json" with { type: "json" };
 
-const ROMANS = ["I", "II", "III", "IV", "V"];
+const ROMANS = ["I", "II", "III", "IV", "V", "VI", "VII"];
 
 function categoryHref(locale, cat) {
   return path(locale, "category", cat.kind === "equipment" ? cat.productSlug : cat.slug);

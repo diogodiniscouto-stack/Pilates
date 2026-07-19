@@ -1,28 +1,28 @@
 {
   "products": [
     {
-      "slug": "reformer",
-      "categoryKey": "reformer",
-      "name": "The Reformer One",
+      "slug": "reformers",
+      "categoryKey": "reformers",
+      "name": "Reformers",
       "tagline": {
         "pt": "A peça central de qualquer estúdio de referência.",
         "en": "The centrepiece of every studio of distinction."
       },
       "description": {
-        "pt": "Estrutura em madeira de bordo maciça com carruagem silenciosa, sistema de molas de precisão e estofo técnico. Concebido para uso profissional intensivo, sem nunca comprometer a elegância da linha. Disponível também em versão com torre e em versão dobrável.",
-        "en": "Solid maple frame with a silent carriage, precision spring system and technical upholstery. Engineered for intensive professional use, without ever compromising the elegance of its line. Also available with tower and in a folding version."
+        "pt": "Reformers de estúdio em carvalho, ácer e liga de alumínio, com carruagem silenciosa, sistema de molas de precisão e estofo técnico. Concebidos para uso profissional intensivo.",
+        "en": "Studio reformers in oak, maple and aluminium alloy, with a silent carriage, precision spring system and technical upholstery. Engineered for intensive professional use."
       },
       "dimensions": {
         "length_cm": 236,
         "width_cm": 74,
         "height_cm": 39
       },
-      "weightCapacityKg": 180,
+      "weightCapacityKg": 200,
       "material": {
-        "pt": "Madeira de bordo maciça, alumínio, aço inoxidável",
-        "en": "Solid maple, aluminium, stainless steel"
+        "pt": "Madeira de carvalho / ácer ou liga de alumínio",
+        "en": "Oak / maple wood or aluminium alloy"
       },
-      "leadTimeWeeks": "6–8",
+      "leadTimeWeeks": 8,
       "warrantyYears": 5,
       "colourways": [
         {
@@ -30,154 +30,69 @@
             "pt": "Preto",
             "en": "Black"
           },
-          "hex": "#1A1A1A"
+          "hex": "#17171A"
         },
         {
           "name": {
-            "pt": "Grafite",
-            "en": "Graphite"
+            "pt": "Branco",
+            "en": "White"
           },
-          "hex": "#2E2E2E"
-        },
-        {
-          "name": {
-            "pt": "Creme",
-            "en": "Cream"
-          },
-          "hex": "#F4F1EC"
+          "hex": "#EFECE6"
         }
       ],
       "woodFinishes": [
         {
           "name": {
-            "pt": "Bordo Natural",
-            "en": "Natural Maple"
+            "pt": "Carvalho",
+            "en": "Oak"
           },
-          "hex": "#C8AD84"
+          "hex": "#C8A97E"
         },
         {
           "name": {
-            "pt": "Faia Clara",
-            "en": "Light Beech"
+            "pt": "Ácer",
+            "en": "Maple"
           },
-          "hex": "#E7D9C4"
-        },
-        {
-          "name": {
-            "pt": "Lacado Branco",
-            "en": "White Lacquer"
-          },
-          "hex": "#F4F1EC"
+          "hex": "#E3C79B"
         }
       ],
       "metalFinishes": [
         {
           "name": {
-            "pt": "Preto Fosco",
-            "en": "Matte Black"
+            "pt": "Liga de alumínio",
+            "en": "Aluminium alloy"
           },
-          "hex": "#111111"
-        },
-        {
-          "name": {
-            "pt": "Alumínio",
-            "en": "Aluminium"
-          },
-          "hex": "#B9B9B6"
+          "hex": "#BFC4C9"
         }
       ],
       "images": [
-        "reformer-1",
-        "reformer-2",
-        "reformer-3",
-        "reformer-4"
+        "base-078",
+        "base-083",
+        "base-082"
       ],
       "relatedSlugs": [
-        "cadillac",
-        "chair",
-        "spine-corrector"
+        "folding-reformers",
+        "tower-reformers",
+        "cadillacs"
       ],
       "series": [
         {
           "sku": "PR-001",
           "name": {
-            "pt": "Reformer com Torre, OKA",
-            "en": "Reformer with Tower, OKA"
-          },
-          "dims": "241 × 74 × 38,5 cm · Torre 200 cm",
-          "image": "pr-tower"
-        },
-        {
-          "sku": "PR-002",
-          "name": {
-            "pt": "Reformer, OKA",
-            "en": "Reformer, OKA"
+            "pt": "Reformer, Carvalho",
+            "en": "Reformer, Oak"
           },
           "dims": "236 × 74 × 38,5 cm",
-          "image": "reformer-2"
-        },
-        {
-          "sku": "PR-004",
-          "name": {
-            "pt": "Reformer Dobrável Vertical",
-            "en": "Upright Folding Reformer"
-          },
-          "dims": "240 × 62 × 56 cm",
-          "image": "pr-folded-upright"
-        },
-        {
-          "sku": "PR-005",
-          "name": {
-            "pt": "Reformer com Meia Torre",
-            "en": "Reformer with Half Tower"
-          },
-          "dims": "230,5 × 74 × 200 cm",
-          "image": "pr-halftower"
-        },
-        {
-          "sku": "PR-006",
-          "name": {
-            "pt": "Reformer Dobrável Compacto",
-            "en": "Compact Folding Reformer"
-          },
-          "dims": "235 × 67 × 30,5 cm",
-          "image": "reformer-4"
+          "image": "base-078"
         },
         {
           "sku": "PR-007",
           "name": {
-            "pt": "Reformer Dobrável, Bordo",
-            "en": "Folding Reformer, Maple"
-          },
-          "dims": "235 × 67 × 30,5 cm",
-          "image": "pr-folding"
-        },
-        {
-          "sku": "PR-008",
-          "name": {
-            "pt": "Reformer Estúdio, Bordo",
-            "en": "Studio Reformer, Maple"
+            "pt": "Reformer, Ácer",
+            "en": "Reformer, Maple"
           },
           "dims": "236 × 74 × 38,5 cm",
-          "image": "reformer-1"
-        },
-        {
-          "sku": "PR-009",
-          "name": {
-            "pt": "Reformer Full Track, Bordo",
-            "en": "Full Track Reformer, Maple"
-          },
-          "dims": "236,5 × 96 × 38,5 cm",
-          "image": "reformer-1"
-        },
-        {
-          "sku": "PR-010",
-          "name": {
-            "pt": "Reformer com Torre, Bordo",
-            "en": "Reformer with Tower, Maple"
-          },
-          "dims": "241 × 74 × 38,5 cm · Torre 200 cm",
-          "image": "pr-tower"
+          "image": "base-083"
         },
         {
           "sku": "PR-015",
@@ -186,177 +101,78 @@
             "en": "Reformer, Aluminium"
           },
           "dims": "240 × 67 × 35 cm",
-          "image": "alu-single"
+          "image": "base-080"
         },
         {
           "sku": "PR-016",
           "name": {
-            "pt": "Reformer Elevado, Alumínio",
-            "en": "Raised Reformer, Aluminium"
+            "pt": "Reformer, Alumínio",
+            "en": "Reformer, Aluminium"
           },
           "dims": "238 × 74,5 × 102 cm",
-          "image": "alu-pair"
+          "image": "base-081"
         },
         {
-          "sku": "PR-017",
+          "sku": "PR-009",
           "name": {
-            "pt": "Reformer com Torre, Alumínio",
-            "en": "Reformer with Tower, Aluminium"
+            "pt": "Reformer Full Track, Ácer",
+            "en": "Full Track Reformer, Maple"
           },
-          "dims": "245 × 67 × 35 cm · Torre 200 cm",
-          "image": "alu-pair"
-        },
-        {
-          "sku": "PR-018",
-          "name": {
-            "pt": "Reformer Elevado com Torre, Alumínio",
-            "en": "Raised Reformer with Tower, Aluminium"
-          },
-          "dims": "238 × 74,5 × 186 cm",
-          "image": "alu-pair"
+          "dims": "236,5 × 96 × 38,5 cm",
+          "image": "base-082"
         },
         {
           "sku": "PR-019",
           "name": {
-            "pt": "Core Bed Branco",
+            "pt": "Core Bed Branca",
             "en": "White Core Bed"
           },
           "dims": "241 × 70 × 34 cm",
-          "image": "reformer-3"
+          "image": "base-084"
         },
         {
           "sku": "PR-020",
           "name": {
-            "pt": "Core Bed Branco Full Track",
-            "en": "Full Track White Core Bed"
+            "pt": "Core Bed Branca Full Track",
+            "en": "White Core Bed Full Track"
           },
           "dims": "239 × 82 × 89 cm",
-          "image": "reformer-3"
-        },
-        {
-          "sku": "PR-021",
-          "name": {
-            "pt": "Core Bed Branco com Torre",
-            "en": "White Core Bed with Tower"
-          },
-          "dims": "241 × 80 × 35 cm · Torre 205 cm",
-          "image": "reformer-3"
-        },
-        {
-          "sku": "PR-022",
-          "name": {
-            "pt": "Core Bed Branco Full Track com Torre",
-            "en": "Full Track White Core Bed with Tower"
-          },
-          "dims": "240 × 82 × 196 cm",
-          "image": "reformer-3"
+          "image": "base-094"
         },
         {
           "sku": "PR-024",
           "name": {
-            "pt": "Core Bed Preto Full Track",
-            "en": "Full Track Black Core Bed"
+            "pt": "Core Bed Preta Full Track",
+            "en": "Black Core Bed Full Track"
           },
           "dims": "239 × 90 × 73 cm",
-          "image": "metal-frame"
-        },
-        {
-          "sku": "PR-025",
-          "name": {
-            "pt": "Core Bed Preto Full Track com Torre",
-            "en": "Full Track Black Core Bed with Tower"
-          },
-          "dims": "239 × 90 × 196 cm",
-          "image": "metal-frame"
-        },
-        {
-          "sku": "PR-028",
-          "name": {
-            "pt": "Reformer de Parede",
-            "en": "Wall-Mounted Reformer"
-          },
-          "dims": "183 × 59 × 7 cm",
-          "image": "wall-mounted"
-        },
-        {
-          "sku": "PR-031",
-          "name": {
-            "pt": "Megaformer",
-            "en": "Megaformer"
-          },
-          "dims": "320 × 120 × 107 cm",
-          "image": "megaformer-low"
-        },
-        {
-          "sku": "PR-032",
-          "name": {
-            "pt": "Torre de Treino de Estúdio",
-            "en": "Studio Training Tower"
-          },
-          "dims": "129 × 93 × 212 cm",
-          "image": "megaformer"
-        },
-        {
-          "sku": "PR-S1E",
-          "name": {
-            "pt": "Reformer Doméstico Ligeiro",
-            "en": "Lightweight Home Reformer"
-          },
-          "dims": "190 × 57 × 64 cm",
-          "image": "alu-single"
-        },
-        {
-          "sku": "PR-S1",
-          "name": {
-            "pt": "Reformer Doméstico",
-            "en": "Home Reformer"
-          },
-          "dims": "197 × 57 × 72,5 cm",
-          "image": "alu-single"
-        },
-        {
-          "sku": "PR-S2",
-          "name": {
-            "pt": "Reformer Doméstico Track Extenso",
-            "en": "Extended Track Home Reformer"
-          },
-          "dims": "197 × 57 × 72,5 cm",
-          "image": "alu-single"
-        },
-        {
-          "sku": "PR-S3",
-          "name": {
-            "pt": "Reformer Doméstico XL",
-            "en": "Extended Frame Home Reformer"
-          },
-          "dims": "234 × 64 × 63,5 cm",
-          "image": "alu-single"
+          "image": "base-085"
         }
       ]
     },
     {
-      "slug": "cadillac",
-      "categoryKey": "cadillac",
-      "name": "The Cadillac Frame",
+      "slug": "folding-reformers",
+      "categoryKey": "folding-reformers",
+      "name": "Reformers Dobráveis",
       "tagline": {
-        "pt": "Amplitude de movimento numa estrutura escultural.",
-        "en": "Range of movement within a sculptural frame."
+        "pt": "A prática completa, que se guarda.",
+        "en": "The full practice, that folds away."
       },
       "description": {
-        "pt": "Torre completa com barras, molas e suspensórios de precisão, desenhada como peça arquitetónica de estúdio. O equilíbrio perfeito entre versatilidade clínica e presença visual. Disponível em versão combinada reformer-torre.",
-        "en": "A complete tower with bars, springs and precision straps, designed as an architectural centrepiece for any studio. The perfect balance between clinical versatility and visual presence. Also available as a combined reformer-tower."
+        "pt": "Reformers dobráveis em carvalho e ácer, com toda a mecânica do estúdio numa estrutura que se recolhe para arrumação.",
+        "en": "Folding reformers in oak and maple, with full studio mechanics in a frame that collapses for storage."
       },
       "dimensions": {
-        "length_cm": 231,
-        "width_cm": 74,
-        "height_cm": 200
+        "length_cm": 235,
+        "width_cm": 67,
+        "height_cm": 31
       },
       "weightCapacityKg": 180,
       "material": {
-        "pt": "Madeira maciça, aço estrutural, alumínio",
-        "en": "Solid wood, structural steel, aluminium"
+        "pt": "Madeira de carvalho / ácer",
+        "en": "Oak / maple wood"
       },
-      "leadTimeWeeks": "8–10",
+      "leadTimeWeeks": 8,
       "warrantyYears": 5,
       "colourways": [
         {
@@ -364,75 +180,303 @@
             "pt": "Preto",
             "en": "Black"
           },
-          "hex": "#1A1A1A"
-        },
-        {
-          "name": {
-            "pt": "Grafite",
-            "en": "Graphite"
-          },
-          "hex": "#2E2E2E"
-        },
-        {
-          "name": {
-            "pt": "Creme",
-            "en": "Cream"
-          },
-          "hex": "#F4F1EC"
+          "hex": "#17171A"
         }
       ],
       "woodFinishes": [
         {
           "name": {
-            "pt": "Bordo Natural",
-            "en": "Natural Maple"
+            "pt": "Carvalho",
+            "en": "Oak"
           },
-          "hex": "#C8AD84"
+          "hex": "#C8A97E"
         },
         {
           "name": {
-            "pt": "Faia Clara",
-            "en": "Light Beech"
+            "pt": "Ácer",
+            "en": "Maple"
           },
-          "hex": "#E7D9C4"
+          "hex": "#E3C79B"
         }
       ],
-      "metalFinishes": [
-        {
-          "name": {
-            "pt": "Aço Cromado",
-            "en": "Chromed Steel"
-          },
-          "hex": "#B9B9B6"
-        },
-        {
-          "name": {
-            "pt": "Preto Fosco",
-            "en": "Matte Black"
-          },
-          "hex": "#111111"
-        }
-      ],
+      "metalFinishes": [],
       "images": [
-        "cadillac-1",
-        "cadillac-2",
-        "cadillac-3",
-        "cadillac-4"
+        "base-087",
+        "base-086",
+        "base-088"
       ],
       "relatedSlugs": [
-        "reformer",
-        "barrel",
-        "chair"
+        "reformers",
+        "tower-reformers",
+        "cadillacs"
       ],
       "series": [
         {
           "sku": "PR-003",
           "name": {
-            "pt": "Cadillac Reformer, Faia",
-            "en": "Cadillac Reformer, Beech"
+            "pt": "Reformer Dobrável, Carvalho",
+            "en": "Folding Reformer, Oak"
+          },
+          "dims": "235 × 67 × 30,5 cm",
+          "image": "base-086"
+        },
+        {
+          "sku": "PR-005",
+          "name": {
+            "pt": "Reformer Dobrável, Carvalho",
+            "en": "Folding Reformer, Oak"
+          },
+          "dims": "240 × 62 × 56 cm",
+          "image": "base-087"
+        },
+        {
+          "sku": "PR-008",
+          "name": {
+            "pt": "Reformer Dobrável, Ácer",
+            "en": "Folding Reformer, Maple"
+          },
+          "dims": "235 × 67 × 30,5 cm",
+          "image": "base-088"
+        }
+      ]
+    },
+    {
+      "slug": "tower-reformers",
+      "categoryKey": "tower-reformers",
+      "name": "Reformers com Torre",
+      "tagline": {
+        "pt": "Reformer e torre, num só aparelho.",
+        "en": "Reformer and tower, in a single apparatus."
+      },
+      "description": {
+        "pt": "Reformers com torre em carvalho, ácer e alumínio, incluindo versões Core Bed em branco e preto, a versatilidade do half-cadillac num só corpo.",
+        "en": "Tower reformers in oak, maple and aluminium, including white and black Core Bed versions, half-cadillac versatility in a single body."
+      },
+      "dimensions": {
+        "length_cm": 241,
+        "width_cm": 74,
+        "height_cm": 200
+      },
+      "weightCapacityKg": 200,
+      "material": {
+        "pt": "Madeira de carvalho / ácer ou liga de alumínio",
+        "en": "Oak / maple wood or aluminium alloy"
+      },
+      "leadTimeWeeks": 8,
+      "warrantyYears": 5,
+      "colourways": [
+        {
+          "name": {
+            "pt": "Preto",
+            "en": "Black"
+          },
+          "hex": "#17171A"
+        },
+        {
+          "name": {
+            "pt": "Branco",
+            "en": "White"
+          },
+          "hex": "#EFECE6"
+        }
+      ],
+      "woodFinishes": [
+        {
+          "name": {
+            "pt": "Carvalho",
+            "en": "Oak"
+          },
+          "hex": "#C8A97E"
+        },
+        {
+          "name": {
+            "pt": "Ácer",
+            "en": "Maple"
+          },
+          "hex": "#E3C79B"
+        }
+      ],
+      "metalFinishes": [
+        {
+          "name": {
+            "pt": "Liga de alumínio",
+            "en": "Aluminium alloy"
+          },
+          "hex": "#BFC4C9"
+        }
+      ],
+      "images": [
+        "base-089",
+        "base-091",
+        "base-095"
+      ],
+      "relatedSlugs": [
+        "reformers",
+        "folding-reformers",
+        "cadillacs"
+      ],
+      "series": [
+        {
+          "sku": "PR-002",
+          "name": {
+            "pt": "Reformer com Torre, Carvalho",
+            "en": "Tower Reformer, Oak"
+          },
+          "dims": "241 × 74 × 38,5 cm · torre 200 cm",
+          "image": "base-089"
+        },
+        {
+          "sku": "PR-006",
+          "name": {
+            "pt": "Reformer com Torre, Carvalho",
+            "en": "Tower Reformer, Oak"
+          },
+          "dims": "230,5 × 74 × 200 cm",
+          "image": "base-090"
+        },
+        {
+          "sku": "PR-010",
+          "name": {
+            "pt": "Reformer com Torre, Ácer",
+            "en": "Tower Reformer, Maple"
+          },
+          "dims": "241 × 74 × 38,5 cm · torre 200 cm",
+          "image": "base-092"
+        },
+        {
+          "sku": "PR-017",
+          "name": {
+            "pt": "Reformer com Torre, Alumínio",
+            "en": "Tower Reformer, Aluminium"
+          },
+          "dims": "245 × 67 × 35 cm · torre 200 cm",
+          "image": "base-093"
+        },
+        {
+          "sku": "PR-018",
+          "name": {
+            "pt": "Reformer com Torre, Alumínio",
+            "en": "Tower Reformer, Aluminium"
+          },
+          "dims": "238 × 74,5 × 186 cm",
+          "image": "base-091"
+        },
+        {
+          "sku": "PR-021",
+          "name": {
+            "pt": "Core Bed Branca com Torre",
+            "en": "White Core Bed with Tower"
+          },
+          "dims": "241 × 80 × 35 cm · torre 205 cm",
+          "image": "base-095"
+        },
+        {
+          "sku": "PR-022",
+          "name": {
+            "pt": "Core Bed Branca Full Track com Torre",
+            "en": "White Core Bed Full Track with Tower"
+          },
+          "dims": "240 × 82 × 196 cm",
+          "image": "base-094"
+        },
+        {
+          "sku": "PR-023",
+          "name": {
+            "pt": "Core Bed Branca com Torre",
+            "en": "White Core Bed with Tower"
+          },
+          "dims": "240 × 82 × 198 cm",
+          "image": "base-095"
+        },
+        {
+          "sku": "PR-025",
+          "name": {
+            "pt": "Core Bed Preta Full Track com Torre",
+            "en": "Black Core Bed Full Track with Tower"
+          },
+          "dims": "239 × 90 × 196 cm",
+          "image": "base-101"
+        },
+        {
+          "sku": "PR-026",
+          "name": {
+            "pt": "Core Bed Preta Full Track com Torre",
+            "en": "Black Core Bed Full Track with Tower"
+          },
+          "dims": "239 × 90 × 189 cm",
+          "image": "base-102"
+        }
+      ]
+    },
+    {
+      "slug": "cadillacs",
+      "categoryKey": "cadillacs",
+      "name": "Cadillacs",
+      "tagline": {
+        "pt": "Amplitude e versatilidade clínica.",
+        "en": "Range and clinical versatility."
+      },
+      "description": {
+        "pt": "Cadillacs e cadillac-reformers em carvalho e faia, com trapézio completo para trabalho assistido e reabilitação.",
+        "en": "Cadillacs and cadillac-reformers in oak and beech, with a full trapeze for assisted work and rehabilitation."
+      },
+      "dimensions": {
+        "length_cm": 234,
+        "width_cm": 78,
+        "height_cm": 201
+      },
+      "weightCapacityKg": 220,
+      "material": {
+        "pt": "Madeira de carvalho / faia",
+        "en": "Oak / beech wood"
+      },
+      "leadTimeWeeks": 8,
+      "warrantyYears": 5,
+      "colourways": [
+        {
+          "name": {
+            "pt": "Preto",
+            "en": "Black"
+          },
+          "hex": "#17171A"
+        }
+      ],
+      "woodFinishes": [
+        {
+          "name": {
+            "pt": "Carvalho",
+            "en": "Oak"
+          },
+          "hex": "#C8A97E"
+        },
+        {
+          "name": {
+            "pt": "Faia",
+            "en": "Beech"
+          },
+          "hex": "#D6B78A"
+        }
+      ],
+      "metalFinishes": [],
+      "images": [
+        "base-099",
+        "base-100",
+        "base-090"
+      ],
+      "relatedSlugs": [
+        "reformers",
+        "folding-reformers",
+        "tower-reformers"
+      ],
+      "series": [
+        {
+          "sku": "PR-004",
+          "name": {
+            "pt": "Cadillac Reformer, Carvalho",
+            "en": "Cadillac Reformer, Oak"
           },
           "dims": "234 × 77,5 × 201 cm",
-          "image": "cad-beech"
+          "image": "base-099"
         },
         {
           "sku": "PR-011",
@@ -441,7 +485,7 @@
             "en": "Cadillac Reformer"
           },
           "dims": "224,5 × 78 × 200 cm",
-          "image": "cadillac-2"
+          "image": "base-100"
         },
         {
           "sku": "PR-012",
@@ -450,169 +494,39 @@
             "en": "Cadillac with Tower"
           },
           "dims": "230,5 × 74 × 200 cm",
-          "image": "cadillac-1"
+          "image": "base-090"
         },
         {
           "sku": "PR-013",
           "name": {
-            "pt": "Cadillac Reformer Alto",
-            "en": "High Cadillac Reformer"
+            "pt": "Cadillac Reformer, Faia",
+            "en": "Cadillac Reformer, Beech"
           },
           "dims": "225 × 87,5 × 200 cm",
-          "image": "cadillac-3"
+          "image": "base-101"
         },
         {
           "sku": "PR-014",
           "name": {
-            "pt": "Cadillac Compacto",
-            "en": "Compact Cadillac"
+            "pt": "Cadillac Reformer, Faia",
+            "en": "Cadillac Reformer, Beech"
           },
           "dims": "236 × 74 × 38,5 cm",
-          "image": "cadillac-4"
-        },
-        {
-          "sku": "PR-027",
-          "name": {
-            "pt": "Ladder Bed de Dupla Face",
-            "en": "Two-Way Ladder Bed"
-          },
-          "dims": "183 × 94,5 × 233,5 cm",
-          "image": "ladder-tower"
-        },
-        {
-          "sku": "PR-029",
-          "name": {
-            "pt": "Torre Gyrotonic, Bordo",
-            "en": "Gyrotonic Tower, Maple"
-          },
-          "dims": "165 × 59 × 90 cm · Torre 198 × 17 × 199 cm",
-          "image": "gyrotonic"
-        },
-        {
-          "sku": "PR-030",
-          "name": {
-            "pt": "Torre Gyrotonic, Faia",
-            "en": "Gyrotonic Tower, Beech"
-          },
-          "dims": "165 × 59 × 90 cm · Torre 198 × 17 × 199 cm",
-          "image": "gyrotonic"
+          "image": "base-096"
         }
       ]
     },
     {
-      "slug": "chair",
-      "categoryKey": "chair",
-      "name": "The Combo Chair",
+      "slug": "chairs-barrels",
+      "categoryKey": "chairs-barrels",
+      "name": "Cadeiras, Barris & Corretores",
       "tagline": {
-        "pt": "Compacta na forma, exigente no movimento.",
-        "en": "Compact in form, demanding in movement."
+        "pt": "As peças que apuram a técnica.",
+        "en": "The pieces that refine technique."
       },
       "description": {
-        "pt": "Estrutura compacta em madeira maciça com pedal dividido de resistência variável e pegas altas, ideal para estúdios boutique e sessões de precisão. Uma peça discreta que não abdica de exigência técnica.",
-        "en": "A compact solid-wood frame with variable-resistance split pedal and high handles, ideal for boutique studios and precision sessions. A discreet piece that never compromises on technical demand."
-      },
-      "dimensions": {
-        "length_cm": 85,
-        "width_cm": 68,
-        "height_cm": 60
-      },
-      "weightCapacityKg": 150,
-      "material": {
-        "pt": "Madeira maciça, aço inoxidável, estofo técnico",
-        "en": "Solid wood, stainless steel, technical upholstery"
-      },
-      "leadTimeWeeks": "5–7",
-      "warrantyYears": 5,
-      "colourways": [
-        {
-          "name": {
-            "pt": "Preto",
-            "en": "Black"
-          },
-          "hex": "#1A1A1A"
-        },
-        {
-          "name": {
-            "pt": "Grafite",
-            "en": "Graphite"
-          },
-          "hex": "#2E2E2E"
-        }
-      ],
-      "woodFinishes": [
-        {
-          "name": {
-            "pt": "Bordo Natural",
-            "en": "Natural Maple"
-          },
-          "hex": "#C8AD84"
-        },
-        {
-          "name": {
-            "pt": "Faia Clara",
-            "en": "Light Beech"
-          },
-          "hex": "#E7D9C4"
-        }
-      ],
-      "metalFinishes": [
-        {
-          "name": {
-            "pt": "Preto Fosco",
-            "en": "Matte Black"
-          },
-          "hex": "#111111"
-        },
-        {
-          "name": {
-            "pt": "Aço Inoxidável",
-            "en": "Stainless Steel"
-          },
-          "hex": "#B9B9B6"
-        }
-      ],
-      "images": [
-        "chair-1",
-        "chair-2",
-        "trio-maple"
-      ],
-      "relatedSlugs": [
-        "barrel",
-        "spine-corrector",
-        "reformer"
-      ],
-      "series": [
-        {
-          "sku": "PC-001",
-          "name": {
-            "pt": "Combo Chair, Bordo",
-            "en": "Combo Chair, Maple"
-          },
-          "dims": "85 × 67,5 × 59,5 cm",
-          "image": "chair-1"
-        },
-        {
-          "sku": "PC-002",
-          "name": {
-            "pt": "Combo Chair, Faia",
-            "en": "Combo Chair, Beech"
-          },
-          "dims": "81 × 57,5 × 61 cm",
-          "image": "chair-2"
-        }
-      ]
-    },
-    {
-      "slug": "barrel",
-      "categoryKey": "barrel",
-      "name": "The Ladder Barrel",
-      "tagline": {
-        "pt": "Curvatura precisa para extensão e mobilidade.",
-        "en": "Precise curvature for extension and mobility."
-      },
-      "description": {
-        "pt": "Barril de madeira curvada revestido a estofo técnico, com escada de barras ajustável para trabalho de extensão, alongamento e mobilidade da coluna com conforto e segurança.",
-        "en": "Curved wood barrel finished in technical upholstery, with an adjustable rung ladder for spinal extension, stretching and mobility work in comfort and safety."
+        "pt": "Cadeiras de Pilates, ladder barrels e spine correctors em carvalho e ácer, precisão para o trabalho de detalhe.",
+        "en": "Pilates chairs, ladder barrels and spine correctors in oak and maple, precision for detailed work."
       },
       "dimensions": {
         "length_cm": 111,
@@ -621,380 +535,609 @@
       },
       "weightCapacityKg": 150,
       "material": {
-        "pt": "Madeira maciça curvada, estofo técnico",
-        "en": "Curved solid wood, technical upholstery"
+        "pt": "Madeira de carvalho / ácer",
+        "en": "Oak / maple wood"
       },
-      "leadTimeWeeks": "4–6",
-      "warrantyYears": 3,
+      "leadTimeWeeks": 8,
+      "warrantyYears": 5,
       "colourways": [
         {
           "name": {
             "pt": "Preto",
             "en": "Black"
           },
-          "hex": "#1A1A1A"
-        },
-        {
-          "name": {
-            "pt": "Grafite",
-            "en": "Graphite"
-          },
-          "hex": "#2E2E2E"
-        },
-        {
-          "name": {
-            "pt": "Creme",
-            "en": "Cream"
-          },
-          "hex": "#F4F1EC"
+          "hex": "#17171A"
         }
       ],
       "woodFinishes": [
         {
           "name": {
-            "pt": "Bordo Natural",
-            "en": "Natural Maple"
+            "pt": "Carvalho",
+            "en": "Oak"
           },
-          "hex": "#C8AD84"
+          "hex": "#C8A97E"
         },
         {
           "name": {
-            "pt": "Faia Clara",
-            "en": "Light Beech"
+            "pt": "Ácer",
+            "en": "Maple"
           },
-          "hex": "#E7D9C4"
+          "hex": "#E3C79B"
         }
       ],
       "metalFinishes": [],
       "images": [
-        "barrel-1",
-        "barrel-2",
-        "trio-beech"
+        "base-104",
+        "base-106",
+        "base-108"
       ],
       "relatedSlugs": [
-        "spine-corrector",
-        "chair",
-        "cadillac"
+        "reformers",
+        "folding-reformers",
+        "tower-reformers"
       ],
       "series": [
         {
+          "sku": "PC-001",
+          "name": {
+            "pt": "Cadeira de Pilates, Carvalho",
+            "en": "Pilates Chair, Oak"
+          },
+          "dims": "85 × 67,5 × 59,5 cm",
+          "image": "base-104"
+        },
+        {
+          "sku": "PC-002",
+          "name": {
+            "pt": "Cadeira de Pilates, Ácer",
+            "en": "Pilates Chair, Maple"
+          },
+          "dims": "81 × 57,5 × 61 cm",
+          "image": "base-105"
+        },
+        {
           "sku": "LB-001",
           "name": {
-            "pt": "Ladder Barrel, Bordo",
-            "en": "Ladder Barrel, Maple"
+            "pt": "Ladder Barrel, Carvalho",
+            "en": "Ladder Barrel, Oak"
           },
           "dims": "111 × 62 × 98 cm",
-          "image": "barrel-1"
+          "image": "base-106"
         },
         {
           "sku": "LB-002",
           "name": {
-            "pt": "Ladder Barrel, Faia",
-            "en": "Ladder Barrel, Beech"
+            "pt": "Ladder Barrel, Ácer",
+            "en": "Ladder Barrel, Maple"
           },
           "dims": "111 × 62 × 98 cm",
-          "image": "barrel-2"
+          "image": "base-107"
+        },
+        {
+          "sku": "SC-001",
+          "name": {
+            "pt": "Spine Corrector, Carvalho",
+            "en": "Spine Corrector, Oak"
+          },
+          "dims": "94 × 47,5 × 32,5 cm",
+          "image": "base-108"
+        },
+        {
+          "sku": "SC-002",
+          "name": {
+            "pt": "Spine Corrector, Ácer",
+            "en": "Spine Corrector, Maple"
+          },
+          "dims": "94 × 47,5 × 32,5 cm",
+          "image": "base-109"
         }
       ]
     },
     {
-      "slug": "spine-corrector",
-      "categoryKey": "spine-corrector",
-      "name": "The Corrector Arc",
+      "slug": "home-line",
+      "categoryKey": "home-line",
+      "name": "Linha Home",
       "tagline": {
-        "pt": "Suporte escultural para a coluna.",
-        "en": "Sculptural support for the spine."
+        "pt": "O estúdio, em casa.",
+        "en": "The studio, at home."
       },
       "description": {
-        "pt": "Arco em madeira maciça revestido a estofo técnico, desenhado para alongamento seguro e progressivo da coluna. Uma peça de escala reduzida com presença de escultura.",
-        "en": "Solid-wood arc finished in technical upholstery, designed for safe, progressive spinal lengthening. A small-scale piece with sculptural presence."
+        "pt": "Reformers compactos para uso doméstico, com resistência por tubo de látex e mola, em versões leve e de estrutura alongada.",
+        "en": "Compact reformers for home use, with latex-tube and spring resistance, in light and extended-frame versions."
       },
       "dimensions": {
-        "length_cm": 94,
-        "width_cm": 48,
-        "height_cm": 33
+        "length_cm": 197,
+        "width_cm": 57,
+        "height_cm": 73
       },
       "weightCapacityKg": 150,
       "material": {
-        "pt": "Madeira maciça, estofo técnico",
-        "en": "Solid wood, technical upholstery"
+        "pt": "Estrutura em alumínio · resistência por tubo de látex / mola",
+        "en": "Aluminium frame · latex-tube / spring resistance"
       },
-      "leadTimeWeeks": "4–6",
-      "warrantyYears": 3,
+      "leadTimeWeeks": 8,
+      "warrantyYears": 5,
       "colourways": [
         {
           "name": {
             "pt": "Preto",
             "en": "Black"
           },
-          "hex": "#1A1A1A"
+          "hex": "#17171A"
         },
         {
           "name": {
-            "pt": "Grafite",
-            "en": "Graphite"
+            "pt": "Branco",
+            "en": "White"
           },
-          "hex": "#2E2E2E"
+          "hex": "#EFECE6"
+        }
+      ],
+      "woodFinishes": [],
+      "metalFinishes": [
+        {
+          "name": {
+            "pt": "Liga de alumínio",
+            "en": "Aluminium alloy"
+          },
+          "hex": "#BFC4C9"
+        }
+      ],
+      "images": [
+        "base-111",
+        "base-110",
+        "base-113"
+      ],
+      "relatedSlugs": [
+        "reformers",
+        "folding-reformers",
+        "tower-reformers"
+      ],
+      "series": [
+        {
+          "sku": "PR-S1E",
+          "name": {
+            "pt": "Reformer Home Leve",
+            "en": "Light Home Reformer"
+          },
+          "dims": "190 × 57 × 64 cm",
+          "image": "base-110"
+        },
+        {
+          "sku": "PR-S1",
+          "name": {
+            "pt": "Reformer Home",
+            "en": "Home Reformer"
+          },
+          "dims": "197 × 57 × 72,5 cm",
+          "image": "base-111"
+        },
+        {
+          "sku": "PR-S2",
+          "name": {
+            "pt": "Reformer Home, Calha Alongada",
+            "en": "Home Reformer, Extended Track"
+          },
+          "dims": "197 × 57 × 72,5 cm",
+          "image": "base-112"
+        },
+        {
+          "sku": "PR-S3",
+          "name": {
+            "pt": "Reformer Home, Estrutura Alongada",
+            "en": "Home Reformer, Extended Frame"
+          },
+          "dims": "234 × 64 × 63,5 cm",
+          "image": "base-113"
+        }
+      ]
+    },
+    {
+      "slug": "special-equipment",
+      "categoryKey": "special-equipment",
+      "name": "Equipamentos Especiais",
+      "tagline": {
+        "pt": "Para além do reformer.",
+        "en": "Beyond the reformer."
+      },
+      "description": {
+        "pt": "Ladder bed, reformer de parede, gyrotonic, megaformer e torre de treino vertical, aparelhos especiais para programas avançados.",
+        "en": "Ladder bed, wall reformer, gyrotonic, megaformer and vertical training tower, special apparatus for advanced programmes."
+      },
+      "dimensions": {
+        "length_cm": 320,
+        "width_cm": 120,
+        "height_cm": 107
+      },
+      "weightCapacityKg": 200,
+      "material": {
+        "pt": "Madeira de ácer / faia e aço",
+        "en": "Maple / beech wood and steel"
+      },
+      "leadTimeWeeks": 8,
+      "warrantyYears": 5,
+      "colourways": [
+        {
+          "name": {
+            "pt": "Preto",
+            "en": "Black"
+          },
+          "hex": "#17171A"
         }
       ],
       "woodFinishes": [
         {
           "name": {
-            "pt": "Bordo Natural",
-            "en": "Natural Maple"
+            "pt": "Ácer",
+            "en": "Maple"
           },
-          "hex": "#C8AD84"
+          "hex": "#E3C79B"
         },
         {
           "name": {
-            "pt": "Faia Clara",
-            "en": "Light Beech"
+            "pt": "Faia",
+            "en": "Beech"
           },
-          "hex": "#E7D9C4"
+          "hex": "#D6B78A"
         }
       ],
-      "metalFinishes": [],
+      "metalFinishes": [
+        {
+          "name": {
+            "pt": "Liga de alumínio",
+            "en": "Aluminium alloy"
+          },
+          "hex": "#BFC4C9"
+        }
+      ],
       "images": [
-        "spine-1",
-        "spine-2",
-        "trio-maple"
+        "base-118",
+        "base-116",
+        "base-119"
       ],
       "relatedSlugs": [
-        "barrel",
-        "chair",
-        "reformer"
+        "reformers",
+        "folding-reformers",
+        "tower-reformers"
       ],
       "series": [
         {
-          "sku": "SC-001",
+          "sku": "PR-027",
           "name": {
-            "pt": "Spine Corrector, Bordo",
-            "en": "Spine Corrector, Maple"
+            "pt": "Ladder Bed Bidirecional, Ácer",
+            "en": "Bidirectional Ladder Bed, Maple"
           },
-          "dims": "94 × 47,5 × 32,5 cm",
-          "image": "spine-1"
+          "dims": "183 × 94,5 × 233,5 cm",
+          "image": "base-114"
         },
         {
-          "sku": "SC-002",
+          "sku": "PR-028",
           "name": {
-            "pt": "Spine Corrector, Faia",
-            "en": "Spine Corrector, Beech"
+            "pt": "Reformer de Parede",
+            "en": "Wall Reformer"
           },
-          "dims": "94 × 47,5 × 32,5 cm",
-          "image": "spine-2"
+          "dims": "183 × 59 × 7 cm",
+          "image": "base-115"
+        },
+        {
+          "sku": "PR-029",
+          "name": {
+            "pt": "Reformer Gyrotonic, Faia",
+            "en": "Gyrotonic Reformer, Beech"
+          },
+          "dims": "Giroscópio 165 × 59 × 90 cm · torre 198 × 17 × 199 cm",
+          "image": "base-116"
+        },
+        {
+          "sku": "PR-030",
+          "name": {
+            "pt": "Reformer Gyrotonic, Ácer",
+            "en": "Gyrotonic Reformer, Maple"
+          },
+          "dims": "Giroscópio 165 × 59 × 90 cm · torre 198 × 17 × 199 cm",
+          "image": "base-117"
+        },
+        {
+          "sku": "PR-031",
+          "name": {
+            "pt": "Megaformer",
+            "en": "Megaformer"
+          },
+          "dims": "320 × 120 × 107 cm",
+          "image": "base-118"
+        },
+        {
+          "sku": "PR-032",
+          "name": {
+            "pt": "Torre de Treino Vertical",
+            "en": "Vertical Training Tower"
+          },
+          "dims": "129 × 93 × 212 cm",
+          "image": "base-119"
         }
       ]
     }
   ],
   "accessoryCategories": [
     {
-      "key": "mat",
-      "slug": "mat",
-      "image": "acc-mat",
+      "key": "boards",
+      "slug": "boards",
+      "image": "base-000",
       "name": {
-        "pt": "Tapete",
-        "en": "Mat"
+        "pt": "Pranchas & Treinadores",
+        "en": "Boards & Trainers"
       },
       "tagline": {
-        "pt": "A base de cada movimento.",
-        "en": "The base of every movement."
+        "pt": "O estúdio, em formato portátil.",
+        "en": "The studio, in portable form."
       },
       "intro": {
-        "pt": "Tapetes técnicos antiderrapantes, em cortiça, PU e versões dobráveis.",
-        "en": "Non-slip technical mats in cork, PU and foldable versions."
+        "pt": "Pranchas e treinadores de Pilates dobráveis, com extensores e resistência regulável, para treino em casa ou em grupo.",
+        "en": "Folding Pilates boards and trainers with extensors and adjustable resistance, for home or group training."
       },
       "items": [
         {
           "sku": null,
           "name": {
-            "pt": "Tapete de Treino PU",
-            "en": "PU Training Mat"
+            "pt": "Prancha de Pilates Dobrável",
+            "en": "Folding Pilates Board"
           },
-          "spec": "183 × 68 cm · 2–5 mm",
-          "image": "acc-mat"
+          "spec": "PP + EVA + espuma · 99 × 41 × 6,5 cm",
+          "image": "base-002"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Tapete Arqueado",
-            "en": "Arched Mat"
+            "pt": "Prancha de Pilates Premium",
+            "en": "Premium Pilates Board"
           },
-          "spec": "183 × 68 cm · 5,5 mm",
-          "image": "acc-mat"
+          "spec": "Ferro, PP, EVA, ABS, látex, TPE · 152 × 55 × 13,5 cm",
+          "image": "base-003"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Tapete de Cortiça",
-            "en": "Cork Mat"
+            "pt": "Prancha Dobrável com Extensores",
+            "en": "Folding Board with Extensors"
           },
-          "spec": "PU + cortiça natural",
-          "image": "acc-cork-mat"
+          "spec": "PP + aço + TPE + espuma · 106 × 41 × 7 cm",
+          "image": "base-005"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Tapete Dobrável",
-            "en": "Foldable Mat"
+            "pt": "Prancha com Extensores",
+            "en": "Board with Extensors"
           },
-          "spec": "TPE · 6–10 mm",
-          "image": "acc-mat-fold"
+          "spec": "PP + aço + TPE + espuma · 106 × 41 × 7 cm",
+          "image": "base-007"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Treinador de Pilates Vertical",
+            "en": "Vertical Pilates Trainer"
+          },
+          "spec": "PP + EVA + espuma · 15 × 14 × 145 cm",
+          "image": "base-010"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Prancha de Pilates Compacta",
+            "en": "Compact Pilates Board"
+          },
+          "spec": "PP + EVA + espuma · 102 × 36 × 6 cm",
+          "image": "base-004"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Prancha de Pilates Dobrável",
+            "en": "Folding Pilates Board"
+          },
+          "spec": "PP + aço + TPE + espuma · 100 × 41 × 4,5 cm",
+          "image": "base-008"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Prancha de Pilates em Madeira",
+            "en": "Wooden Pilates Board"
+          },
+          "spec": "Madeira · 83 × 43 × 6 cm",
+          "image": "base-009"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Treinador de Pernas Dobrável",
+            "en": "Folding Leg Trainer"
+          },
+          "spec": "PP · 126 × 28 × 8 cm",
+          "image": "base-006"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Treinador de Pernas",
+            "en": "Leg Trainer"
+          },
+          "spec": "PP · 120 × 38 × 38 cm",
+          "image": "base-006"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Stepper Twist com Extensores",
+            "en": "Twist Stepper with Extensors"
+          },
+          "spec": "PP + aço inoxidável · 53 × 33 × 11,5 cm",
+          "image": "base-012"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Prancha com Extensores",
+            "en": "Board with Extensors"
+          },
+          "spec": "PP + aço + TPE + espuma · 106 × 41 × 3,2 cm",
+          "image": "base-011"
         }
       ]
     },
     {
-      "key": "pilates-ball",
-      "slug": "pilates-ball",
-      "image": "acc-ball",
+      "key": "silicone-weights",
+      "slug": "silicone-weights",
+      "image": "base-014",
       "name": {
-        "pt": "Bola de Pilates",
-        "en": "Pilates Ball"
+        "pt": "Pesos em Silicone",
+        "en": "Silicone Weights"
       },
       "tagline": {
-        "pt": "Controlo, equilíbrio e core.",
-        "en": "Control, balance and core."
+        "pt": "Tonificar, em tons de creme.",
+        "en": "Toning, in cream tones."
       },
       "intro": {
-        "pt": "Bolas de Pilates e de ginástica para trabalho de precisão e estabilidade.",
-        "en": "Pilates and gym balls for precision and stability work."
+        "pt": "Pesos revestidos a silicone, pulso, halteres, kettlebell e barras, em seis cores da paleta da marca: preto, rosa, verde-acinzentado, caramelo, bege e rosa-nude.",
+        "en": "Silicone-coated weights, wrist, dumbbells, kettlebell and bars, in six brand-palette colours: black, pink, sage, caramel, beige and nude-pink."
       },
       "items": [
         {
           "sku": null,
           "name": {
-            "pt": "Bola de Pilates",
-            "en": "Pilates Ball"
+            "pt": "Pesos de Pulso Quadrados",
+            "en": "Square Wrist Weights"
           },
-          "spec": "Ø 20–25 cm",
-          "image": "acc-ball"
+          "spec": "Silicone + ferro + velcro · 0,5–2 lb / 1 kg (par)",
+          "image": "base-015"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Bola de Ginástica",
-            "en": "Gym Ball"
+            "pt": "Pesos de Pulso Quadrados Monocromáticos",
+            "en": "Monochrome Square Wrist Weights"
           },
-          "spec": "Ø 55–75 cm",
-          "image": "acc-gym-ball"
+          "spec": "Silicone + ferro + velcro · 1–2 lb (par)",
+          "image": "base-016"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Pesos de Pulso Triangulares",
+            "en": "Triangular Wrist Weights"
+          },
+          "spec": "Silicone + ferro + velcro · 0,5–2 lb (par)",
+          "image": "base-017"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Pesos de Pulso Triangulares Monocromáticos",
+            "en": "Monochrome Triangular Wrist Weights"
+          },
+          "spec": "Silicone + ferro + velcro · 1–2 lb (par)",
+          "image": "base-018"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres Ergonómicos",
+            "en": "Ergonomic Dumbbells"
+          },
+          "spec": "Silicone + ferro · 1–2,5 kg (par)",
+          "image": "base-001"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres de Topo Plano",
+            "en": "Flat-Top Dumbbells"
+          },
+          "spec": "Silicone + ferro · 1–2 kg (par)",
+          "image": "base-019"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres Semicirculares",
+            "en": "Semicircular Dumbbells"
+          },
+          "spec": "Silicone + ferro · 1–2 kg",
+          "image": "base-024"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres Circulares",
+            "en": "Circular Dumbbells"
+          },
+          "spec": "Silicone + ferro · 5–15 lb",
+          "image": "base-022"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres Triangulares",
+            "en": "Triangular Dumbbells"
+          },
+          "spec": "Silicone + ferro · 7–10 lb",
+          "image": "base-023"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Kettlebell de Saco",
+            "en": "Bag Kettlebell"
+          },
+          "spec": "Silicone + ferro · 10 lb",
+          "image": "base-024"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Barra Crossbeam",
+            "en": "Crossbeam Bar"
+          },
+          "spec": "Silicone + ferro · 15 lb (90 cm) / 25 lb (110 cm)",
+          "image": "base-020"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Barra Triangular",
+            "en": "Triangular Bar"
+          },
+          "spec": "Silicone + ferro · 5 kg · 55 cm",
+          "image": "base-020"
         }
       ]
     },
     {
-      "key": "pilates-ring",
-      "slug": "pilates-ring",
-      "image": "acc-ring-c",
+      "key": "massage",
+      "slug": "massage",
+      "image": "base-030",
       "name": {
-        "pt": "Aro de Pilates",
-        "en": "Pilates Ring"
+        "pt": "Massagem & Pequenos Acessórios",
+        "en": "Massage & Small Accessories"
       },
       "tagline": {
-        "pt": "Resistência que tonifica.",
-        "en": "Resistance that tones."
+        "pt": "Os detalhes que completam a prática.",
+        "en": "The details that complete the practice."
       },
       "intro": {
-        "pt": "Aro de resistência com núcleo em fibra de vidro, para tonificação e controlo.",
-        "en": "Resistance ring with a glass-fibre core, for toning and control."
+        "pt": "Cones e bolas de massagem, bandas, bola e anel de Pilates, em silicone, na paleta neutra da marca.",
+        "en": "Massage cones and balls, bands, Pilates ball and ring, in silicone, in the brand's neutral palette."
       },
       "items": [
-        {
-          "sku": null,
-          "name": {
-            "pt": "Aro de Pilates",
-            "en": "Pilates Ring"
-          },
-          "spec": "Ø 38 cm · fibra de vidro",
-          "image": "acc-ring-c"
-        }
-      ]
-    },
-    {
-      "key": "weights",
-      "slug": "weights",
-      "image": "acc-rings",
-      "name": {
-        "pt": "Pesos",
-        "en": "Weights"
-      },
-      "tagline": {
-        "pt": "Tonificação em tons de creme.",
-        "en": "Toning in cream tones."
-      },
-      "intro": {
-        "pt": "Pesos revestidos a silicone, anilhas, halteres, kettlebell e barras, na paleta neutra da marca.",
-        "en": "Silicone-coated weights, rings, dumbbells, kettlebell and bars, in the brand's neutral palette."
-      },
-      "items": [
-        {
-          "sku": null,
-          "name": {
-            "pt": "Anilhas de Peso",
-            "en": "Weighted Rings"
-          },
-          "spec": "2,3 e 4,5 kg · silicone + ferro",
-          "image": "acc-rings"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Bracelete de Peso Quadrada",
-            "en": "Square Weighted Bracelet"
-          },
-          "spec": "0,25–1 kg por par · velcro",
-          "image": "acc-bracelet"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Halteres de Punho",
-            "en": "Handprint Dumbbells"
-          },
-          "spec": "1–2,5 kg · silicone + ferro",
-          "image": "acc-flat-dumbbell"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Halteres Planos",
-            "en": "Flat-Headed Dumbbells"
-          },
-          "spec": "1–2 kg · silicone + ferro",
-          "image": "acc-flat-dumbbell"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Haltere Triangular",
-            "en": "Triangular Dumbbell"
-          },
-          "spec": "3,2–4,5 kg · silicone + ferro",
-          "image": "acc-tri-dumbbell"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Kettlebell de Estúdio",
-            "en": "Studio Kettlebell"
-          },
-          "spec": "4,5 kg · silicone + ferro",
-          "image": "acc-kettlebell"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Barra de Peso",
-            "en": "Weighted Bar"
-          },
-          "spec": "6,8–11,3 kg · 90–110 cm",
-          "image": "acc-bar"
-        },
         {
           "sku": null,
           "name": {
             "pt": "Cone de Massagem",
             "en": "Massage Cone"
           },
-          "spec": "178 g · 6,8 × 7,6 cm",
-          "image": "acc-cone"
+          "spec": "Silicone + ferro · 178 g · 6,8 × 7,6 cm",
+          "image": "base-026"
         },
         {
           "sku": null,
@@ -1002,17 +1145,90 @@
             "pt": "Bola de Massagem",
             "en": "Massage Ball"
           },
-          "spec": "158 g · Ø 6,3 cm",
-          "image": "acc-massage-ball"
+          "spec": "Silicone + ferro · 158 g · Ø 6,3 cm",
+          "image": "base-027"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Halteres Revestidos",
-            "en": "Coated Dumbbells"
+            "pt": "Banda de Silicone",
+            "en": "Silicone Band"
           },
-          "spec": "0,5–10 kg · vinil",
-          "image": "acc-dumbbells"
+          "spec": "Silicone · 58 g · 33 × 6,9 cm",
+          "image": "base-025"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Bola de Pilates",
+            "en": "Pilates Ball"
+          },
+          "spec": "PVC · 300 g · Ø 20 cm",
+          "image": "base-028"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Capa de Silicone para Bloco de Yoga",
+            "en": "Silicone Yoga Block Cover"
+          },
+          "spec": "Silicone · lado 21,5 cm",
+          "image": "base-029"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Anel de Pilates",
+            "en": "Pilates Ring"
+          },
+          "spec": "Silicone + nylon + fibra de vidro · Ø interior 34 cm",
+          "image": "base-030"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Tapete de Yoga Arqueado",
+            "en": "Arched Yoga Mat"
+          },
+          "spec": "Borracha PU · 183 × 68 cm · 5,5 mm",
+          "image": "base-031"
+        }
+      ]
+    },
+    {
+      "key": "pvc-dumbbells",
+      "slug": "pvc-dumbbells",
+      "image": "base-033",
+      "name": {
+        "pt": "Halteres em PVC",
+        "en": "PVC Dumbbells"
+      },
+      "tagline": {
+        "pt": "Cor e peso, à sua medida.",
+        "en": "Colour and weight, made to measure."
+      },
+      "intro": {
+        "pt": "Halteres com núcleo de ferro fundido revestido a PVC, personalizáveis na cor e no peso.",
+        "en": "Cast-iron core dumbbells with a PVC coating, customisable in colour and weight."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres de Topo Plano",
+            "en": "Flat-Top Dumbbells"
+          },
+          "spec": "Ferro fundido + PVC · 0,5–10 kg",
+          "image": "base-032"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres Hexagonais",
+            "en": "Hexagonal Dumbbells"
+          },
+          "spec": "Ferro fundido + PVC · 0,5–3 kg",
+          "image": "base-033"
         },
         {
           "sku": null,
@@ -1020,428 +1236,99 @@
             "pt": "Halteres Bone",
             "en": "Bone Dumbbells"
           },
-          "spec": "0,5–3 kg",
-          "image": "acc-dumbbell-bone"
+          "spec": "Ferro fundido + PVC · 0,5–3 kg",
+          "image": "base-034"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres Quadrados",
+            "en": "Square Dumbbells"
+          },
+          "spec": "Ferro fundido + PVC · 1–5 kg",
+          "image": "base-035"
         }
       ]
     },
     {
-      "key": "resistance-bands",
-      "slug": "resistance-bands",
-      "image": "acc-bands",
+      "key": "mats",
+      "slug": "mats",
+      "image": "base-038",
       "name": {
-        "pt": "Faixas de Resistência",
-        "en": "Resistance Bands"
+        "pt": "Tapetes",
+        "en": "Mats"
       },
       "tagline": {
-        "pt": "Progressão para todos os níveis.",
-        "en": "Progression for every level."
+        "pt": "Logótipo gravado, cores à medida.",
+        "en": "Engraved logo, colours made to measure."
       },
       "intro": {
-        "pt": "Faixas e elásticos técnicos em tecido, silicone e TPE.",
-        "en": "Technical bands and elastics in fabric, silicone and TPE."
+        "pt": "Tapetes de yoga e treino em PU, TPE, cortiça e camurça, totalmente personalizáveis em logótipo, cor e forma.",
+        "en": "Yoga and training mats in PU, TPE, cork and suede, fully customisable in logo, colour and shape."
       },
       "items": [
         {
           "sku": null,
           "name": {
-            "pt": "Faixas de Resistência em Tecido",
-            "en": "Fabric Resistance Bands"
+            "pt": "Tapete de Yoga PU",
+            "en": "PU Yoga Mat"
           },
-          "spec": "3 níveis · conjunto",
-          "image": "acc-bands"
+          "spec": "Borracha PU · 2–5 mm · logótipo, cor, forma",
+          "image": "base-038"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Faixa de Silicone",
-            "en": "Silicone Resistance Band"
+            "pt": "Tapete de Yoga TPE",
+            "en": "TPE Yoga Mat"
           },
-          "spec": "58 g · 33 × 6,9 cm",
-          "image": "acc-silicone-band"
+          "spec": "TPE · 6–10 mm · logótipo, cor, forma",
+          "image": "base-031"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Faixas TPE",
-            "en": "TPE Resistance Bands"
+            "pt": "Tapete de Yoga em Cortiça",
+            "en": "Cork Yoga Mat"
           },
-          "spec": "vários níveis",
-          "image": "acc-band-tpe"
+          "spec": "Borracha PU + cortiça · logótipo, padrão",
+          "image": "base-039"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Elástico com Pedais",
-            "en": "Foot Pedal Band"
+            "pt": "Tapete de Yoga em Camurça",
+            "en": "Suede Yoga Mat"
           },
-          "spec": "tensão dupla",
-          "image": "acc-band-8"
+          "spec": "Borracha PU + camurça · logótipo, cor",
+          "image": "base-040"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Faixas de Alta Resistência",
-            "en": "Heavy-Duty Bands"
+            "pt": "Tapete de Yoga Dobrável",
+            "en": "Folding Yoga Mat"
           },
-          "spec": "loop contínuo",
-          "image": "acc-band-heavy"
-        }
-      ]
-    },
-    {
-      "key": "socks",
-      "slug": "socks",
-      "image": "acc-socks",
-      "name": {
-        "pt": "Meias",
-        "en": "Socks"
-      },
-      "tagline": {
-        "pt": "Aderência de estúdio.",
-        "en": "Studio grip."
-      },
-      "intro": {
-        "pt": "Meias antiderrapantes em algodão técnico, edição de estúdio.",
-        "en": "Non-slip technical cotton socks, studio edition."
-      },
-      "items": [
-        {
-          "sku": "YS1",
-          "name": {
-            "pt": "Meias de Pilates",
-            "en": "Pilates Socks"
-          },
-          "spec": "algodão antiderrapante",
-          "image": "acc-socks"
-        },
-        {
-          "sku": "YS2",
-          "name": {
-            "pt": "Meias de Dedos",
-            "en": "Toe Socks"
-          },
-          "spec": "algodão antiderrapante",
-          "image": "acc-socks-2"
-        },
-        {
-          "sku": "YS3",
-          "name": {
-            "pt": "Meias Altas",
-            "en": "Crew Socks"
-          },
-          "spec": "algodão antiderrapante",
-          "image": "acc-socks-3"
-        }
-      ]
-    },
-    {
-      "key": "boards",
-      "slug": "boards",
-      "image": "acc-board",
-      "name": {
-        "pt": "Boards",
-        "en": "Boards"
-      },
-      "tagline": {
-        "pt": "Reformer em formato compacto.",
-        "en": "Reformer, made compact."
-      },
-      "intro": {
-        "pt": "Boards de treino estilo reformer, dobráveis, para casa, viagem e aulas de grupo.",
-        "en": "Reformer-style training boards, foldable, for home, travel and group classes."
-      },
-      "items": [
-        {
-          "sku": "PB1",
-          "name": {
-            "pt": "Pilates Board Dobrável",
-            "en": "Folding Pilates Board"
-          },
-          "spec": "99 × 41 × 6,5 cm · 3 kg",
-          "image": "acc-board"
-        },
-        {
-          "sku": "PB2",
-          "name": {
-            "pt": "Board Reformer com Carruagem",
-            "en": "Reformer Board with Carriage"
-          },
-          "spec": "152 × 55 × 13,5 cm · 8,7 kg",
-          "image": "board-2"
-        },
-        {
-          "sku": "PB3",
-          "name": {
-            "pt": "Board com Faixas e Pegas",
-            "en": "Board with Straps and Handles"
-          },
-          "spec": "106 × 41 × 7 cm · 4,6 kg",
-          "image": "board-3"
-        },
-        {
-          "sku": "PB4",
-          "name": {
-            "pt": "Board de Treino Completo",
-            "en": "Complete Training Board"
-          },
-          "spec": "106 × 41 × 7 cm · 5,5 kg",
-          "image": "board-6"
-        },
-        {
-          "sku": "PB5",
-          "name": {
-            "pt": "Barra de Treino Multifunções",
-            "en": "Multi-Function Training Bar"
-          },
-          "spec": "145 × 15 × 14 cm · 2,35 kg",
-          "image": "board-5"
-        },
-        {
-          "sku": "PB6",
-          "name": {
-            "pt": "Board Compacto",
-            "en": "Compact Board"
-          },
-          "spec": "102 × 36 × 6 cm · 2,85 kg",
-          "image": "board-1"
-        },
-        {
-          "sku": "PB7",
-          "name": {
-            "pt": "Board Dobrável em A",
-            "en": "A-Frame Folding Board"
-          },
-          "spec": "100 × 41 × 4,5 cm · 4 kg",
-          "image": "board-7"
-        },
-        {
-          "sku": "PB8",
-          "name": {
-            "pt": "Board em Madeira",
-            "en": "Wooden Board"
-          },
-          "spec": "83 × 43 × 6 cm · 7 kg",
-          "image": "board-8"
-        },
-        {
-          "sku": "PB10",
-          "name": {
-            "pt": "Board com Rodas",
-            "en": "Board with Wheels"
-          },
-          "spec": "120 × 38 × 38 cm · 8 kg",
-          "image": "board-4"
-        },
-        {
-          "sku": "PB11",
-          "name": {
-            "pt": "Board de Torção",
-            "en": "Twist Board"
-          },
-          "spec": "53 × 33 × 11,5 cm · 4 kg",
-          "image": "board-8"
-        },
-        {
-          "sku": "PB12",
-          "name": {
-            "pt": "Board Longo",
-            "en": "Long Board"
-          },
-          "spec": "126 × 28 × 8 cm · 2,7 kg",
-          "image": "board-1"
-        }
-      ]
-    },
-    {
-      "key": "blocks",
-      "slug": "blocks",
-      "image": "acc-blocks",
-      "name": {
-        "pt": "Blocos e Rolos",
-        "en": "Blocks & Rollers"
-      },
-      "tagline": {
-        "pt": "Apoio e libertação.",
-        "en": "Support and release."
-      },
-      "intro": {
-        "pt": "Blocos de cortiça e EVA e rolos de massagem para apoio e libertação miofascial.",
-        "en": "Cork and EVA blocks and massage rollers for support and myofascial release."
-      },
-      "items": [
-        {
-          "sku": null,
-          "name": {
-            "pt": "Blocos de Cortiça",
-            "en": "Cork Blocks"
-          },
-          "spec": "bloco, meia-lua e bola",
-          "image": "acc-blocks"
+          "spec": "TPE · logótipo, cor",
+          "image": "base-041"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Blocos EVA",
-            "en": "EVA Blocks"
+            "pt": "Tapete de Treino",
+            "en": "Training Mat"
           },
-          "spec": "várias cores",
-          "image": "acc-eva-blocks"
+          "spec": "Borracha · 0,5×0,5 / 1×1 m · 15–30 mm",
+          "image": "base-042"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Capa de Bloco em Silicone",
-            "en": "Silicone Block Case"
+            "pt": "Tapete de Luta",
+            "en": "Combat Mat"
           },
-          "spec": "21,5 cm",
-          "image": "acc-eva-blocks"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Rolo de Massagem",
-            "en": "Massage Roller"
-          },
-          "spec": "alta densidade",
-          "image": "acc-roller"
-        }
-      ]
-    },
-    {
-      "key": "comfort",
-      "slug": "comfort",
-      "image": "acc-cushion-round",
-      "name": {
-        "pt": "Conforto de Estúdio",
-        "en": "Studio Comfort"
-      },
-      "tagline": {
-        "pt": "Os detalhes que acolhem.",
-        "en": "The details that welcome."
-      },
-      "intro": {
-        "pt": "Almofadas de meditação, bolsters, toalhas e o saco de estúdio.",
-        "en": "Meditation cushions, bolsters, towels and the studio bag."
-      },
-      "items": [
-        {
-          "sku": null,
-          "name": {
-            "pt": "Almofada de Meditação Redonda",
-            "en": "Round Meditation Cushion"
-          },
-          "spec": "veludo · trigo-sarraceno",
-          "image": "acc-cushion-round"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Almofada de Meditação Quadrada",
-            "en": "Square Meditation Cushion"
-          },
-          "spec": "veludo · PP",
-          "image": "acc-cushion-square"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Almofada de Yoga",
-            "en": "Yoga Bolster"
-          },
-          "spec": "cilíndrica ou retangular",
-          "image": "acc-pillow"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Almofada de Olhos Ponderada",
-            "en": "Weighted Eye Pillow"
-          },
-          "spec": "linho + lavanda",
-          "image": "acc-eye"
-        },
-        {
-          "sku": "TT1",
-          "name": {
-            "pt": "Toalha de Treino",
-            "en": "Training Towel"
-          },
-          "spec": "microfibra · 42 × 95 cm",
-          "image": "acc-towel-1"
-        },
-        {
-          "sku": "TT2",
-          "name": {
-            "pt": "Toalha com Bolsa",
-            "en": "Towel with Pouch"
-          },
-          "spec": "microfibra · 40 × 80 cm",
-          "image": "acc-towel-2"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Saco de Estúdio",
-            "en": "Studio Bag"
-          },
-          "spec": "tecido técnico",
-          "image": "acc-bag"
-        }
-      ]
-    },
-    {
-      "key": "training",
-      "slug": "training",
-      "image": "acc-hip-1",
-      "name": {
-        "pt": "Treino de Estúdio",
-        "en": "Studio Training"
-      },
-      "tagline": {
-        "pt": "Complementos de treino.",
-        "en": "Training complements."
-      },
-      "intro": {
-        "pt": "Trainers pélvicos, pisos e superfícies de treino para estúdios e espaços fitness.",
-        "en": "Pelvic trainers, flooring and training surfaces for studios and fitness spaces."
-      },
-      "items": [
-        {
-          "sku": "MT1",
-          "name": {
-            "pt": "Trainer Pélvico",
-            "en": "Hip Trainer"
-          },
-          "spec": "31 × 17 × 11,5 cm",
-          "image": "acc-hip-1"
-        },
-        {
-          "sku": "MT3",
-          "name": {
-            "pt": "Trainer Pélvico Digital",
-            "en": "Digital Hip Trainer"
-          },
-          "spec": "com contador",
-          "image": "acc-hip-2"
-        },
-        {
-          "sku": "MT4",
-          "name": {
-            "pt": "Trainer Pélvico Pro",
-            "en": "Hip Trainer Pro"
-          },
-          "spec": "25 × 15 × 9,5 cm",
-          "image": "acc-hip-3"
-        },
-        {
-          "sku": null,
-          "name": {
-            "pt": "Piso de Estúdio",
-            "en": "Studio Flooring"
-          },
-          "spec": "borracha · 15–30 mm",
-          "image": "acc-floor-tiles"
+          "spec": "3×3 / 5×5 m · personalizável",
+          "image": "base-043"
         },
         {
           "sku": null,
@@ -1449,17 +1336,391 @@
             "pt": "Tapete de Ginástica",
             "en": "Gymnastics Mat"
           },
-          "spec": "10–20 cm",
-          "image": "acc-gym-mat"
+          "spec": "10 cm / 20 cm",
+          "image": "base-043"
         },
         {
           "sku": null,
           "name": {
-            "pt": "Air Track",
-            "en": "Air Track"
+            "pt": "Tapete de Yoga Aquático",
+            "en": "Aquatic Yoga Mat"
           },
-          "spec": "insuflável · por medida",
-          "image": "acc-airtrack"
+          "spec": "Personalizável",
+          "image": "base-044"
+        }
+      ]
+    },
+    {
+      "key": "blocks-balls",
+      "slug": "blocks-balls",
+      "image": "base-047",
+      "name": {
+        "pt": "Blocos, Rolos & Bolas",
+        "en": "Blocks, Rollers & Balls"
+      },
+      "tagline": {
+        "pt": "Apoio para cada postura.",
+        "en": "Support for every posture."
+      },
+      "intro": {
+        "pt": "Blocos em cortiça e EVA, rolos de espuma, bolas e anéis de Pilates, os apoios essenciais do estúdio.",
+        "en": "Cork and EVA blocks, foam rollers, balls and Pilates rings, the studio's essential props."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Blocos de Yoga em Cortiça",
+            "en": "Cork Yoga Blocks"
+          },
+          "spec": "Cortiça",
+          "image": "base-046"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Blocos de Yoga EVA",
+            "en": "EVA Yoga Blocks"
+          },
+          "spec": "EVA",
+          "image": "base-047"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Rolo de Espuma",
+            "en": "Foam Roller"
+          },
+          "spec": "EVA / EPP",
+          "image": "base-048"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Bola de Yoga PVC",
+            "en": "PVC Yoga Ball"
+          },
+          "spec": "PVC · Ø 25 / 55 / 65 / 75 cm",
+          "image": "base-028"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Anel de Pilates",
+            "en": "Pilates Ring"
+          },
+          "spec": "Fibra de vidro temperada · Ø 38 cm",
+          "image": "base-050"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Saco de Yoga",
+            "en": "Yoga Bag"
+          },
+          "spec": "Tecido Oxford",
+          "image": "base-051"
+        }
+      ]
+    },
+    {
+      "key": "textiles",
+      "slug": "textiles",
+      "image": "base-054",
+      "name": {
+        "pt": "Têxteis & Conforto",
+        "en": "Textiles & Comfort"
+      },
+      "tagline": {
+        "pt": "O toque que faz a diferença.",
+        "en": "The touch that makes the difference."
+      },
+      "intro": {
+        "pt": "Toalhas, meias antiderrapantes, almofadas, bolsters e almofadas de olhos, conforto e aderência para cada sessão.",
+        "en": "Towels, non-slip socks, cushions, bolsters and eye pillows, comfort and grip for every session."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Toalha de Treino TT1",
+            "en": "Training Towel TT1"
+          },
+          "spec": "Microfibra · 42 × 95 / 30 × 100 cm",
+          "image": "base-052"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Toalha de Treino TT2",
+            "en": "Training Towel TT2"
+          },
+          "spec": "Microfibra · 40 × 40 / 40 × 80 cm",
+          "image": "base-053"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Meias de Yoga YS1",
+            "en": "Yoga Socks YS1"
+          },
+          "spec": "Algodão · antiderrapante",
+          "image": "base-054"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Meias de Yoga YS2",
+            "en": "Yoga Socks YS2"
+          },
+          "spec": "Algodão · antiderrapante",
+          "image": "base-055"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Meias de Yoga YS3",
+            "en": "Yoga Socks YS3"
+          },
+          "spec": "Algodão · antiderrapante",
+          "image": "base-056"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Almofada de Yoga Redonda",
+            "en": "Round Yoga Cushion"
+          },
+          "spec": "Veludo · trigo-sarraceno / algodão",
+          "image": "base-057"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Almofada de Yoga Quadrada",
+            "en": "Square Yoga Cushion"
+          },
+          "spec": "Veludo · algodão",
+          "image": "base-058"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Bolster de Yoga",
+            "en": "Yoga Bolster"
+          },
+          "spec": "Cilíndrico / retangular",
+          "image": "base-059"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Almofada de Olhos",
+            "en": "Eye Pillow"
+          },
+          "spec": "Linho + algodão + lavanda + linhaça",
+          "image": "base-060"
+        }
+      ]
+    },
+    {
+      "key": "resistance-bands",
+      "slug": "resistance-bands",
+      "image": "base-061",
+      "name": {
+        "pt": "Bandas de Resistência",
+        "en": "Resistance Bands"
+      },
+      "tagline": {
+        "pt": "Progressão para todos os níveis.",
+        "en": "Progression for every level."
+      },
+      "intro": {
+        "pt": "Bandas em silicone, TPE e tecido, extensores de pedal e de forma em 8, resistência para cada exercício.",
+        "en": "Silicone, TPE and fabric bands, pedal and figure-8 pullers, resistance for every exercise."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Banda de Resistência em Silicone",
+            "en": "Silicone Resistance Band"
+          },
+          "spec": "Silicone",
+          "image": "base-061"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Banda de Resistência TPE",
+            "en": "TPE Resistance Band"
+          },
+          "spec": "TPE",
+          "image": "base-062"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Extensor de Pedal",
+            "en": "Pedal Puller"
+          },
+          "spec": "PP + TPE",
+          "image": "base-063"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Banda de Resistência Reforçada",
+            "en": "Reinforced Resistance Band"
+          },
+          "spec": "Tecido reforçado",
+          "image": "base-064"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Banda de Resistência em Tecido",
+            "en": "Fabric Resistance Band"
+          },
+          "spec": "Tecido",
+          "image": "base-065"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Extensor em Forma de 8",
+            "en": "Figure-8 Puller"
+          },
+          "spec": "TPE",
+          "image": "base-066"
+        }
+      ]
+    },
+    {
+      "key": "glute-trainers",
+      "slug": "glute-trainers",
+      "image": "base-068",
+      "name": {
+        "pt": "Treinadores de Glúteos & Pernas",
+        "en": "Glute & Leg Trainers"
+      },
+      "tagline": {
+        "pt": "Foco no trabalho de baixo corpo.",
+        "en": "Focused lower-body work."
+      },
+      "intro": {
+        "pt": "Treinadores de glúteos e adutores com mola e resistência regulável, em quatro modelos.",
+        "en": "Glute and adductor trainers with spring and adjustable resistance, in four models."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Treinador de Glúteos MT1",
+            "en": "Glute Trainer MT1"
+          },
+          "spec": "Espuma + elástico + PP · 31 × 17 × 11,5 cm · 340 g",
+          "image": "base-067"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Treinador de Glúteos MT2",
+            "en": "Glute Trainer MT2"
+          },
+          "spec": "PP + TPE + mola · 450 g",
+          "image": "base-068"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Treinador de Glúteos MT3",
+            "en": "Glute Trainer MT3"
+          },
+          "spec": "ABS + PP + TPE + mola · 638 g",
+          "image": "base-069"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Treinador de Glúteos MT4",
+            "en": "Glute Trainer MT4"
+          },
+          "spec": "Aço + PVC · 25 × 15 × 9,5 cm · 790 g",
+          "image": "base-070"
+        }
+      ]
+    },
+    {
+      "key": "jump-ropes",
+      "slug": "jump-ropes",
+      "image": "base-071",
+      "name": {
+        "pt": "Cordas de Saltar",
+        "en": "Jump Ropes"
+      },
+      "tagline": {
+        "pt": "Cardio, com a marca do estúdio.",
+        "en": "Cardio, with the studio's mark."
+      },
+      "intro": {
+        "pt": "Cordas em alumínio e de contas, com e sem contador, em várias cores personalizáveis.",
+        "en": "Aluminium and beaded ropes, with and without counter, in several customisable colours."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Corda de Saltar em Alumínio TS1",
+            "en": "Aluminium Jump Rope TS1"
+          },
+          "spec": "160 g",
+          "image": "base-071"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Corda de Saltar com Contador TS3",
+            "en": "Counter Jump Rope TS3"
+          },
+          "spec": "Pega 19 cm · corda 3 m",
+          "image": "base-074"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Corda de Saltar de Contas TS4",
+            "en": "Beaded Jump Rope TS4"
+          },
+          "spec": "128 g · pega 16 cm · corda 3 m",
+          "image": "base-073"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Corda de Saltar em Alumínio TS5",
+            "en": "Aluminium Jump Rope TS5"
+          },
+          "spec": "Pega 14 cm · corda 3 m",
+          "image": "base-075"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Corda de Saltar em Alumínio TS6",
+            "en": "Aluminium Jump Rope TS6"
+          },
+          "spec": "Pega 16,2 cm · corda 3 m",
+          "image": "base-072"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Corda de Saltar com Contador TS7",
+            "en": "Counter Jump Rope TS7"
+          },
+          "spec": "Corda 2,8 m",
+          "image": "base-076"
         }
       ]
     }

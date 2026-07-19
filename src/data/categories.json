@@ -1,227 +1,257 @@
 [
   {
-    "key": "mat",
+    "key": "boards",
     "kind": "accessory",
-    "slug": "mat",
+    "slug": "boards",
     "name": {
-      "pt": "Tapete",
-      "en": "Mat"
+      "pt": "Pranchas & Treinadores",
+      "en": "Boards & Trainers"
     },
     "shortDescription": {
-      "pt": "A base de cada movimento.",
-      "en": "The base of every movement."
+      "pt": "O estúdio, em formato portátil.",
+      "en": "The studio, in portable form."
     },
-    "image": "acc-mat",
-    "accessoryKey": "mat"
+    "image": "base-000",
+    "accessoryKey": "boards"
   },
   {
-    "key": "pilates-ball",
+    "key": "silicone-weights",
     "kind": "accessory",
-    "slug": "pilates-ball",
+    "slug": "silicone-weights",
     "name": {
-      "pt": "Bola de Pilates",
-      "en": "Pilates Ball"
+      "pt": "Pesos em Silicone",
+      "en": "Silicone Weights"
     },
     "shortDescription": {
-      "pt": "Controlo, equilíbrio e core.",
-      "en": "Control, balance and core."
+      "pt": "Tonificar, em tons de creme.",
+      "en": "Toning, in cream tones."
     },
-    "image": "acc-ball",
-    "accessoryKey": "pilates-ball"
+    "image": "base-014",
+    "accessoryKey": "silicone-weights"
   },
   {
-    "key": "pilates-ring",
+    "key": "massage",
     "kind": "accessory",
-    "slug": "pilates-ring",
+    "slug": "massage",
     "name": {
-      "pt": "Aro de Pilates",
-      "en": "Pilates Ring"
+      "pt": "Massagem & Pequenos Acessórios",
+      "en": "Massage & Small Accessories"
     },
     "shortDescription": {
-      "pt": "Resistência que tonifica.",
-      "en": "Resistance that tones."
+      "pt": "Os detalhes que completam a prática.",
+      "en": "The details that complete the practice."
     },
-    "image": "acc-ring-c",
-    "accessoryKey": "pilates-ring"
+    "image": "base-030",
+    "accessoryKey": "massage"
   },
   {
-    "key": "weights",
+    "key": "pvc-dumbbells",
     "kind": "accessory",
-    "slug": "weights",
+    "slug": "pvc-dumbbells",
     "name": {
-      "pt": "Pesos",
-      "en": "Weights"
+      "pt": "Halteres em PVC",
+      "en": "PVC Dumbbells"
     },
     "shortDescription": {
-      "pt": "Tonificação em tons de creme.",
-      "en": "Toning in cream tones."
+      "pt": "Cor e peso, à sua medida.",
+      "en": "Colour and weight, made to measure."
     },
-    "image": "acc-rings",
-    "accessoryKey": "weights"
+    "image": "base-033",
+    "accessoryKey": "pvc-dumbbells"
+  },
+  {
+    "key": "mats",
+    "kind": "accessory",
+    "slug": "mats",
+    "name": {
+      "pt": "Tapetes",
+      "en": "Mats"
+    },
+    "shortDescription": {
+      "pt": "Logótipo gravado, cores à medida.",
+      "en": "Engraved logo, colours made to measure."
+    },
+    "image": "base-038",
+    "accessoryKey": "mats"
+  },
+  {
+    "key": "blocks-balls",
+    "kind": "accessory",
+    "slug": "blocks-balls",
+    "name": {
+      "pt": "Blocos, Rolos & Bolas",
+      "en": "Blocks, Rollers & Balls"
+    },
+    "shortDescription": {
+      "pt": "Apoio para cada postura.",
+      "en": "Support for every posture."
+    },
+    "image": "base-047",
+    "accessoryKey": "blocks-balls"
+  },
+  {
+    "key": "textiles",
+    "kind": "accessory",
+    "slug": "textiles",
+    "name": {
+      "pt": "Têxteis & Conforto",
+      "en": "Textiles & Comfort"
+    },
+    "shortDescription": {
+      "pt": "O toque que faz a diferença.",
+      "en": "The touch that makes the difference."
+    },
+    "image": "base-054",
+    "accessoryKey": "textiles"
   },
   {
     "key": "resistance-bands",
     "kind": "accessory",
     "slug": "resistance-bands",
     "name": {
-      "pt": "Faixas de Resistência",
+      "pt": "Bandas de Resistência",
       "en": "Resistance Bands"
     },
     "shortDescription": {
       "pt": "Progressão para todos os níveis.",
       "en": "Progression for every level."
     },
-    "image": "acc-bands",
+    "image": "base-061",
     "accessoryKey": "resistance-bands"
   },
   {
-    "key": "socks",
+    "key": "glute-trainers",
     "kind": "accessory",
-    "slug": "socks",
+    "slug": "glute-trainers",
     "name": {
-      "pt": "Meias",
-      "en": "Socks"
+      "pt": "Treinadores de Glúteos & Pernas",
+      "en": "Glute & Leg Trainers"
     },
     "shortDescription": {
-      "pt": "Aderência de estúdio.",
-      "en": "Studio grip."
+      "pt": "Foco no trabalho de baixo corpo.",
+      "en": "Focused lower-body work."
     },
-    "image": "acc-socks",
-    "accessoryKey": "socks"
+    "image": "base-068",
+    "accessoryKey": "glute-trainers"
   },
   {
-    "key": "reformer",
-    "kind": "equipment",
-    "slug": "reformer",
+    "key": "jump-ropes",
+    "kind": "accessory",
+    "slug": "jump-ropes",
     "name": {
-      "pt": "Reformer",
-      "en": "Reformer"
+      "pt": "Cordas de Saltar",
+      "en": "Jump Ropes"
     },
     "shortDescription": {
-      "pt": "A peça central do estúdio moderno.",
-      "en": "The centrepiece of the modern studio."
+      "pt": "Cardio, com a marca do estúdio.",
+      "en": "Cardio, with the studio's mark."
     },
-    "image": "reformer-1",
-    "productSlug": "reformer"
+    "image": "base-071",
+    "accessoryKey": "jump-ropes"
   },
   {
-    "key": "cadillac",
+    "key": "reformers",
     "kind": "equipment",
-    "slug": "cadillac",
+    "slug": "reformers",
     "name": {
-      "pt": "Cadillac",
-      "en": "Cadillac"
+      "pt": "Reformers",
+      "en": "Reformers"
+    },
+    "shortDescription": {
+      "pt": "A peça central de qualquer estúdio de referência.",
+      "en": "The centrepiece of every studio of distinction."
+    },
+    "image": "base-078",
+    "productSlug": "reformers"
+  },
+  {
+    "key": "folding-reformers",
+    "kind": "equipment",
+    "slug": "folding-reformers",
+    "name": {
+      "pt": "Reformers Dobráveis",
+      "en": "Reformers Dobráveis"
+    },
+    "shortDescription": {
+      "pt": "A prática completa, que se guarda.",
+      "en": "The full practice, that folds away."
+    },
+    "image": "base-087",
+    "productSlug": "folding-reformers"
+  },
+  {
+    "key": "tower-reformers",
+    "kind": "equipment",
+    "slug": "tower-reformers",
+    "name": {
+      "pt": "Reformers com Torre",
+      "en": "Reformers com Torre"
+    },
+    "shortDescription": {
+      "pt": "Reformer e torre, num só aparelho.",
+      "en": "Reformer and tower, in a single apparatus."
+    },
+    "image": "base-089",
+    "productSlug": "tower-reformers"
+  },
+  {
+    "key": "cadillacs",
+    "kind": "equipment",
+    "slug": "cadillacs",
+    "name": {
+      "pt": "Cadillacs",
+      "en": "Cadillacs"
     },
     "shortDescription": {
       "pt": "Amplitude e versatilidade clínica.",
       "en": "Range and clinical versatility."
     },
-    "image": "cadillac-1",
-    "productSlug": "cadillac"
+    "image": "base-099",
+    "productSlug": "cadillacs"
   },
   {
-    "key": "chair",
+    "key": "chairs-barrels",
     "kind": "equipment",
-    "slug": "chair",
+    "slug": "chairs-barrels",
     "name": {
-      "pt": "Chair",
-      "en": "Chair"
+      "pt": "Cadeiras, Barris & Corretores",
+      "en": "Cadeiras, Barris & Corretores"
     },
     "shortDescription": {
-      "pt": "Precisão numa escala compacta.",
-      "en": "Precision at a compact scale."
+      "pt": "As peças que apuram a técnica.",
+      "en": "The pieces that refine technique."
     },
-    "image": "chair-1",
-    "productSlug": "chair"
+    "image": "base-104",
+    "productSlug": "chairs-barrels"
   },
   {
-    "key": "barrel",
+    "key": "home-line",
     "kind": "equipment",
-    "slug": "barrel",
+    "slug": "home-line",
     "name": {
-      "pt": "Barrel",
-      "en": "Barrel"
+      "pt": "Linha Home",
+      "en": "Linha Home"
     },
     "shortDescription": {
-      "pt": "Extensão e mobilidade espinhal.",
-      "en": "Spinal extension and mobility."
+      "pt": "O estúdio, em casa.",
+      "en": "The studio, at home."
     },
-    "image": "barrel-1",
-    "productSlug": "barrel"
+    "image": "base-111",
+    "productSlug": "home-line"
   },
   {
-    "key": "spine-corrector",
+    "key": "special-equipment",
     "kind": "equipment",
-    "slug": "spine-corrector",
+    "slug": "special-equipment",
     "name": {
-      "pt": "Spine Corrector",
-      "en": "Spine Corrector"
+      "pt": "Equipamentos Especiais",
+      "en": "Equipamentos Especiais"
     },
     "shortDescription": {
-      "pt": "Suporte escultural para a coluna.",
-      "en": "Sculptural support for the spine."
+      "pt": "Para além do reformer.",
+      "en": "Beyond the reformer."
     },
-    "image": "spine-1",
-    "productSlug": "spine-corrector"
-  },
-  {
-    "key": "boards",
-    "kind": "accessory",
-    "slug": "boards",
-    "name": {
-      "pt": "Boards",
-      "en": "Boards"
-    },
-    "shortDescription": {
-      "pt": "Reformer em formato compacto.",
-      "en": "Reformer, made compact."
-    },
-    "image": "acc-board",
-    "accessoryKey": "boards"
-  },
-  {
-    "key": "blocks",
-    "kind": "accessory",
-    "slug": "blocks",
-    "name": {
-      "pt": "Blocos e Rolos",
-      "en": "Blocks & Rollers"
-    },
-    "shortDescription": {
-      "pt": "Apoio e libertação.",
-      "en": "Support and release."
-    },
-    "image": "acc-blocks",
-    "accessoryKey": "blocks"
-  },
-  {
-    "key": "comfort",
-    "kind": "accessory",
-    "slug": "comfort",
-    "name": {
-      "pt": "Conforto de Estúdio",
-      "en": "Studio Comfort"
-    },
-    "shortDescription": {
-      "pt": "Os detalhes que acolhem.",
-      "en": "The details that welcome."
-    },
-    "image": "acc-cushion-round",
-    "accessoryKey": "comfort"
-  },
-  {
-    "key": "training",
-    "kind": "accessory",
-    "slug": "training",
-    "name": {
-      "pt": "Treino de Estúdio",
-      "en": "Studio Training"
-    },
-    "shortDescription": {
-      "pt": "Complementos de treino.",
-      "en": "Training complements."
-    },
-    "image": "acc-hip-1",
-    "accessoryKey": "training"
+    "image": "base-118",
+    "productSlug": "special-equipment"
   }
 ]
