@@ -235,9 +235,9 @@
     "navHeading": "Navegação",
     "shopHeading": "Catálogo",
     "contactHeading": "Contacto",
-    "address": "Avenida da Liberdade 110, 1250-146 Lisboa, Portugal",
+    "address": "Porto, Portugal",
     "phone": "+351 210 000 000",
-    "email": "estudio@basemovement.pt",
+    "email": "info@basemovement.com",
     "newsletterHeading": "Newsletter",
     "newsletterText": "Novidades, lançamentos e inspiração de estúdio, direto na sua caixa de entrada.",
     "newsletterPlaceholder": "O seu email",
@@ -316,7 +316,7 @@
     "hoursLabel": "Horário",
     "hoursText": "Segunda a Sexta, 9h–18h",
     "socialHeading": "Siga-nos",
-    "mapCaption": "Showroom Base Movement, Lisboa"
+    "mapCaption": "Porto, Portugal"
   },
   "product": {
     "dimensions": "Dimensões",

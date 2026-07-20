@@ -47,9 +47,7 @@ function orgStructuredData(locale) {
     description: t.meta.defaultDescription,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Avenida da Liberdade 110",
-      addressLocality: "Lisboa",
-      postalCode: "1250-146",
+      addressLocality: "Porto",
       addressCountry: "PT",
     },
     sameAs: [INSTAGRAM_URL, LINKEDIN_URL],
