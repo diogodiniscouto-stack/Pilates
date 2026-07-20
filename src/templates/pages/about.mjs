@@ -1,4 +1,3 @@
-import { photo } from "../media.mjs";
 import { path } from "../routes.mjs";
 
 export function aboutPage({ locale, t }) {
@@ -15,18 +14,21 @@ export function aboutPage({ locale, t }) {
 
 <section class="section">
   <div class="container">
-    <div class="about-lead" data-reveal>
-      <p class="text-lead">${t.about.intro}</p>
-      ${t.about.leadParagraphs.map((p) => `<p>${p}</p>`).join("")}
+    <div class="about-intro" data-reveal>
+      <p class="about-intro__statement">${t.about.intro}</p>
+      <div class="about-intro__body">
+        ${t.about.leadParagraphs.map((p) => `<p>${p}</p>`).join("")}
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section section--muted">
   <div class="container">
-    <div class="media-frame" data-reveal="scale" style="aspect-ratio:21/9;">
-      ${photo("about-wide", locale === "pt" ? "Cadillac Base Movement em madeira de bordo" : "Base Movement maple Cadillac")}
-    </div>
+    <figure class="about-ethos" data-reveal="scale">
+      <p class="about-ethos__quote">${t.about.ethos}</p>
+      <figcaption class="about-ethos__by">Base Movement</figcaption>
+    </figure>
   </div>
 </section>
 

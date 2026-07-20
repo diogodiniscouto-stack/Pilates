@@ -307,11 +307,19 @@
   function initQuotePrefill() {
     var message = document.querySelector("form[data-form] #message");
     if (!message) return;
+    if (message.value) return;
     var params = new URLSearchParams(window.location.search);
+    var isPT = (document.documentElement.lang || "pt-PT").indexOf("pt") === 0;
+    var subject = params.get("assunto") || params.get("subject");
+    if (subject === "personalizacao" || subject === "customisation") {
+      message.value = isPT
+        ? "Gostaria de personalizar equipamento para o meu estúdio — cor, logótipo e acabamentos à medida. Podem ajudar-me?\n\n"
+        : "I'd like to personalise equipment for my studio — colour, logo and made-to-measure finishes. Could you help?\n\n";
+      return;
+    }
     var product = params.get("produto") || params.get("product");
-    if (!product || message.value) return;
-    var lang = document.documentElement.lang || "pt-PT";
-    message.value = lang.indexOf("pt") === 0
+    if (!product) return;
+    message.value = isPT
       ? "Gostaria de solicitar um orçamento para: " + product + "\n\n"
       : "I would like to request a quote for: " + product + "\n\n";
   }
