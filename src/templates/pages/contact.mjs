@@ -88,13 +88,6 @@ export function contactPage({ locale, t }) {
             </div>
           </div>
         </div>
-
-        <div class="map-frame">
-          <div class="art-placeholder art-placeholder--sand art-placeholder--fill">
-            <span class="art-placeholder__caption">${t.contact.mapCaption}</span>
-          </div>
-          <span class="map-frame__pin">${icon("mapPin")}</span>
-        </div>
       </div>
     </div>
   </div>
