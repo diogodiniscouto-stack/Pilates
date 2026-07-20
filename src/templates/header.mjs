@@ -41,6 +41,7 @@ export function header({ locale, t, pageId, transparent, param }) {
         <a class="site-nav__link" href="${catalogue}"${current("catalogue")}>${t.nav.catalogue}</a>
         <div class="site-nav__dropdown site-nav__dropdown--mega">${dropdown}</div>
       </div>
+      <a class="site-nav__link" href="${home}#kit-essencial">${t.nav.kit}</a>
       <a class="site-nav__link" href="${contact}?assunto=personalizacao">${t.nav.customisation}</a>
       <a class="site-nav__link" href="${about}"${current("about")}>${t.nav.about}</a>
       <a class="site-nav__link" href="${contact}"${current("contact")}>${t.nav.contact}</a>
@@ -71,6 +72,7 @@ export function header({ locale, t, pageId, transparent, param }) {
     <div class="mobile-menu__sub">
       ${categoriesData.map((cat) => `<a href="${categoryHref(locale, cat)}">${cat.name[locale]}</a>`).join("")}
     </div>
+    <a class="mobile-menu__link" href="${home}#kit-essencial">${t.nav.kit}</a>
     <a class="mobile-menu__link" href="${contact}?assunto=personalizacao">${t.nav.customisation}</a>
     <a class="mobile-menu__link" href="${about}">${t.nav.about}</a>
     <a class="mobile-menu__link" href="${contact}">${t.nav.contact}</a>
