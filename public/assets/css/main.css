@@ -2098,7 +2098,14 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
 .prologue__media::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(244,241,236,0.25) 0%, rgba(244,241,236,0) 30%, rgba(244,241,236,0.66) 90%);
+  background:
+    linear-gradient(94deg, rgba(244,241,236,0.9) 0%, rgba(244,241,236,0.62) 32%, rgba(244,241,236,0.14) 58%, rgba(244,241,236,0) 76%),
+    linear-gradient(180deg, rgba(244,241,236,0.4) 0%, rgba(244,241,236,0) 34%, rgba(244,241,236,0.74) 92%);
+}
+@media (max-width: 720px) {
+  .prologue__media::after {
+    background: linear-gradient(180deg, rgba(244,241,236,0.5) 0%, rgba(244,241,236,0.12) 30%, rgba(244,241,236,0.84) 82%);
+  }
 }
 .prologue__content {
   position: relative;
@@ -2110,12 +2117,13 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
   font-size: clamp(0.75rem, 0.72rem + 0.12vw, 0.8125rem);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--c-gold-text);
   margin-bottom: var(--space-md);
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
+  text-shadow: 0 1px 16px rgba(247,244,239,0.9);
 }
 .prologue__eyebrow::after {
   content: "";
@@ -2133,6 +2141,7 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
   font-size: clamp(2.85rem, 1.7rem + 6.9vw, 8.2rem);
   line-height: 0.98;
   letter-spacing: -0.03em;
+  text-shadow: 0 1px 32px rgba(247,244,239,0.7);
 }
 .prologue__headline .line em {
   font-style: italic;
@@ -2143,7 +2152,8 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
   margin-top: var(--space-md);
   max-width: 32rem;
   font-size: var(--fs-lead);
-  color: var(--c-charcoal);
+  color: var(--c-ink);
+  text-shadow: 0 1px 18px rgba(247,244,239,0.85);
 }
 .prologue__benefits {
   list-style: none;
