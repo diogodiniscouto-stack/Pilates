@@ -2369,11 +2369,35 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
 .matter__options .customisation-option p { color: rgba(248, 248, 246, 0.65); }
 
 /* ---- Essential Pilates kit ---- */
-.kit { padding-block: var(--space-3xl); background: var(--c-bg-muted); }
+.kit { padding-block: var(--space-3xl); background: var(--c-bg-muted); position: relative; overflow: hidden; }
 .kit__grid { display: grid; grid-template-columns: 1fr; gap: var(--space-2xl); align-items: center; }
-@media (min-width: 900px) { .kit__grid { grid-template-columns: 0.92fr 1fr; gap: clamp(2.5rem, 5vw, 5rem); } }
-.kit__media .media-frame { aspect-ratio: 113 / 100; border-radius: var(--radius-lg); }
+@media (min-width: 900px) { .kit__grid { grid-template-columns: 1.02fr 1fr; gap: clamp(3rem, 6vw, 6rem); } }
+.kit__media { position: relative; }
+/* soft warm halo lifts the flat-lay off the page */
+.kit__media::before {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border-radius: 50%;
+  background: radial-gradient(58% 58% at 50% 46%, rgba(201, 169, 106, 0.16), rgba(201, 169, 106, 0) 72%);
+  filter: blur(34px);
+  z-index: 0;
+}
+.kit__media .media-frame {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 113 / 100;
+  border-radius: var(--radius-lg);
+  background: #F2EEE7;
+  box-shadow: 0 1px 2px rgba(43, 38, 30, 0.05), 0 44px 84px -38px rgba(43, 38, 30, 0.34);
+  transition: transform var(--dur-slow) var(--ease-luxury), box-shadow var(--dur-slow) var(--ease-luxury);
+}
+.kit__media .media-frame:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1px 2px rgba(43, 38, 30, 0.05), 0 54px 96px -38px rgba(43, 38, 30, 0.4);
+}
 .kit__media .media-frame .photo { object-fit: cover; }
+@media (prefers-reduced-motion: reduce) { .kit__media .media-frame { transition: none; } }
 .kit__body .eyebrow { margin-bottom: var(--space-sm); }
 .kit__body .text-lead { margin-top: var(--space-sm); max-width: 34rem; }
 .kit__items-label {
