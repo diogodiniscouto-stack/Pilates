@@ -16,7 +16,7 @@ const BRAND_COLOURS = [
   { pt: "Bege", en: "Beige", hex: "#E1D3BB" },
   { pt: "Rosa-nude", en: "Nude pink", hex: "#E7CBC1" },
 ];
-const BRAND_COLOUR_CATS = new Set(["silicone-weights", "massage"]);
+const BRAND_COLOUR_CATS = new Set(["silicone-weights", "massage", "kit"]);
 
 function brandColourRow(locale) {
   const label = locale === "pt" ? "6 cores da marca" : "6 brand colours";
