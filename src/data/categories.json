@@ -1,5 +1,20 @@
 [
   {
+    "key": "kit",
+    "kind": "accessory",
+    "slug": "kit-essencial",
+    "name": {
+      "pt": "Kit Essencial de Pilates",
+      "en": "Essential Pilates Kit"
+    },
+    "shortDescription": {
+      "pt": "A seleção essencial para começar.",
+      "en": "The essential set to begin."
+    },
+    "image": "base-077",
+    "accessoryKey": "kit"
+  },
+  {
     "key": "boards",
     "kind": "accessory",
     "slug": "boards",

@@ -860,6 +860,88 @@
   ],
   "accessoryCategories": [
     {
+      "key": "kit",
+      "slug": "kit-essencial",
+      "image": "base-077",
+      "name": {
+        "pt": "Kit Essencial de Pilates",
+        "en": "Essential Pilates Kit"
+      },
+      "tagline": {
+        "pt": "A seleção essencial para começar.",
+        "en": "The essential set to begin."
+      },
+      "intro": {
+        "pt": "Tudo o que um estúdio ou espaço wellness precisa para começar, numa seleção coordenada e totalmente personalizável em cor e logótipo.",
+        "en": "Everything a studio or wellness space needs to begin, in one coordinated selection, fully customisable in colour and logo."
+      },
+      "items": [
+        {
+          "sku": null,
+          "name": {
+            "pt": "Bola de Pilates",
+            "en": "Pilates Ball"
+          },
+          "spec": "PVC",
+          "image": "base-049"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Anel de Pilates",
+            "en": "Pilates Ring"
+          },
+          "spec": "Ø interior 34 cm",
+          "image": "base-030"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Tapete de Exercício Ergonómico",
+            "en": "Ergonomic Exercise Mat"
+          },
+          "spec": "Borracha PU",
+          "image": "base-031"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Halteres Ergonómicos",
+            "en": "Ergonomic Dumbbells"
+          },
+          "spec": "Silicone + ferro",
+          "image": "base-019"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Pesos de Pulso com Fecho em Velcro",
+            "en": "Velcro-Strap Wrist Weights"
+          },
+          "spec": "Silicone + ferro",
+          "image": "base-015"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Saco de Transporte para Tapete",
+            "en": "Mat Carry Bag"
+          },
+          "spec": "Tecido Oxford",
+          "image": "base-051"
+        },
+        {
+          "sku": null,
+          "name": {
+            "pt": "Banda de Resistência",
+            "en": "Resistance Band"
+          },
+          "spec": "Silicone / TPE",
+          "image": "base-061"
+        }
+      ]
+    },
+    {
       "key": "boards",
       "slug": "boards",
       "image": "base-002",

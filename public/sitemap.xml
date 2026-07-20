@@ -133,6 +133,18 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.basemovement.pt/catalogo/kit-essencial/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/kit-essencial/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/kit-essencial/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.basemovement.pt/en/catalogue/kit-essencial/</loc>
+      <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/kit-essencial/" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/kit-essencial/" />
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.basemovement.pt/catalogo/boards/</loc>
       <xhtml:link rel="alternate" hreflang="pt" href="https://www.basemovement.pt/catalogo/boards/" />
       <xhtml:link rel="alternate" hreflang="en" href="https://www.basemovement.pt/en/catalogue/boards/" />
