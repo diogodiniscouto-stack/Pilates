@@ -183,8 +183,8 @@ export function homePage({ locale, t }) {
     })
     .join("");
 
-  /* ---------- Interlude: matter ---------- */
-  const matterImages = ["fabric", "reformer-2", "metal-frame"];
+  /* ---------- Interlude: matter (materials & customisation) ---------- */
+  const matterTones = ["upholstery", "wood", "metal"];
   const matter = `
 <section class="matter" id="materia">
   <div class="living living--dark"></div>
@@ -194,33 +194,29 @@ export function homePage({ locale, t }) {
       <h2 class="text-h2">${x.matterTitle}</h2>
       <p class="text-lead">${x.matterIntro}</p>
     </div>
-    <div class="matter__bands" data-reveal-group>
+    <div class="matter__materials" data-reveal-group>
       ${x.matterBands
         .map(
           (band, i) => `
-      <a class="matter__band" href="${path(locale, "home")}#personalizacao-detalhe" data-band>
-        ${photo(matterImages[i], band.label)}
-        <span class="matter__band-label">
+      <div class="matter__material matter__material--${matterTones[i]}" data-reveal style="--reveal-delay:${i * 90}ms">
+        <span class="matter__material-label">
           <span class="big">${band.label}</span>
           <span class="sub">${band.sub}</span>
         </span>
-      </a>`
-        )
-        .join("")}
-    </div>
-    <div id="personalizacao-detalhe" style="margin-top:var(--space-2xl);display:grid;gap:var(--space-md);grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));" data-reveal-group>
-      ${t.customisation.options
-        .map(
-          (opt) => `
-      <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">${opt.title}</h4>
-        <p style="color:rgba(248,248,246,0.65);">${opt.text}</p>
       </div>`
         )
         .join("")}
     </div>
-    <div style="margin-top:var(--space-xl);" data-reveal>
-      <a class="btn btn--gold btn--magnetic" href="${contact}">${t.customisation.cta}</a>
+    <div id="personalizacao-detalhe" class="matter__options" data-reveal-group>
+      ${t.customisation.options
+        .map(
+          (opt) => `
+      <div class="customisation-option">
+        <h4>${opt.title}</h4>
+        <p>${opt.text}</p>
+      </div>`
+        )
+        .join("")}
     </div>
   </div>
 </section>`;
@@ -319,5 +315,5 @@ export function homePage({ locale, t }) {
     .join("")}
 </nav>`;
 
-  return [rail, prologue, manifesto, collection, chapters, matter, ticker, quotes, faq, epilogue].join("\n");
+  return [rail, prologue, ticker, quotes, manifesto, collection, chapters, matter, faq, epilogue].join("\n");
 }

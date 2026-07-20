@@ -342,51 +342,52 @@
 .matter { padding-block: var(--space-3xl); background: var(--c-ink); color: var(--c-ivory); position: relative; overflow: hidden; }
 .matter .section-head h2 { color: var(--c-ivory); }
 .matter .section-head p { color: rgba(248,248,246,0.7); }
-.matter__bands { display: flex; flex-direction: column; gap: 2px; margin-top: var(--space-xl); }
-.matter__band {
+/* Material panels — tasteful tonal fields (upholstery / wood / metal) */
+.matter__materials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+}
+@media (max-width: 720px) { .matter__materials { grid-template-columns: 1fr; } }
+.matter__material {
   position: relative;
-  display: block;
-  height: clamp(7rem, 16vh, 10rem);
-  overflow: hidden;
+  min-height: clamp(13rem, 26vh, 19rem);
   border-radius: var(--radius-md);
-  transition: height 650ms var(--ease-luxury);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(1.2rem, 2.4vw, 1.9rem);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: transform 500ms var(--ease-luxury);
 }
-.matter__band:hover, .matter__band:focus-visible { height: clamp(14rem, 38vh, 22rem); }
-.matter__band .photo {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 900ms var(--ease-luxury);
-}
-.matter__band:hover .photo { transform: scale(1.06); }
-.matter__band::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(17,17,17,0.55) 0%, rgba(17,17,17,0.1) 60%);
-}
-.matter__band-label {
-  position: absolute;
-  left: clamp(1rem, 4vw, 3rem);
-  bottom: 1.2rem;
-  z-index: 2;
-  color: var(--c-ivory);
-}
-.matter__band-label .big {
+.matter__material:hover { transform: translateY(-5px); }
+.matter__material--upholstery { background: linear-gradient(155deg, #F4EEE3 0%, #E2D5BF 100%); }
+.matter__material--wood { background: linear-gradient(155deg, #E9D6BB 0%, #CDA97D 100%); }
+.matter__material--metal { background: linear-gradient(155deg, #E7EAED 0%, #C4CACF 100%); }
+.matter__material-label .big {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 1.4rem + 3vw, 4rem);
+  font-size: clamp(1.9rem, 1.3rem + 2.4vw, 3rem);
   line-height: 1;
   display: block;
+  color: var(--c-ink);
 }
-.matter__band-label .sub {
+.matter__material-label .sub {
   display: block;
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
   font-size: var(--fs-small);
-  color: rgba(248,248,246,0.75);
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 500ms var(--ease-luxury) 120ms, transform 500ms var(--ease-luxury) 120ms;
+  color: rgba(17, 17, 17, 0.64);
+  max-width: 16rem;
 }
-.matter__band:hover .matter__band-label .sub { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .matter__material { transition: none; } }
+.matter__options {
+  margin-top: var(--space-2xl);
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+.matter__options .customisation-option h4 { color: var(--c-gold); }
+.matter__options .customisation-option p { color: rgba(248, 248, 246, 0.65); }
 
 /* ---- Contexts ticker ---- */
 .ticker {

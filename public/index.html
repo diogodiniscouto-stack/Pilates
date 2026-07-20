@@ -145,6 +145,37 @@
   </div>
 </section>
 
+<section class="ticker" aria-label="Concebido para espaços de referência">
+  <div class="ticker__inner"><span class="ticker__item">Estúdios de Pilates</span><span class="ticker__item">Hotéis</span><span class="ticker__item">Clínicas de Fisioterapia</span><span class="ticker__item">Casas de Luxo</span><span class="ticker__item">Clubes de Fitness</span><span class="ticker__item">Centros de Wellness</span><span class="ticker__item">Estúdios de Pilates</span><span class="ticker__item">Hotéis</span><span class="ticker__item">Clínicas de Fisioterapia</span><span class="ticker__item">Casas de Luxo</span><span class="ticker__item">Clubes de Fitness</span><span class="ticker__item">Centros de Wellness</span></div>
+</section>
+
+<section class="quotes">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow eyebrow--center">Vozes</p>
+      <h2 class="text-h2">A confiança de quem trabalha connosco</h2>
+    </div>
+    <div class="testimonial-grid" data-reveal-group>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>&ldquo;A qualidade do equipamento e a atenção ao detalhe transformaram por completo a experiência do nosso estúdio.&rdquo;</blockquote>
+        <footer><cite>Mariana Oliveira</cite><span class="role">Diretora de Estúdio de Pilates</span></footer>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>&ldquo;Um processo de personalização impecável, do primeiro esboço à instalação final. Resultado à altura da nossa marca.&rdquo;</blockquote>
+        <footer><cite>Rui Ferreira</cite><span class="role">Fundador de Espaço de Wellness</span></footer>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>&ldquo;Equipamento robusto, elegante, e um serviço que se sente verdadeiramente premium em cada etapa.&rdquo;</blockquote>
+        <footer><cite>Beatriz Nunes</cite><span class="role">Diretora de Wellness & Spa</span></footer>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="manifesto" id="manifesto">
   <div class="living"></div>
   <div class="container" style="position:relative;">
@@ -792,85 +823,48 @@
       <h2 class="text-h2">A matéria</h2>
       <p class="text-lead">Cada peça começa aqui: no tacto do estofo, no veio da madeira, no silêncio do metal.</p>
     </div>
-    <div class="matter__bands" data-reveal-group>
+    <div class="matter__materials" data-reveal-group>
       
-      <a class="matter__band" href="/#personalizacao-detalhe" data-band>
-        <img src="/assets/img/products/fabric.jpg" alt="Estofo" width="1600" height="907" loading="lazy" decoding="async" class="photo ">
-        <span class="matter__band-label">
+      <div class="matter__material matter__material--upholstery" data-reveal style="--reveal-delay:0ms">
+        <span class="matter__material-label">
           <span class="big">Estofo</span>
           <span class="sub">Tecidos técnicos em tons de areia</span>
         </span>
-      </a>
-      <a class="matter__band" href="/#personalizacao-detalhe" data-band>
-        <img src="/assets/img/products/reformer-2.jpg" alt="Madeira" width="1600" height="778" loading="lazy" decoding="async" class="photo ">
-        <span class="matter__band-label">
+      </div>
+      <div class="matter__material matter__material--wood" data-reveal style="--reveal-delay:90ms">
+        <span class="matter__material-label">
           <span class="big">Madeira</span>
           <span class="sub">Bordo e faia de origem responsável</span>
         </span>
-      </a>
-      <a class="matter__band" href="/#personalizacao-detalhe" data-band>
-        <img src="/assets/img/products/metal-frame.jpg" alt="Metal" width="1502" height="684" loading="lazy" decoding="async" class="photo ">
-        <span class="matter__band-label">
+      </div>
+      <div class="matter__material matter__material--metal" data-reveal style="--reveal-delay:180ms">
+        <span class="matter__material-label">
           <span class="big">Metal</span>
           <span class="sub">Aço e alumínio de precisão</span>
         </span>
-      </a>
+      </div>
     </div>
-    <div id="personalizacao-detalhe" style="margin-top:var(--space-2xl);display:grid;gap:var(--space-md);grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));" data-reveal-group>
+    <div id="personalizacao-detalhe" class="matter__options" data-reveal-group>
       
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Cores</h4>
-        <p style="color:rgba(248,248,246,0.65);">Uma paleta cuidada de tons neutros e acentos discretos.</p>
+        <h4>Cores</h4>
+        <p>Uma paleta cuidada de tons neutros e acentos discretos.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Estofo</h4>
-        <p style="color:rgba(248,248,246,0.65);">Tecidos técnicos e couro sintético premium, resistentes ao uso profissional.</p>
+        <h4>Estofo</h4>
+        <p>Tecidos técnicos e couro sintético premium, resistentes ao uso profissional.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Acabamentos em Madeira</h4>
-        <p style="color:rgba(248,248,246,0.65);">Carvalho, nogueira e faia, em acabamento natural ou lacado.</p>
+        <h4>Acabamentos em Madeira</h4>
+        <p>Carvalho, nogueira e faia, em acabamento natural ou lacado.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Cores em Metal</h4>
-        <p style="color:rgba(248,248,246,0.65);">Estruturas em preto fosco, latão escovado ou aço inoxidável.</p>
+        <h4>Cores em Metal</h4>
+        <p>Estruturas em preto fosco, latão escovado ou aço inoxidável.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Gravação de Marca</h4>
-        <p style="color:rgba(248,248,246,0.65);">Gravação subtil do logótipo do seu estúdio nas peças principais.</p>
-      </div>
-    </div>
-    <div style="margin-top:var(--space-xl);" data-reveal>
-      <a class="btn btn--gold btn--magnetic" href="/contacto/">Pedir Amostras</a>
-    </div>
-  </div>
-</section>
-
-<section class="ticker" aria-label="Concebido para espaços de referência">
-  <div class="ticker__inner"><span class="ticker__item">Estúdios de Pilates</span><span class="ticker__item">Hotéis</span><span class="ticker__item">Clínicas de Fisioterapia</span><span class="ticker__item">Casas de Luxo</span><span class="ticker__item">Clubes de Fitness</span><span class="ticker__item">Centros de Wellness</span><span class="ticker__item">Estúdios de Pilates</span><span class="ticker__item">Hotéis</span><span class="ticker__item">Clínicas de Fisioterapia</span><span class="ticker__item">Casas de Luxo</span><span class="ticker__item">Clubes de Fitness</span><span class="ticker__item">Centros de Wellness</span></div>
-</section>
-
-<section class="quotes">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Vozes</p>
-      <h2 class="text-h2">A confiança de quem trabalha connosco</h2>
-    </div>
-    <div class="testimonial-grid" data-reveal-group>
-      
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;A qualidade do equipamento e a atenção ao detalhe transformaram por completo a experiência do nosso estúdio.&rdquo;</blockquote>
-        <footer><cite>Mariana Oliveira</cite><span class="role">Diretora, Studio Nove, Lisboa</span></footer>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;Um processo de personalização impecável, do primeiro esboço à instalação final. Resultado à altura da nossa marca.&rdquo;</blockquote>
-        <footer><cite>Rui Ferreira</cite><span class="role">Fundador, Reform Atelier, Porto</span></footer>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;Equipamento robusto, elegante, e um serviço que se sente verdadeiramente premium em cada etapa.&rdquo;</blockquote>
-        <footer><cite>Beatriz Nunes</cite><span class="role">Wellness Director, Aurora Hotel & Spa</span></footer>
+        <h4>Gravação de Marca</h4>
+        <p>Gravação subtil do logótipo do seu estúdio nas peças principais.</p>
       </div>
     </div>
   </div>

@@ -145,6 +145,37 @@
   </div>
 </section>
 
+<section class="ticker" aria-label="Built for spaces of distinction">
+  <div class="ticker__inner"><span class="ticker__item">Pilates Studios</span><span class="ticker__item">Hotels</span><span class="ticker__item">Physiotherapy Clinics</span><span class="ticker__item">Luxury Homes</span><span class="ticker__item">Fitness Clubs</span><span class="ticker__item">Wellness Centres</span><span class="ticker__item">Pilates Studios</span><span class="ticker__item">Hotels</span><span class="ticker__item">Physiotherapy Clinics</span><span class="ticker__item">Luxury Homes</span><span class="ticker__item">Fitness Clubs</span><span class="ticker__item">Wellness Centres</span></div>
+</section>
+
+<section class="quotes">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <p class="eyebrow eyebrow--center">Voices</p>
+      <h2 class="text-h2">The trust of those who work with us</h2>
+    </div>
+    <div class="testimonial-grid" data-reveal-group>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>&ldquo;The quality of the equipment and the attention to detail completely transformed our studio experience.&rdquo;</blockquote>
+        <footer><cite>Mariana Oliveira</cite><span class="role">Pilates Studio Director</span></footer>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>&ldquo;An impeccable customisation process, from first sketch to final installation. A result worthy of our brand.&rdquo;</blockquote>
+        <footer><cite>Rui Ferreira</cite><span class="role">Wellness Space Founder</span></footer>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>&ldquo;Robust, elegant equipment, and a service that feels genuinely premium at every step.&rdquo;</blockquote>
+        <footer><cite>Beatriz Nunes</cite><span class="role">Wellness & Spa Director</span></footer>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="manifesto" id="manifesto">
   <div class="living"></div>
   <div class="container" style="position:relative;">
@@ -792,85 +823,48 @@
       <h2 class="text-h2">The matter</h2>
       <p class="text-lead">Every piece begins here: in the touch of the upholstery, the grain of the wood, the silence of the metal.</p>
     </div>
-    <div class="matter__bands" data-reveal-group>
+    <div class="matter__materials" data-reveal-group>
       
-      <a class="matter__band" href="/en/#personalizacao-detalhe" data-band>
-        <img src="/assets/img/products/fabric.jpg" alt="Upholstery" width="1600" height="907" loading="lazy" decoding="async" class="photo ">
-        <span class="matter__band-label">
+      <div class="matter__material matter__material--upholstery" data-reveal style="--reveal-delay:0ms">
+        <span class="matter__material-label">
           <span class="big">Upholstery</span>
           <span class="sub">Technical fabrics in sand tones</span>
         </span>
-      </a>
-      <a class="matter__band" href="/en/#personalizacao-detalhe" data-band>
-        <img src="/assets/img/products/reformer-2.jpg" alt="Wood" width="1600" height="778" loading="lazy" decoding="async" class="photo ">
-        <span class="matter__band-label">
+      </div>
+      <div class="matter__material matter__material--wood" data-reveal style="--reveal-delay:90ms">
+        <span class="matter__material-label">
           <span class="big">Wood</span>
           <span class="sub">Responsibly sourced maple and beech</span>
         </span>
-      </a>
-      <a class="matter__band" href="/en/#personalizacao-detalhe" data-band>
-        <img src="/assets/img/products/metal-frame.jpg" alt="Metal" width="1502" height="684" loading="lazy" decoding="async" class="photo ">
-        <span class="matter__band-label">
+      </div>
+      <div class="matter__material matter__material--metal" data-reveal style="--reveal-delay:180ms">
+        <span class="matter__material-label">
           <span class="big">Metal</span>
           <span class="sub">Precision steel and aluminium</span>
         </span>
-      </a>
+      </div>
     </div>
-    <div id="personalizacao-detalhe" style="margin-top:var(--space-2xl);display:grid;gap:var(--space-md);grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));" data-reveal-group>
+    <div id="personalizacao-detalhe" class="matter__options" data-reveal-group>
       
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Colours</h4>
-        <p style="color:rgba(248,248,246,0.65);">A carefully curated palette of neutral tones and discreet accents.</p>
+        <h4>Colours</h4>
+        <p>A carefully curated palette of neutral tones and discreet accents.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Upholstery</h4>
-        <p style="color:rgba(248,248,246,0.65);">Technical fabrics and premium synthetic leather, built for professional use.</p>
+        <h4>Upholstery</h4>
+        <p>Technical fabrics and premium synthetic leather, built for professional use.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Wood Finishes</h4>
-        <p style="color:rgba(248,248,246,0.65);">Oak, walnut and beech, in natural or lacquered finish.</p>
+        <h4>Wood Finishes</h4>
+        <p>Oak, walnut and beech, in natural or lacquered finish.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Metal Colours</h4>
-        <p style="color:rgba(248,248,246,0.65);">Frames in matte black, brushed brass or stainless steel.</p>
+        <h4>Metal Colours</h4>
+        <p>Frames in matte black, brushed brass or stainless steel.</p>
       </div>
       <div class="customisation-option">
-        <h4 style="color:var(--c-gold);">Brand Engraving</h4>
-        <p style="color:rgba(248,248,246,0.65);">Subtle engraving of your studio's logo on signature pieces.</p>
-      </div>
-    </div>
-    <div style="margin-top:var(--space-xl);" data-reveal>
-      <a class="btn btn--gold btn--magnetic" href="/en/contact/">Request Samples</a>
-    </div>
-  </div>
-</section>
-
-<section class="ticker" aria-label="Built for spaces of distinction">
-  <div class="ticker__inner"><span class="ticker__item">Pilates Studios</span><span class="ticker__item">Hotels</span><span class="ticker__item">Physiotherapy Clinics</span><span class="ticker__item">Luxury Homes</span><span class="ticker__item">Fitness Clubs</span><span class="ticker__item">Wellness Centres</span><span class="ticker__item">Pilates Studios</span><span class="ticker__item">Hotels</span><span class="ticker__item">Physiotherapy Clinics</span><span class="ticker__item">Luxury Homes</span><span class="ticker__item">Fitness Clubs</span><span class="ticker__item">Wellness Centres</span></div>
-</section>
-
-<section class="quotes">
-  <div class="container">
-    <div class="section-head section-head--center" data-reveal>
-      <p class="eyebrow eyebrow--center">Voices</p>
-      <h2 class="text-h2">The trust of those who work with us</h2>
-    </div>
-    <div class="testimonial-grid" data-reveal-group>
-      
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;The quality of the equipment and the attention to detail completely transformed our studio experience.&rdquo;</blockquote>
-        <footer><cite>Mariana Oliveira</cite><span class="role">Director, Studio Nove, Lisbon</span></footer>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;An impeccable customisation process, from first sketch to final installation. A result worthy of our brand.&rdquo;</blockquote>
-        <footer><cite>Rui Ferreira</cite><span class="role">Founder, Reform Atelier, Porto</span></footer>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
-        <blockquote>&ldquo;Robust, elegant equipment, and a service that feels genuinely premium at every step.&rdquo;</blockquote>
-        <footer><cite>Beatriz Nunes</cite><span class="role">Wellness Director, Aurora Hotel & Spa</span></footer>
+        <h4>Brand Engraving</h4>
+        <p>Subtle engraving of your studio's logo on signature pieces.</p>
       </div>
     </div>
   </div>
