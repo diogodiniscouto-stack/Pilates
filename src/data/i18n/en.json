@@ -417,5 +417,50 @@
     "accessoriesChapterText": "Fifty-four objects that complete the practice, cream-toned weights, natural cork, studio textiles.",
     "accessoriesCta": "See all accessories",
     "faqEyebrow": "Final Notes"
+  },
+  "kit": {
+    "eyebrow": "Start here",
+    "title": "Essential Pilates Kit",
+    "intro": "Everything a studio or wellness space needs to begin, in one coordinated selection, fully customisable in colour and logo.",
+    "itemsLabel": "Included",
+    "items": [
+      {
+        "name": "Pilates Ball",
+        "note": "PVC",
+        "image": "base-049"
+      },
+      {
+        "name": "Pilates Ring",
+        "note": "Ø 34 cm interior",
+        "image": "base-030"
+      },
+      {
+        "name": "Ergonomic Exercise Mat",
+        "note": "PU rubber",
+        "image": "base-031"
+      },
+      {
+        "name": "Ergonomic Dumbbells",
+        "note": "Silicone + iron",
+        "image": "base-001"
+      },
+      {
+        "name": "Velcro-Strap Wrist Weights",
+        "note": "Silicone + iron",
+        "image": "base-015"
+      },
+      {
+        "name": "Mat Carry Bag",
+        "note": "Oxford fabric",
+        "image": "base-051"
+      },
+      {
+        "name": "Resistance Band",
+        "note": "Silicone / TPE",
+        "image": "base-061"
+      }
+    ],
+    "cta": "Request the Kit Quote",
+    "note": "Customisable in colour and logo · made to order"
   }
 }

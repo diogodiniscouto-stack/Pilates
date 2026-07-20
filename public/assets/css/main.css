@@ -2337,6 +2337,54 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
 .matter__options .customisation-option h4 { color: var(--c-gold); }
 .matter__options .customisation-option p { color: rgba(248, 248, 246, 0.65); }
 
+/* ---- Essential Pilates kit ---- */
+.kit { padding-block: var(--space-3xl); background: var(--c-bg-muted); }
+.kit__grid { display: grid; grid-template-columns: 1fr; gap: var(--space-2xl); align-items: center; }
+@media (min-width: 900px) { .kit__grid { grid-template-columns: 0.92fr 1fr; gap: clamp(2.5rem, 5vw, 5rem); } }
+.kit__media .media-frame { aspect-ratio: 113 / 100; border-radius: var(--radius-lg); }
+.kit__media .media-frame .photo { object-fit: cover; }
+.kit__body .eyebrow { margin-bottom: var(--space-sm); }
+.kit__body .text-lead { margin-top: var(--space-sm); max-width: 34rem; }
+.kit__items-label {
+  margin-top: var(--space-lg);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+}
+.kit__items {
+  list-style: none;
+  margin-top: var(--space-sm);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.35rem;
+}
+@media (min-width: 560px) { .kit__items { grid-template-columns: 1fr 1fr; gap: 0.4rem 1.5rem; } }
+.kit__item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: var(--radius-md);
+  transition: background-color var(--dur-base) var(--ease-luxury), transform var(--dur-base) var(--ease-luxury);
+}
+.kit__item:hover { background: var(--c-bg); transform: translateX(4px); }
+.kit__thumb {
+  flex: 0 0 auto;
+  width: 3.4rem; height: 3.4rem;
+  border-radius: var(--radius-sm);
+}
+.kit__thumb .photo { object-fit: contain; }
+.kit__item:hover .kit__thumb .photo { transform: scale(1.08); }
+.kit__item-text { display: flex; flex-direction: column; min-width: 0; }
+.kit__item-name { font-weight: 500; font-size: var(--fs-small); color: var(--c-ink); line-height: 1.25; transition: color var(--dur-base) var(--ease-luxury); }
+.kit__item:hover .kit__item-name { color: var(--c-gold-text); }
+.kit__item-note { font-size: 0.6875rem; color: var(--c-text-muted); margin-top: 0.1rem; }
+.kit__cta { margin-top: var(--space-xl); display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-start; }
+.kit__note { font-size: var(--fs-small); color: var(--c-text-muted); }
+@media (prefers-reduced-motion: reduce) { .kit__item { transition: none; } }
+
 /* ---- Contexts ticker ---- */
 .ticker {
   padding-block: var(--space-xl);

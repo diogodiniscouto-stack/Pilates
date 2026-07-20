@@ -417,5 +417,50 @@
     "accessoriesChapterText": "Cinquenta e quatro objetos que completam a prática, pesos em tons de creme, cortiça natural, têxteis de estúdio.",
     "accessoriesCta": "Ver todos os acessórios",
     "faqEyebrow": "Notas Finais"
+  },
+  "kit": {
+    "eyebrow": "Comece por aqui",
+    "title": "Kit Essencial de Pilates",
+    "intro": "Tudo o que um estúdio ou espaço wellness precisa para começar, numa seleção coordenada e totalmente personalizável em cor e logótipo.",
+    "itemsLabel": "Inclui",
+    "items": [
+      {
+        "name": "Bola de Pilates",
+        "note": "PVC",
+        "image": "base-049"
+      },
+      {
+        "name": "Anel de Pilates",
+        "note": "Ø interior 34 cm",
+        "image": "base-030"
+      },
+      {
+        "name": "Tapete de Exercício Ergonómico",
+        "note": "Borracha PU",
+        "image": "base-031"
+      },
+      {
+        "name": "Halteres Ergonómicos",
+        "note": "Silicone + ferro",
+        "image": "base-001"
+      },
+      {
+        "name": "Pesos de Pulso com Fecho em Velcro",
+        "note": "Silicone + ferro",
+        "image": "base-015"
+      },
+      {
+        "name": "Saco de Transporte para Tapete",
+        "note": "Tecido Oxford",
+        "image": "base-051"
+      },
+      {
+        "name": "Banda de Resistência",
+        "note": "Silicone / TPE",
+        "image": "base-061"
+      }
+    ],
+    "cta": "Pedir Orçamento do Kit",
+    "note": "Personalizável em cor e logótipo · produzido por encomenda"
   }
 }

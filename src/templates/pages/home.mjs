@@ -228,6 +228,43 @@ export function homePage({ locale, t }) {
   <div class="ticker__inner">${tickerItems}${tickerItems}</div>
 </section>`;
 
+  /* ---------- Essential Pilates kit ---------- */
+  const k = t.kit;
+  const kit = `
+<section class="kit" id="kit-essencial">
+  <div class="container">
+    <div class="kit__grid">
+      <div class="kit__media" data-reveal="scale">
+        <div class="media-frame">${photo("base-077", `${k.title} — Base Movement`, { extraClass: "kit__photo" })}</div>
+      </div>
+      <div class="kit__body">
+        <p class="eyebrow" data-reveal>${k.eyebrow}</p>
+        <h2 class="text-h2" data-reveal>${k.title}</h2>
+        <p class="text-lead" data-reveal>${k.intro}</p>
+        <p class="kit__items-label" data-reveal>${k.itemsLabel}</p>
+        <ul class="kit__items" data-reveal-group>
+          ${k.items
+            .map(
+              (it, i) => `
+          <li class="kit__item" data-reveal style="--reveal-delay:${i * 55}ms">
+            <span class="kit__thumb media-frame">${photo(it.image, it.name)}</span>
+            <span class="kit__item-text">
+              <span class="kit__item-name">${it.name}</span>
+              <span class="kit__item-note">${it.note}</span>
+            </span>
+          </li>`
+            )
+            .join("")}
+        </ul>
+        <div class="kit__cta" data-reveal>
+          <a class="btn btn--primary btn--magnetic" href="${contact}?produto=${encodeURIComponent(k.title)}">${k.cta} ${icon("arrowRight")}</a>
+          <p class="kit__note">${k.note}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`;
+
   /* ---------- Voices — static grid (no horizontal scroll) ---------- */
   const quotes = `
 <section class="quotes">
@@ -315,5 +352,5 @@ export function homePage({ locale, t }) {
     .join("")}
 </nav>`;
 
-  return [rail, prologue, ticker, quotes, manifesto, collection, chapters, matter, faq, epilogue].join("\n");
+  return [rail, prologue, ticker, kit, quotes, manifesto, collection, chapters, matter, faq, epilogue].join("\n");
 }
