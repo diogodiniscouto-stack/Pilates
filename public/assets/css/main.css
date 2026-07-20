@@ -2403,7 +2403,7 @@ body.is-loaded .preloader { opacity: 0; visibility: hidden; pointer-events: none
   z-index: 1;
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-lg);
-  background: #FBFAF8;
+  background: #F3EEE6;
   padding: clamp(0.5rem, 2.2vw, 1.5rem);
   box-shadow: 0 1px 2px rgba(43, 38, 30, 0.05), 0 44px 84px -38px rgba(43, 38, 30, 0.34);
   transition: transform var(--dur-slow) var(--ease-luxury), box-shadow var(--dur-slow) var(--ease-luxury);
