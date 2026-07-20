@@ -7,11 +7,31 @@ import { path } from "../routes.mjs";
  * whole line as a responsive grid (no horizontal scroll), matching the
  * equipment pages in weight and treatment.
  */
+// The six signature brand-palette colours (silicone line)
+const BRAND_COLOURS = [
+  { pt: "Preto", en: "Black", hex: "#1F1D1B" },
+  { pt: "Rosa", en: "Pink", hex: "#E9AFC2" },
+  { pt: "Verde-acinzentado", en: "Sage", hex: "#AFBAB0" },
+  { pt: "Caramelo", en: "Caramel", hex: "#C39A6C" },
+  { pt: "Bege", en: "Beige", hex: "#E1D3BB" },
+  { pt: "Rosa-nude", en: "Nude pink", hex: "#E7CBC1" },
+];
+const BRAND_COLOUR_CATS = new Set(["silicone-weights", "massage"]);
+
+function brandColourRow(locale) {
+  const label = locale === "pt" ? "6 cores da marca" : "6 brand colours";
+  const dots = BRAND_COLOURS
+    .map((c) => `<span class="colour-dot" style="--sw:${c.hex}" title="${c[locale]}"></span>`)
+    .join("");
+  return `<div class="accessory-card__colours" aria-label="${locale === "pt" ? "Disponível em seis cores da paleta da marca" : "Available in six brand-palette colours"}">${dots}<span class="accessory-card__colours-label">${label}</span></div>`;
+}
+
 export function accessoryCategoryPage({ locale, t, category }) {
   const catalogue = path(locale, "catalogue");
   const contact = path(locale, "contact");
   const n = category.items.length;
   const objectsWord = locale === "pt" ? (n === 1 ? "produto" : "produtos") : n === 1 ? "product" : "products";
+  const showColours = BRAND_COLOUR_CATS.has(category.key);
 
   const cards = category.items
     .map(
@@ -23,6 +43,7 @@ export function accessoryCategoryPage({ locale, t, category }) {
         ${item.sku ? `<p class="series-card__ref">${t.product.refLabel} ${item.sku}</p>` : ""}
         <h3>${item.name[locale]}</h3>
         <p>${item.spec}</p>
+        ${showColours ? brandColourRow(locale) : ""}
         <a class="icon-link accessory-card__cta" href="${contact}?produto=${encodeURIComponent((item.sku ? item.sku + " · " : "") + item.name[locale])}">${t.product.requestQuote} ${icon("arrowRight")}</a>
       </div>`
     )
