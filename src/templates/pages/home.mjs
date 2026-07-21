@@ -112,7 +112,7 @@ export function homePage({ locale, t }) {
         .map(
           (cat, i) => `
       <a class="collection-card" href="${categoryHref(locale, cat)}" data-reveal style="--reveal-delay:${(i % 4) * 55}ms">
-        <div class="media-frame">${photo(cat.image, `${cat.name[locale]} — Base Movement`)}</div>
+        <div class="media-frame">${photo(cat.key === "kit" ? "base-077b" : cat.image, `${cat.name[locale]} — Base Movement`)}</div>
         <div class="collection-card__title">
           <h3>${cat.name[locale]}</h3>
           ${icon("arrowUpRight")}
