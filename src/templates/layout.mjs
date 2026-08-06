@@ -36,6 +36,14 @@ export function layout({
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N63R45WX');</script>
+  <!-- End Google Tag Manager -->
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSQXY7F7VP"></script>
   <script>
@@ -74,6 +82,10 @@ export function layout({
   ${ld}
 </head>
 <body class="${transparentHeader ? "has-transparent-header" : ""} ${bodyClass}">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N63R45WX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div class="preloader" aria-hidden="true">
     <div class="preloader__mark">${logoMark()}</div>
     <div class="preloader__bar"></div>
