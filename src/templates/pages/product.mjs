@@ -100,14 +100,6 @@ export function productPage({ locale, t, product, category }) {
             <tr><th>${t.product.warranty}</th><td>${product.warrantyYears} ${locale === "pt" ? "anos" : "years"}</td></tr>
           </tbody>
         </table>
-
-        <div style="margin-top:var(--space-lg);">
-          <h3 style="font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:var(--ls-wide);color:var(--c-text-muted);margin-bottom:0.75rem;">${t.product.downloads}</h3>
-          <div class="product-downloads">
-            <a class="product-download" href="#">${icon("download")}${t.product.downloadSpec}</a>
-            <a class="product-download" href="#">${icon("download")}${t.product.download3d}</a>
-          </div>
-        </div>
       </div>
     </div>
 

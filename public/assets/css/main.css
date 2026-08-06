@@ -1558,21 +1558,6 @@ form.is-success .form-success { display: block; }
 .spec-table th { width: 40%; font-weight: 500; color: var(--c-text-muted); font-size: var(--fs-small); }
 .spec-table td { font-size: var(--fs-small); font-weight: 500; }
 
-.product-downloads { display: flex; flex-direction: column; gap: 0.75rem; margin-top: var(--space-sm); }
-.product-download {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.9rem 1.1rem;
-  border: 1px solid var(--c-border);
-  border-radius: var(--radius-md);
-  font-size: var(--fs-small);
-  font-weight: 500;
-  transition: border-color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
-}
-.product-download:hover { border-color: var(--c-gold); background: var(--c-bg-muted); }
-.product-download svg { width: 1.25rem; height: 1.25rem; color: var(--c-gold); flex-shrink: 0; }
-
 .product-tabs { margin-top: var(--space-2xl); }
 .product-tabs__nav { display: flex; gap: var(--space-lg); border-bottom: 1px solid var(--c-border); margin-bottom: var(--space-lg); overflow-x: auto; }
 .product-tabs__btn {
