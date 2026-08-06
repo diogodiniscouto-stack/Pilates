@@ -105,7 +105,7 @@ export function productPage({ locale, t, product, category }) {
 
     <div class="quote-banner" data-reveal>
       <p class="text-lead">${t.customisation.headingLines[0]}</p>
-      <a class="btn btn--secondary" href="${contact}">${t.customisation.cta}</a>
+      <a class="btn btn--secondary" href="${contact}">${t.product.requestQuote}</a>
     </div>
   </div>
 </section>
