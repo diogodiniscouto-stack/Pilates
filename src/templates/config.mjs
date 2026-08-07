@@ -14,5 +14,5 @@ export const CONTACT_EMAIL = "info@basemovementpilates.com";
 export const WEB3FORMS_ACCESS_KEY = "f3827906-5315-40b2-b4a5-49db0cb76445";
 // WhatsApp number in international format, digits only (e.g. "351912345678").
 // Leave empty to hide the floating WhatsApp button.
-export const WHATSAPP_NUMBER = "";
+export const WHATSAPP_NUMBER = "351914373226";
 export const WHATSAPP_MESSAGE = "Olá! Gostaria de saber mais sobre os equipamentos Base Movement.";
