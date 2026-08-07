@@ -434,9 +434,43 @@
         });
         if (!valid) return;
 
-        // TODO: wire to a real submission endpoint.
-        form.classList.add("is-success");
-        if (form.reset) form.reset();
+        var isPT = (document.documentElement.lang || "pt").indexOf("pt") === 0;
+        var keyField = form.querySelector('[name="access_key"]');
+        var key = keyField ? keyField.value.trim() : "";
+        var submitBtn = form.querySelector('[type="submit"]');
+        var get = function (n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value : ""; };
+
+        function showSuccess() { form.classList.add("is-success"); if (form.reset) form.reset(); }
+
+        function mailtoFallback() {
+          var email = form.getAttribute("data-contact-email") || "";
+          if (!email) { showSuccess(); return; }
+          var subject = get("subject") || (isPT ? "Pedido de orçamento" : "Quote request");
+          var lines = [];
+          if (get("name")) lines.push((isPT ? "Nome: " : "Name: ") + get("name"));
+          if (get("email")) lines.push("Email: " + get("email"));
+          if (get("phone")) lines.push((isPT ? "Telefone: " : "Phone: ") + get("phone"));
+          if (get("studioType")) lines.push((isPT ? "Tipo de espaço: " : "Space type: ") + get("studioType"));
+          if (get("message")) lines.push("\n" + get("message"));
+          window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+          showSuccess();
+        }
+
+        // No form-service key configured yet -> open the visitor's mail client.
+        if (!key) { mailtoFallback(); return; }
+
+        if (submitBtn) submitBtn.disabled = true;
+        var payload = {};
+        new FormData(form).forEach(function (v, k) { payload[k] = v; });
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(payload),
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (d) { if (d && d.success) showSuccess(); else mailtoFallback(); })
+          .catch(function () { mailtoFallback(); })
+          .then(function () { if (submitBtn) submitBtn.disabled = false; });
       });
     });
   }

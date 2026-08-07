@@ -1,6 +1,6 @@
 import { icon } from "../icons.mjs";
 import { path } from "../routes.mjs";
-import { INSTAGRAM_URL, LINKEDIN_URL } from "../config.mjs";
+import { INSTAGRAM_URL, LINKEDIN_URL, WEB3FORMS_ACCESS_KEY, CONTACT_EMAIL } from "../config.mjs";
 
 export function contactPage({ locale, t }) {
   const f = t.contact.fields;
@@ -21,7 +21,11 @@ export function contactPage({ locale, t }) {
     <div class="contact-layout">
       <div data-reveal>
         <h2 class="text-h3" style="margin-bottom:var(--space-lg);">${t.contact.formHeading}</h2>
-        <form data-form novalidate>
+        <form data-form novalidate data-contact-email="${CONTACT_EMAIL}">
+          <input type="hidden" name="access_key" value="${WEB3FORMS_ACCESS_KEY}" />
+          <input type="hidden" name="subject" value="${locale === "pt" ? "Novo pedido de orçamento — Base Movement" : "New quote request — Base Movement"}" />
+          <input type="hidden" name="from_name" value="Base Movement — Website" />
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important;" aria-hidden="true" />
           <div class="form-fields">
             <div class="form-row form-row--2">
               <div class="form-field">

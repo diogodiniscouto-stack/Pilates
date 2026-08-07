@@ -2,7 +2,7 @@ import { header } from "./header.mjs";
 import { footer } from "./footer.mjs";
 import { logoMark } from "./logoMark.mjs";
 import { path, locales } from "./routes.mjs";
-import { SITE_URL, SITE_NAME } from "./config.mjs";
+import { SITE_URL, SITE_NAME, WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from "./config.mjs";
 import { icon } from "./icons.mjs";
 
 function alternateLinks(pageId, param) {
@@ -105,6 +105,10 @@ export function layout({
     <button class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next">${icon("chevronRight")}</button>
     <button class="lightbox__close" data-lightbox-close aria-label="${t.nav.close}">${icon("close")}</button>
   </div>
+
+  ${WHATSAPP_NUMBER
+    ? `<a class="wa-fab" href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}" target="_blank" rel="noopener" aria-label="WhatsApp">${icon("whatsapp")}<span class="wa-fab__pulse" aria-hidden="true"></span></a>`
+    : ""}
 
   <script src="/assets/js/main.js" defer></script>
 </body>
