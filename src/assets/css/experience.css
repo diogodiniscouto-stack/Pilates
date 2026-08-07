@@ -105,8 +105,9 @@
   content: "";
   position: absolute; inset: 0;
   background:
-    linear-gradient(94deg, rgba(244,241,236,0.9) 0%, rgba(244,241,236,0.62) 32%, rgba(244,241,236,0.14) 58%, rgba(244,241,236,0) 76%),
-    linear-gradient(180deg, rgba(244,241,236,0.4) 0%, rgba(244,241,236,0) 34%, rgba(244,241,236,0.74) 92%);
+    linear-gradient(94deg, rgba(244,241,236,0.95) 0%, rgba(244,241,236,0.84) 40%, rgba(244,241,236,0.52) 64%, rgba(244,241,236,0.16) 82%, rgba(244,241,236,0) 93%),
+    linear-gradient(180deg, rgba(244,241,236,0.42) 0%, rgba(244,241,236,0) 32%, rgba(244,241,236,0.76) 92%),
+    linear-gradient(0deg, rgba(244,241,236,0.16), rgba(244,241,236,0.16));
 }
 @media (max-width: 720px) {
   .prologue__media::after {
@@ -147,7 +148,7 @@
   font-size: clamp(2.85rem, 1.7rem + 6.9vw, 8.2rem);
   line-height: 0.98;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 32px rgba(247,244,239,0.7);
+  text-shadow: 0 1px 2px rgba(247,244,239,0.55), 0 2px 30px rgba(247,244,239,0.9);
 }
 .prologue__headline .line em {
   font-style: italic;
@@ -168,9 +169,10 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem 1.75rem;
-  font-size: clamp(0.75rem, 0.72rem + 0.1vw, 0.8125rem);
-  letter-spacing: 0.04em;
-  color: var(--c-charcoal);
+  font-size: clamp(0.78rem, 0.74rem + 0.12vw, 0.85rem);
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  color: var(--c-ink);
 }
 .prologue__benefits li {
   display: inline-flex;
@@ -180,7 +182,8 @@
 .prologue__benefits li::before {
   content: "\2713";
   color: var(--c-gold-text);
-  font-size: 0.9em;
+  font-weight: 700;
+  font-size: 0.95em;
 }
 .prologue__actions { margin-top: var(--space-lg); display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 .prologue__proof {
