@@ -11,7 +11,7 @@ export const LINKEDIN_URL = "https://www.linkedin.com/company/basemovement.pilat
 export const CONTACT_EMAIL = "info@basemovementpilates.com";
 // Web3Forms access key (free, tied to CONTACT_EMAIL). Create one at
 // https://web3forms.com — until it's set, the form falls back to mailto.
-export const WEB3FORMS_ACCESS_KEY = "";
+export const WEB3FORMS_ACCESS_KEY = "f3827906-5315-40b2-b4a5-49db0cb76445";
 // WhatsApp number in international format, digits only (e.g. "351912345678").
 // Leave empty to hide the floating WhatsApp button.
 export const WHATSAPP_NUMBER = "";
